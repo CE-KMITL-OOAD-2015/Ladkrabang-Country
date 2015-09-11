@@ -40,7 +40,6 @@ public class BuildingProvider extends ListActivity {
         }
     }
 
-
     public Cursor getAll() {
         SQLiteDatabase db = buildingDB.getReadableDatabase();
         return db.query(TABLE_NAME, COLUMNS, null, null, null, null, Constants.TITLE + (" ASC"));
@@ -89,10 +88,8 @@ public class BuildingProvider extends ListActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
-
 
     public void showFilter(String str) {
         Cursor cursor;
@@ -113,8 +110,6 @@ public class BuildingProvider extends ListActivity {
                 cursor, new String[]{Constants.TITLE}, VIEWS, 0);
         setListAdapter(adapter);
     }
-
-
 }
 
 class BuildingDB extends SQLiteOpenHelper {
@@ -156,7 +151,6 @@ class BuildingDB extends SQLiteOpenHelper {
         add(db, "อาคารเฉลิมพระเกียรติ 84 พรรษาภูมิพลมหาราชา(HM)", "วิศวกรรมศาสตร์", 13.726552f, 100.775154f);
         add(db, "อาคารปฏิบัติการไฟฟ้า(L)", "วิศวกรรมศาสตร์", 13.728486f, 100.775537f);
         add(db, "โรงอาหาร L", "วิศวกรรมศาสตร์", 13.728760f, 100.775207f);
-        add(db, "อาคารภาควิชาวิศวกรรมโยธา", "วิศวกรรมศาสตร์", 13.726951f, 100.774367f);
         add(db, "อาคารปฏิบัติการรวมวิศวกรรมศาสตร์ 2(ECC)", "วิศวกรรมศาสตร์", 13.729158f, 100.775511f);
         add(db, "อาคารบูรณาการ", "สถาปัตยกรรมศาสตร์", 13.725755f, 100.773841f);
         add(db, "อาคารเรียนรวมสถาปัตยกรรมศาสตร์", "สถาปัตยกรรมศาสตร์", 13.725206f, 100.775100f);
@@ -205,7 +199,6 @@ class BuildingDB extends SQLiteOpenHelper {
         add(db, "อาคารเจ้าคุณทหาร", "อุตสาหกรรมการเกษตร เทคโนโลยีการเกษตร", 13.726536f, 100.780341f);
         add(db, "โรงอาหารคณะอุตสาหกรรมการเกษตร", "อุตสาหกรรมการเกษตร", 13.725263f, 100.780632f);
         add(db, "อาคารบุนนาค", "เทคโนโลยีการเกษตร", 13.729740f, 100.782029f);
-
     }
 
     private void add(SQLiteDatabase db, String title, String faculty, float lat, float lng) {
