@@ -1,4 +1,5 @@
 <resources>
+    <string name="facebook_app_id">1461166147546095</string>
     <string name="app_name">Ladkrabang Country</string>
     <string name="kmitl_place">KMITL PLACE</string>
     <string name="transportation">TRANSPORTATION</string>
@@ -29,4 +30,5 @@
     //Contact Us
     <string name="tel">สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง     เลขที่ 1 ซอยฉลองกรุง 1 เขตลาดกระบัง กรุงเทพมหานคร ประเทศไทย 10520
                         </string>
+
 </resources>
