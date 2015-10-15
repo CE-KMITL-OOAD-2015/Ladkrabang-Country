@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Ladkrabang Country</string>
+    <string name="kmitl_place">KMITL PLACE</string>
+    <string name="transportation">TRANSPORTATION</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="action_login">action_login</string>
+    <string name="title_activity_main_building">KMITL PLACE</string>
+    <string name="title_activity_main__tran">Transportation</string>
+    <string name="title_activity_tran_train">Train</string>
+
+
+    //train function
+    <string name="goBKK">GO TO BBK</string>
+    <string name="outBKK">OUT OF BBK</string>
+    <string name="title_activity_menu__van">Menu_Van</string>
+    <string name="title_activity_tran__van">Van</string>
+    <string name="title_activity_tran__bus">Bus</string>
+    <string name="title_activity_tran__motorcycle">Motorcycle</string>
+    <string name="title_activity_first">First</string>
+    <string name="login_with_facebook">Login with facebook</string>
+    <string name="guest">Guest</string>
+    <string name="Ladkrabang_Country">Ladkrabang Country</string>
+    <string name="title_activity_announcement">Announcement</string>
+    <string name="title_activity_table_train_in">ตารางรถไฟ(เที่ยวไป)</string>
+    <string name="title_activity_tran__train">ตารางรถไฟ(เที่ยวกลับ)</string>
+    <string name="title_activity_contact_us">contactUs</string>
+
+
+    //van
+    <string name="van1013">สาย 1013</string>
+    <string name="van143">สาย 143</string>
+
+    <string name="map1">MAP</string>
+    <string name="map2">MAP</string>
+    <string name="place3">อนุเสาวรีย์ชัยสมรภูมิ</string>
+    <string name="place4">หมอชิต</string>
+    <string name="place5">ซีคอน-พาราไดซ์</string>
+    <string name="location1">หน้าคณะวิทยาศาสตร์</string>
+    <string name="location2">ซอยจินดา</string>
+    //Contact Us
+    <string name="tel">สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง     เลขที่ 1 ซอยฉลองกรุง 1 เขตลาดกระบัง กรุงเทพมหานคร ประเทศไทย 10520
+                        </string>
+    <string name="title_activity_van_soi">Van_soi</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_van_sci">Van_sci</string>
+</resources>
