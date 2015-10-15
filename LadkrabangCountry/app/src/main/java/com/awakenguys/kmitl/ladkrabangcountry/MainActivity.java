@@ -1,6 +1,7 @@
 package com.awakenguys.kmitl.ladkrabangcountry;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -38,9 +39,12 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void view_Building(View view) {
-        Intent intent = new Intent(this, Building.class);
+    public void Menu_Building(View view) {
+        Intent intent = new Intent(this, Main_building.class);
         startActivity(intent);
     }
-
+    public void Menu_Tran(View view) {
+        Intent intent = new Intent(this, Main_Tran.class);
+        startActivity(intent);
+    }
 }

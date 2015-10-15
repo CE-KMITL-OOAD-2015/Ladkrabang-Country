@@ -1,7 +1,27 @@
 <resources>
     <string name="app_name">Ladkrabang Country</string>
-
-    <string name="hello_world">Hello world!</string>
+    <string name="kmitl_place">KMITL PLACE</string>
+    <string name="transportation">TRANSPORTATION</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_maps">Map</string>
+    <string name="action_login">action_login</string>
+    <string name="title_activity_main_building">Main_building</string>
+    <string name="title_activity_main__tran">Main_Tran</string>
+    <string name="title_activity_tran_train">tran_train</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_tran__train">Tran_Train</string>
+
+    //train function
+    <string name="goBKK">GO TO BBK</string>
+    <string name="outBKK">OUT OF BBK</string>
+    <string name="title_activity_menu__van">Menu_Van</string>
+    <string name="title_activity_tran__van">Tran_Van</string>
+    <string name="title_activity_tran__bus">Tran_Bus</string>
+    <string name="title_activity_tran__motorcycle">Tran_Motorcycle</string>
+
+    //main
+    <string name="Transpotation">Transpotation</string>
+
+
 </resources>
