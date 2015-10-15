@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="func_train">
+        <item> @string/goBKK </item>
+        <item> @string/outBKK</item>
+    </array>
+</resources>

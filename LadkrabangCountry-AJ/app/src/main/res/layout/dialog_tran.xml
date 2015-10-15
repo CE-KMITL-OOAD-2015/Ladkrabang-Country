@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <Button
+        android:text="Train"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:scaleType="center"
+        android:background="#ff3eaff9"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        style="@style/Base.TextAppearance.AppCompat"
+        android:textSize="30dp"
+        android:layout_weight="0.02"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/outBKK"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.10"
+        android:onClick="Menu_TrainOut" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/goBKK"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.10"
+        android:onClick="Menu_Train" />/>
+
+</LinearLayout>
