@@ -1,32 +1,49 @@
 package com.awakenguys.kmitl.ladkrabangcountry.model;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.geo.Point;
 
-
-import java.io.UnsupportedEncodingException;
 
 public class Place {
     @Id private String id;
 
+
     private String name;
     private String category;
+    private float lat;
+    private float lng;
 
-    private Point location;
+    public Place() {
+    }
 
-
-    public Place( String name, String category, Point location) throws UnsupportedEncodingException {
+    public Place(String name, String category, float lat, float lng) {
         this.name = name;
         this.category = category;
-        this.location = location;
+        this.lat = lat;
+        this.lng = lng;
     }
 
-    public Point getLocation() {
-        return location;
+    public String getId() {
+        return id;
     }
 
-    public void setLocation(Point location) {
-        this.location = location;
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public float getLat() {
+        return lat;
+    }
+
+    public void setLat(float lat) {
+        this.lat = lat;
+    }
+
+    public float getLng() {
+        return lng;
+    }
+
+    public void setLng(float lng) {
+        this.lng = lng;
     }
 
     public void setName(String name){
@@ -36,7 +53,6 @@ public class Place {
     public void setCategory(String cat){
         category=cat;
     }
-
 
     public String getName(){
         return name;
@@ -52,7 +68,6 @@ public class Place {
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", category='" + category + '\'' +
-                ", location=" + location +
                 '}';
     }
 }

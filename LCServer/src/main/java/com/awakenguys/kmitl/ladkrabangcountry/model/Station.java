@@ -4,15 +4,44 @@ package com.awakenguys.kmitl.ladkrabangcountry.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.geo.Point;
 
-public class Station {
-    @Id
-    private String id;
-    private String name;
-    private Point location;
 
-    public Station(String name, Point location) {
+public abstract class Station {
+    @Id private String id;
+    private String name;
+    private float lat;
+    private float lng;
+
+    public Station() {
+    }
+
+    public Station(String name, float lat, float lng) {
         this.name = name;
-        this.location = location;
+        this.lat = lat;
+        this.lng = lng;
+    }
+
+    public float getLat() {
+        return lat;
+    }
+
+    public void setLat(float lat) {
+        this.lat = lat;
+    }
+
+    public float getLng() {
+        return lng;
+    }
+
+    public void setLng(float lng) {
+        this.lng = lng;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -23,19 +52,13 @@ public class Station {
         this.name = name;
     }
 
-    public Point getLocation() {
-        return location;
-    }
-
-    public void setLocation(Point location) {
-        this.location = location;
-    }
-
     @Override
     public String toString() {
         return "Station{" +
-                "name='" + name + '\'' +
-                ", location=" + location +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", lat=" + lat +
+                ", lng=" + lng +
                 '}';
     }
 }

@@ -12,12 +12,23 @@ public class User {
     public final int ADMIN = 0;
     public final int MEMBER = 1;
     ArrayList<String> rateReview = new ArrayList<String>();
-    public User(String fb_id, String name, boolean banned, int level, ArrayList<String> rateReview){
+
+    public User() {
+    }
+
+    public User(String fb_id, String name, boolean banned, int level) {
         this.fb_id = fb_id;
         this.name = name;
         this.banned = banned;
         this.level = level;
-        this.rateReview = rateReview;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getFb_id() {
@@ -68,6 +79,8 @@ public class User {
                 ", name='" + name + '\'' +
                 ", banned=" + banned +
                 ", level=" + level +
+                ", ADMIN=" + ADMIN +
+                ", MEMBER=" + MEMBER +
                 ", rateReview=" + rateReview +
                 '}';
     }
