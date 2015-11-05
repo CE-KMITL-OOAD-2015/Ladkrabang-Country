@@ -2315,14 +2315,14 @@ containing a value of this type.
         public static final int action_bar_title=0x7f0e004f;
         public static final int action_context_bar=0x7f0e0070;
         public static final int action_divider=0x7f0e00ae;
-        public static final int action_login=0x7f0e00bd;
+        public static final int action_login=0x7f0e00be;
         public static final int action_menu_divider=0x7f0e0002;
         public static final int action_menu_presenter=0x7f0e0003;
         public static final int action_mode_bar=0x7f0e006c;
         public static final int action_mode_bar_stub=0x7f0e006b;
         public static final int action_mode_close_button=0x7f0e0051;
-        public static final int action_settings=0x7f0e00b8;
-        public static final int actions=0x7f0e00bb;
+        public static final int action_settings=0x7f0e00b9;
+        public static final int actions=0x7f0e00bc;
         public static final int activity_chooser_view_content=0x7f0e0052;
         public static final int adjust_height=0x7f0e001d;
         public static final int adjust_width=0x7f0e001e;
@@ -2385,6 +2385,7 @@ containing a value of this type.
         public static final int holo_light=0x7f0e0029;
         public static final int home=0x7f0e0005;
         public static final int homeAsUp=0x7f0e000e;
+        public static final int home_icon=0x7f0e00b8;
         public static final int hybrid=0x7f0e001f;
         public static final int icon=0x7f0e0057;
         public static final int ifRoom=0x7f0e0024;
@@ -2400,14 +2401,14 @@ containing a value of this type.
         public static final int linearLayout3=0x7f0e0083;
         public static final int linearLayout4=0x7f0e0086;
         public static final int linearLayout5=0x7f0e008a;
-        public static final int list1=0x7f0e00be;
+        public static final int list1=0x7f0e00bf;
         public static final int listMode=0x7f0e000a;
         public static final int list_item=0x7f0e0056;
         public static final int locate=0x7f0e008f;
         public static final int login_button=0x7f0e007f;
-        public static final int login_icon=0x7f0e00ba;
+        public static final int login_icon=0x7f0e00bb;
         public static final int logo_only=0x7f0e0037;
-        public static final int logout_icon=0x7f0e00bc;
+        public static final int logout_icon=0x7f0e00bd;
         public static final int main=0x7f0e008e;
         public static final int map=0x7f0e008d;
         public static final int match_parent=0x7f0e0030;
@@ -2420,7 +2421,7 @@ containing a value of this type.
         public static final int middle=0x7f0e001c;
         public static final int monochrome=0x7f0e003d;
         public static final int multiply=0x7f0e0014;
-        public static final int nameFB=0x7f0e00b9;
+        public static final int nameFB=0x7f0e00ba;
         public static final int nearby=0x7f0e008b;
         public static final int never=0x7f0e0025;
         public static final int never_display=0x7f0e004c;
@@ -2580,35 +2581,37 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f040047;
     }
     public static final class menu {
-        public static final int guest_menu=0x7f0f0000;
-        public static final int login_success_menu=0x7f0f0001;
-        public static final int menu_announcement=0x7f0f0002;
-        public static final int menu_contact_us=0x7f0f0003;
-        public static final int menu_default=0x7f0f0004;
-        public static final int menu_first=0x7f0f0005;
-        public static final int menu_main=0x7f0f0006;
-        public static final int menu_main__review=0x7f0f0007;
-        public static final int menu_main__tran=0x7f0f0008;
-        public static final int menu_main_building=0x7f0f0009;
-        public static final int menu_menu__van=0x7f0f000a;
-        public static final int menu_post=0x7f0f000b;
-        public static final int menu_search_page=0x7f0f000c;
-        public static final int menu_table_train_in=0x7f0f000d;
-        public static final int menu_tran__bus=0x7f0f000e;
-        public static final int menu_tran__bus2=0x7f0f000f;
-        public static final int menu_tran__bus__second=0x7f0f0010;
-        public static final int menu_tran__bus_second=0x7f0f0011;
-        public static final int menu_tran__motorcycle=0x7f0f0012;
-        public static final int menu_tran__train=0x7f0f0013;
-        public static final int menu_tran__van=0x7f0f0014;
-        public static final int menu_tran_train=0x7f0f0015;
-        public static final int menu_van__map_1=0x7f0f0016;
-        public static final int menu_van__map_2=0x7f0f0017;
+        public static final int guest_anotherpage_menu=0x7f0f0000;
+        public static final int guest_menu=0x7f0f0001;
+        public static final int login_success_menu=0x7f0f0002;
+        public static final int menu_announcement=0x7f0f0003;
+        public static final int menu_contact_us=0x7f0f0004;
+        public static final int menu_default=0x7f0f0005;
+        public static final int menu_first=0x7f0f0006;
+        public static final int menu_main=0x7f0f0007;
+        public static final int menu_main__review=0x7f0f0008;
+        public static final int menu_main__tran=0x7f0f0009;
+        public static final int menu_main_building=0x7f0f000a;
+        public static final int menu_menu__van=0x7f0f000b;
+        public static final int menu_post=0x7f0f000c;
+        public static final int menu_search_page=0x7f0f000d;
+        public static final int menu_table_train_in=0x7f0f000e;
+        public static final int menu_tran__bus=0x7f0f000f;
+        public static final int menu_tran__bus2=0x7f0f0010;
+        public static final int menu_tran__bus__second=0x7f0f0011;
+        public static final int menu_tran__bus_second=0x7f0f0012;
+        public static final int menu_tran__motorcycle=0x7f0f0013;
+        public static final int menu_tran__train=0x7f0f0014;
+        public static final int menu_tran__van=0x7f0f0015;
+        public static final int menu_tran_train=0x7f0f0016;
+        public static final int menu_van__map_1=0x7f0f0017;
+        public static final int menu_van__map_2=0x7f0f0018;
     }
     public static final class mipmap {
         public static final int fb_icon=0x7f030000;
         public static final int guest_icon=0x7f030001;
-        public static final int ic_launcher=0x7f030002;
+        public static final int home_icon=0x7f030002;
+        public static final int ic_launcher=0x7f030003;
     }
     public static final class raw {
         public static final int gtm_analytics=0x7f060000;

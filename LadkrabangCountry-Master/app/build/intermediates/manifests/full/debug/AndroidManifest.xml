@@ -41,12 +41,14 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <meta-data
@@ -59,49 +61,63 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.Building" >
+        <activity
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.Building"
+            android:screenOrientation="portrait" >
         </activity>
-        <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.BuildingProvider" >
+        <activity
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.BuildingProvider"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.MapsActivity"
-            android:label="@string/title_activity_maps" >
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Main_building"
-            android:label="@string/title_activity_main_building" >
+            android:label="@string/title_activity_main_building"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Main_Tran"
-            android:label="@string/title_activity_main__tran" >
+            android:label="@string/title_activity_main__tran"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.tran_train"
-            android:label="@string/title_activity_tran_train" >
+            android:label="@string/title_activity_tran_train"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Tran_Train"
-            android:label="@string/title_activity_tran__train" >
+            android:label="@string/title_activity_tran__train"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Menu_Van"
-            android:label="@string/title_activity_menu__van" >
+            android:label="@string/title_activity_menu__van"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Tran_Van"
-            android:label="@string/title_activity_tran__van" >
+            android:label="@string/title_activity_tran__van"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Tran_Bus"
-            android:label="@string/title_activity_tran__bus" >
+            android:label="@string/title_activity_tran__bus"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Tran_Motorcycle"
-            android:label="@string/title_activity_tran__motorcycle" >
+            android:label="@string/title_activity_tran__motorcycle"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.First"
-            android:label="@string/Ladkrabang_Country" >
+            android:label="@string/Ladkrabang_Country"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <!-- set 1st page here -->
@@ -110,39 +126,48 @@
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.TableTrainOut"
-            android:label="@string/title_activity_table_train_in" >
+            android:label="@string/title_activity_table_train_in"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.contactUs"
-            android:label="@string/title_activity_contact_us" >
+            android:label="@string/title_activity_contact_us"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Van_Map_1"
-            android:label="@string/title_activity_van__map_1" >
+            android:label="@string/title_activity_van__map_1"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Van_Map_2"
-            android:label="@string/title_activity_van__map_2" >
+            android:label="@string/title_activity_van__map_2"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.SearchPage"
-            android:label="@string/title_activity_search_page" >
+            android:label="@string/title_activity_search_page"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Post"
-            android:label="@string/title_activity_post" >
+            android:label="@string/title_activity_post"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Main_Review"
-            android:label="@string/title_activity_main__review" >
+            android:label="@string/title_activity_main__review"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Tran_Bus_second"
-            android:label="@string/title_activity_tran__bus_second" >
+            android:label="@string/title_activity_tran__bus_second"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Tran_Bus_Second"
-            android:label="@string/title_activity_tran__bus__second" >
+            android:label="@string/title_activity_tran__bus__second"
+            android:screenOrientation="portrait" >
         </activity>
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity

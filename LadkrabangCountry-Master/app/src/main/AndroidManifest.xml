@@ -21,14 +21,17 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
         </activity>
 
         <activity android:name="com.facebook.FacebookActivity"
             android:configChanges=
                 "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
-            android:label="@string/app_name" />
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
 
 
 
@@ -44,50 +47,62 @@
 
 
 
-        <activity android:name=".Building" >
+        <activity android:name=".Building"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".BuildingProvider" >
+        <activity android:name=".BuildingProvider"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" >
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Main_building"
-            android:label="@string/title_activity_main_building" >
+            android:label="@string/title_activity_main_building"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Main_Tran"
-            android:label="@string/title_activity_main__tran" >
+            android:label="@string/title_activity_main__tran"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity
             android:name=".tran_train"
-            android:label="@string/title_activity_tran_train" >
+            android:label="@string/title_activity_tran_train"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Tran_Train"
-            android:label="@string/title_activity_tran__train" >
+            android:label="@string/title_activity_tran__train"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Menu_Van"
-            android:label="@string/title_activity_menu__van" >
+            android:label="@string/title_activity_menu__van"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Tran_Van"
-            android:label="@string/title_activity_tran__van" >
+            android:label="@string/title_activity_tran__van"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Tran_Bus"
-            android:label="@string/title_activity_tran__bus" >
+            android:label="@string/title_activity_tran__bus"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Tran_Motorcycle"
-            android:label="@string/title_activity_tran__motorcycle" >
+            android:label="@string/title_activity_tran__motorcycle"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".First"
-            android:label="@string/Ladkrabang_Country" >
+            android:label="@string/Ladkrabang_Country"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <!-- set 1st page here-->
@@ -96,40 +111,49 @@
         </activity>
         <activity
             android:name=".TableTrainOut"
-            android:label="@string/title_activity_table_train_in" >
+            android:label="@string/title_activity_table_train_in"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".contactUs"
-            android:label="@string/title_activity_contact_us" >
+            android:label="@string/title_activity_contact_us"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Van_Map_1"
-            android:label="@string/title_activity_van__map_1" >
+            android:label="@string/title_activity_van__map_1"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Van_Map_2"
-            android:label="@string/title_activity_van__map_2" >
+            android:label="@string/title_activity_van__map_2"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".SearchPage"
-            android:label="@string/title_activity_search_page" >
+            android:label="@string/title_activity_search_page"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Post"
-            android:label="@string/title_activity_post" >
+            android:label="@string/title_activity_post"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Main_Review"
-            android:label="@string/title_activity_main__review" >
+            android:label="@string/title_activity_main__review"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity
             android:name=".Tran_Bus_second"
-            android:label="@string/title_activity_tran__bus_second" >
+            android:label="@string/title_activity_tran__bus_second"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Tran_Bus_Second"
-            android:label="@string/title_activity_tran__bus__second" >
+            android:label="@string/title_activity_tran__bus__second"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

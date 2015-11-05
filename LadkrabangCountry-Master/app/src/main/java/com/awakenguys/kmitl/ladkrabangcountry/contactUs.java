@@ -1,5 +1,6 @@
 package com.awakenguys.kmitl.ladkrabangcountry;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -16,7 +17,7 @@ public class contactUs extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_contact_us, menu);
+        getMenuInflater().inflate(R.menu.guest_anotherpage_menu, menu);
         return true;
     }
 
@@ -28,7 +29,8 @@ public class contactUs extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.home_icon) {
+            startActivity(new Intent(this, MainActivity.class));
             return true;
         }
 
