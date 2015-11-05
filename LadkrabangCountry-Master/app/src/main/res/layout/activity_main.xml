@@ -12,53 +12,57 @@
         android:layout_alignParentBottom="true"
         android:layout_weight="1"
         >
-         <Button
-                android:text="Announcement"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight=".70"
-                android:background="@drawable/buttom_frame"
-                android:longClickable="false"
-                android:textColor="#ff000000"
-                android:padding="10sp"/>
-
         <Button
-            android:text="KMITL BUILDING"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight=".70"
-            android:background="@drawable/buttom_frame"
+            android:layout_height="60dp"
+            android:background="@drawable/m_list1"
             android:longClickable="false"
             android:textColor="#ff000000"
-            android:onClick="Menu_Building"/>
+            android:padding="10sp"
+            android:layout_weight="0.70"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="3dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0.70"
+            android:longClickable="false"
+            android:textColor="#ff000000"
+            android:onClick="Menu_Building"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/m_list2" />
 
 
         <Button
-            android:text="Food and Place"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:textColor="#ff030001"
-            android:background="@drawable/buttom_frame"
             android:onClick="Menu_Reviewing"
-            />
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0.70"
+            android:background="@drawable/m_list3" />
 
         <Button
-            android:text="Transpotation"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_weight=".70"
             android:textColor="#ff030001"
-            android:background="@drawable/buttom_frame"
             android:onClick="Menu_Tran"
-            />
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/m_list4" />
         <Button
-            android:text="Contact Us"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:textColor="#ff030001"
-            android:background="@drawable/buttom_frame"
             android:onClick = "contact"
-            />
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0.70"
+            android:background="@drawable/m_list5" />
     </LinearLayout>
 
     <RelativeLayout
