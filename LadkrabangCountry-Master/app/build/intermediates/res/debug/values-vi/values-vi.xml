@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- From: file:/C:/Users/I-chi/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-vi/values-vi.xml -->
+    <!-- From: file:/C:/Users/SIRAPAT/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-vi/values-vi.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Điều hướng về trang chủ"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
@@ -21,7 +21,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Chia sẻ với"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Chia sẻ với %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Thu gọn"</string>
-    <!-- From: file:/C:/Users/I-chi/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values-vi/values-vi.xml -->
+    <!-- From: file:/C:/Users/SIRAPAT/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values-vi/values-vi.xml -->
     <eat-comment/>
     <string name="com_facebook_image_download_unknown_error">Lỗi bất ngờ khi tải ảnh xuống.</string>
     <string name="com_facebook_internet_permission_error_message">Đăng nhập WebView yêu cầu INTERNET cho phép</string>
@@ -39,7 +39,7 @@
     <string name="com_facebook_send_button_text">Gửi</string>
     <string name="com_facebook_share_button_text">Chia sẻ</string>
     <string name="com_facebook_tooltip_default">Mới! Bạn đang có quyền kiểm soát - hãy chọn thông tin bạn muốn chia sẻ với các ứng dụng.</string>
-    <!-- From: file:/C:/Users/I-chi/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-vi/common_strings.xml -->
+    <!-- From: file:/C:/Users/SIRAPAT/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-vi/common_strings.xml -->
     <eat-comment/>
     <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> yêu cầu phải cập nhật lên ứng dụng Android Wear."</string>
     <string msgid="2453027084525739603" name="common_android_wear_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> sẽ không chạy trừ khi bạn cập nhật ứng dụng Android Wear."</string>
@@ -71,10 +71,10 @@
     <string msgid="2201289642219771610" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> sẽ không chạy khi không có Dịch vụ của Google Play đang cập nhật."</string>
     <string msgid="815008177440683245" name="common_google_play_services_updating_title">"Dịch vụ của Google Play đang cập nhật"</string>
     <string msgid="411506735369601515" name="common_open_on_phone">"Mở trên điện thoại"</string>
-    <!-- From: file:/C:/Users/I-chi/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values-vi/values-vi.xml -->
+    <!-- From: file:/C:/Users/SIRAPAT/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values-vi/values-vi.xml -->
     <eat-comment/>
     <string name="messenger_send_button_text">Gửi</string>
-    <!-- From: file:/C:/Users/I-chi/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values-vi/values-vi.xml -->
+    <!-- From: file:/C:/Users/SIRAPAT/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values-vi/values-vi.xml -->
     <eat-comment/>
     <string msgid="4271159405637008602" name="mr_media_route_button_content_description">"Đầu ra phương tiện"</string>
     <string msgid="7553005460920830010" name="mr_media_route_chooser_searching">"Đang tìm kiếm thiết bị…"</string>
@@ -82,10 +82,10 @@
     <string msgid="109793632378378069" name="mr_media_route_controller_disconnect">"Ngắt kết nối"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"Hệ thống"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"Thiết bị"</string>
-    <!-- From: file:/C:/Users/I-chi/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-vi/values-vi.xml -->
+    <!-- From: file:/C:/Users/SIRAPAT/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-vi/values-vi.xml -->
     <eat-comment/>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
-    <!-- From: file:/C:/Users/I-chi/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.1.0/res/values-vi/wallet_strings.xml -->
+    <!-- From: file:/C:/Users/SIRAPAT/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.1.0/res/values-vi/wallet_strings.xml -->
     <eat-comment/>
     <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"Mua hàng bằng Google"</string>
 </resources>
