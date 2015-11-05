@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <array name="func_train">
+        <item> @string/goBKK </item>
+        <item> @string/outBKK</item>
+    </array>
+
+    <array name="menu1st">
+        <item><com.facebook.login.widget.LoginButton
+            android:id="@+id/login__"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"/>
+        </item>
+        <item>LogIn</item>
+
+    </array>
+</resources>
