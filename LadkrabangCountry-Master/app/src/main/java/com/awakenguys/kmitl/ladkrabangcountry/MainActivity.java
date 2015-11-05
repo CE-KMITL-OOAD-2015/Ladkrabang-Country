@@ -91,7 +91,7 @@ public class MainActivity extends ActionBarActivity {
         Profile profile = Profile.getCurrentProfile();
         if (loggedIn && (profile != null)) {
             MenuInflater inflater = getMenuInflater();
-            inflater.inflate(R.menu.guest_anotherpage_menu, menu);
+            inflater.inflate(R.menu.login_success_menu, menu);
             MenuItem menuItem = menu.findItem(R.id.nameFB);
             menuItem.setTitle(fullName);
             //menuItem.setIcon();
@@ -109,10 +109,6 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.home_icon) {
-            startActivity(new Intent(this, MainActivity.class));
-            return true;
-        }
         if (id == R.id.logout_icon) {
             LoginManager.getInstance().logOut();
             startActivity(new Intent(MainActivity.this, First.class));
