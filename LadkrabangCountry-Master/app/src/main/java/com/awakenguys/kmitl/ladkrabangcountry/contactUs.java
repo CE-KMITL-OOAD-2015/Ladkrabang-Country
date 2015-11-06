@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class contactUs extends AppCompatActivity {
+public class ContactUs extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

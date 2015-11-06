@@ -44,16 +44,16 @@
 
 
 
-        <activity android:name=".Building" >
+        <activity android:name=".CatList" >
         </activity>
-        <activity android:name=".BuildingProvider" >
+        <activity android:name=".PlaceList" >
         </activity>
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" >
         </activity>
         <activity
-            android:name=".Main_building"
+            android:name=".Main_Place"
             android:label="@string/title_activity_main_building" >
         </activity>
         <activity
@@ -99,7 +99,7 @@
             android:label="@string/title_activity_table_train_in" >
         </activity>
         <activity
-            android:name=".contactUs"
+            android:name=".ContactUs"
             android:label="@string/title_activity_contact_us" >
         </activity>
         <activity

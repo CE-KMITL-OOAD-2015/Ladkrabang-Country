@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion '23.0.1'
+    buildToolsVersion '23.0.2'
     defaultConfig {
         applicationId "com.awakenguys.kmitl.ladkrabangcountry"
         minSdkVersion 16
@@ -18,15 +18,48 @@ android {
     }
     productFlavors {
     }
+
+    packagingOptions {
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/spring.schemas'
+        exclude 'META-INF/spring.handlers'
+        exclude 'META-INF/spring.tooling'
+        exclude 'notice.txt'
+        exclude 'license.txt'
+        exclude 'changelog.txt'
+    }
 }
 
-repositories{
+repositories {
     mavenCentral()
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:23.1.0'
-    compile 'com.google.android.gms:play-services:8.1.0'
-    compile 'com.facebook.android:facebook-android-sdk:4.7.0'
+    testCompile 'junit:junit:4.12'
+    //compile ('com.google.android.gms:play-services:8.1.0'){force = true}//{ dep -> transitive = false }
+    compile ('com.google.android.gms:play-services-maps:8.1.0')
+    compile ('com.android.support:appcompat-v7:23.1.0')
+    compile ('com.facebook.android:facebook-android-sdk:4.7.0')//{ dep -> transitive = false }
+    compile ('org.springframework.hateoas:spring-hateoas:0.19.0.RELEASE') { dep -> transitive = false }
+    compile ('org.springframework:spring-core:4.2.2.RELEASE')//{ dep -> transitive = false }
+    compile ('org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE') //{ dep -> transitive = false }
+    compile ('org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'){ dep -> transitive = false }
+    compile ('com.jayway.jsonpath:json-path:2.0.0') { dep -> transitive = false }
+    compile ('com.fasterxml.jackson.core:jackson-databind:2.6.3')//{ dep -> transitive = false }
+    compile ('net.minidev:json-smart:2.2') { dep -> transitive = false }
+
+
+//    compile ('com.google.android.gms:play-services:8.1.0')//{ dep -> transitive = false }
+//    compile ('com.facebook.android:facebook-android-sdk:4.7.0')
+//    compile('org.springframework.hateoas:spring-hateoas:0.19.0.RELEASE') //{ dep -> transitive = false }
+//    compile ('org.springframework:spring-core:4.2.2.RELEASE')
+//    compile ('org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE') //{ dep -> transitive = false }
+//    compile ('org.springframework.android:spring-android-rest-template:1.0.1.RELEASE')// { dep -> transitive = false }
+//    compile ('com.jayway.jsonpath:json-path:2.0.0') //{ dep -> transitive = false }
+//    compile 'com.fasterxml.jackson.core:jackson-databind:2.6.3'
+//    compile ('net.minidev:json-smart:2.2')// { dep -> transitive = false }
 }

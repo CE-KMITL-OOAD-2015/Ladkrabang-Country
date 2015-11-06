@@ -1,48 +1,22 @@
 package com.awakenguys.kmitl.ladkrabangcountry;
 
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Base64;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.SubMenu;
 import android.view.View;
 import android.widget.Toast;
-import android.graphics.drawable.BitmapDrawable;
 
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
-import com.facebook.FacebookCallback;
-import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
 import com.facebook.Profile;
 import com.facebook.ProfileTracker;
 import com.facebook.login.LoginManager;
-import com.facebook.login.LoginResult;
-import com.facebook.login.widget.LoginButton;
-import com.facebook.login.widget.ProfilePictureView;
 
-import com.facebook.login.LoginManager;
-
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.net.URL;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
 public class MainActivity extends ActionBarActivity {
@@ -141,7 +115,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void Menu_Building(View view) {
-        Intent intent = new Intent(this, Main_building.class);
+        Intent intent = new Intent(this, Main_Place.class);
         startActivity(intent);
     }
     public void Menu_Tran(View view) {
@@ -150,7 +124,7 @@ public class MainActivity extends ActionBarActivity {
     }
     public void contact(View view)
     {
-        Intent intent = new Intent(this,contactUs.class);
+        Intent intent = new Intent(this,ContactUs.class);
         startActivity(intent);
     }
     public void Menu_Reviewing(View view)
