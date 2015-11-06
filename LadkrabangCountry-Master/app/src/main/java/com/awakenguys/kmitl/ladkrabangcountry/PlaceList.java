@@ -48,7 +48,7 @@ public class PlaceList extends AppCompatActivity {
 
     }
 
-    private class GetPlace extends AsyncTask<String,Void,Object> {
+    public class GetPlace extends AsyncTask<String,Void,Object> {
 
         @Override
         protected Object doInBackground(String... params) {

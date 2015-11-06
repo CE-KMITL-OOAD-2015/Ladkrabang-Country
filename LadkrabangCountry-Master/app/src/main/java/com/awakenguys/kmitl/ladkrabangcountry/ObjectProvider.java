@@ -35,7 +35,7 @@ public class ObjectProvider  {
     public List<Place> getPlacesByNameLike(String str) throws URISyntaxException {
         List places = new ArrayList<Place>();
         try {
-            traverson = new Traverson(new URI(url + "places/search/findByNameLikeOrderByNameAsc?name=" + str), MediaTypes.HAL_JSON);
+            traverson = new Traverson(new URI(url + "places/search/findByNameLikeIgnoreCaseOrderByNameAsc?name=" + str), MediaTypes.HAL_JSON);
             Place place = new Place();
             int i = 0;
             while(true){
@@ -107,6 +107,27 @@ public class ObjectProvider  {
             } finally {
                 return names;
             }
+        }
+    }
+
+    public List<String> getPlacesNameByNameLike(String str) throws URISyntaxException{
+        List names = new ArrayList<String>();
+        try {
+            traverson = new Traverson(new URI(url + "places/search/findByNameLikeIgnoreCaseOrderByNameAsc?name=" + str), MediaTypes.HAL_JSON);
+            String name;
+            int i = 0;
+            while (true) {
+                Traverson.TraversalBuilder traversalBuilder = traverson
+                        .follow("$._embedded.places[" + i + "]._links.self.href");
+                name = traversalBuilder.toObject("$.name");
+                if (name == null) break;
+                names.add(name);
+                i++;
+            }
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            return names;
         }
     }
 
