@@ -10,4 +10,8 @@
         >
 
     </com.facebook.login.widget.ProfilePictureView>
+<<<<<<< HEAD
 </LinearLayout><!-- From: file:/D:/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/src/main/res/layout/profile_picture.xml -->
+=======
+</LinearLayout><!-- From: file:/C:/Users/SIRAPAT/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/src/main/res/layout/profile_picture.xml -->
+>>>>>>> 7522252ba766ab2278164cad05428e3604745d3b

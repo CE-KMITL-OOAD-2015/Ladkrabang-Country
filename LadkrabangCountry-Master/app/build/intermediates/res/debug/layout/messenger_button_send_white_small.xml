@@ -29,4 +29,8 @@
     style="@style/MessengerButtonText.White.Small"
     />
 </FrameLayout>
+<<<<<<< HEAD
 <!-- From: file:/Users/swiese/fbandroid-sdk/facebook/res/layout/messenger_button_send_white_small.xml --><!-- From: file:/D:/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/layout/messenger_button_send_white_small.xml -->
+=======
+<!-- From: file:/Users/swiese/fbandroid-sdk/facebook/res/layout/messenger_button_send_white_small.xml --><!-- From: file:/C:/Users/SIRAPAT/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/layout/messenger_button_send_white_small.xml -->
+>>>>>>> 7522252ba766ab2278164cad05428e3604745d3b

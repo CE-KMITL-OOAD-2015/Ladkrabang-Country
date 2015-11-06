@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- From: file:/D:/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-w720dp/values-w720dp.xml -->
+=======
+    <!-- From: file:/C:/Users/SIRAPAT/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-w720dp/values-w720dp.xml -->
+>>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
     <eat-comment/>
     <bool name="abc_action_bar_expanded_action_views_exclusive">false</bool>
 </resources>

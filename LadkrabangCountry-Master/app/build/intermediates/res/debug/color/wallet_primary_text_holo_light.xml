@@ -7,4 +7,8 @@
     <item android:state_selected="true" android:color="@color/wallet_bright_foreground_holo_light"/>
     <item android:color="@color/wallet_bright_foreground_holo_light"/> <!-- not selected -->
 </selector>
+<<<<<<< HEAD
 <!-- From: file:/D:/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.1.0/res/color/wallet_primary_text_holo_light.xml -->
+=======
+<!-- From: file:/C:/Users/SIRAPAT/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.1.0/res/color/wallet_primary_text_holo_light.xml -->
+>>>>>>> 7522252ba766ab2278164cad05428e3604745d3b

@@ -20,7 +20,7 @@ public class Main_Place extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main_building, menu);
+        getMenuInflater().inflate(R.menu.guest_anotherpage_menu, menu);
         return true;
     }
 
@@ -32,7 +32,8 @@ public class Main_Place extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.home_icon) {
+            startActivity(new Intent(this, MainActivity.class));
             return true;
         }
 

@@ -16,4 +16,8 @@
     <item
         android:drawable="@drawable/common_signin_btn_text_normal_dark" />
 </selector>
+<<<<<<< HEAD
 <!-- From: file:/D:/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/res/drawable/common_signin_btn_text_dark.xml -->
+=======
+<!-- From: file:/C:/Users/SIRAPAT/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/res/drawable/common_signin_btn_text_dark.xml -->
+>>>>>>> 7522252ba766ab2278164cad05428e3604745d3b

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- From: file:/D:/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values-te/values-te.xml -->
+=======
+    <!-- From: file:/C:/Users/SIRAPAT/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values-te/values-te.xml -->
+>>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
     <eat-comment/>
     <string name="com_facebook_image_download_unknown_error">చిత్రాన్ని డౌన్‌లోడ్ చేస్తున్నప్పుడు ఊహించని లోపం ఏర్పడింది.</string>
     <string name="com_facebook_internet_permission_error_message">వెబ్ వీక్షణ లాగిన్‌కు ఇంటర్నెట్ అనుమతి అవసరం</string>

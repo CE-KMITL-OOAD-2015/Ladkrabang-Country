@@ -45,7 +45,7 @@ public class Main_Tran extends ActionBarActivity implements View.OnClickListener
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main__tran, menu);
+        getMenuInflater().inflate(R.menu.guest_anotherpage_menu, menu);
         return true;
     }
 
@@ -57,7 +57,8 @@ public class Main_Tran extends ActionBarActivity implements View.OnClickListener
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.home_icon) {
+            startActivity(new Intent(this, MainActivity.class));
             return true;
         }
 

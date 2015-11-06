@@ -23,4 +23,8 @@
         <corners android:radius="2dp" />
         <solid android:color="@color/background_floating_material_light" />
     </shape>
+<<<<<<< HEAD
 </inset><!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/mnc-supportlib-release/frameworks/support/v7/appcompat/res/drawable/abc_dialog_material_background_light.xml --><!-- From: file:/D:/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/drawable/abc_dialog_material_background_light.xml -->
+=======
+</inset><!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/mnc-supportlib-release/frameworks/support/v7/appcompat/res/drawable/abc_dialog_material_background_light.xml --><!-- From: file:/C:/Users/SIRAPAT/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/drawable/abc_dialog_material_background_light.xml -->
+>>>>>>> 7522252ba766ab2278164cad05428e3604745d3b

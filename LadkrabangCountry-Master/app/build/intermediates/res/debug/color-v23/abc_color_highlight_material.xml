@@ -20,4 +20,8 @@
           android:alpha="@dimen/highlight_alpha_material_colored"
           android:color="?android:attr/colorControlActivated" />
     <item android:color="?android:attr/colorControlHighlight" />
+<<<<<<< HEAD
 </selector><!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/mnc-supportlib-release/frameworks/support/v7/appcompat/res/color-v23/abc_color_highlight_material.xml --><!-- From: file:/D:/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/color-v23/abc_color_highlight_material.xml -->
+=======
+</selector><!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/mnc-supportlib-release/frameworks/support/v7/appcompat/res/color-v23/abc_color_highlight_material.xml --><!-- From: file:/C:/Users/SIRAPAT/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/color-v23/abc_color_highlight_material.xml -->
+>>>>>>> 7522252ba766ab2278164cad05428e3604745d3b

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- From: file:/D:/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/src/main/res/values-w820dp/dimens.xml -->
+=======
+    <!-- From: file:/C:/Users/SIRAPAT/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/src/main/res/values-w820dp/dimens.xml -->
+>>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
     <eat-comment/>
     <dimen name="activity_horizontal_margin">64dp</dimen>
 </resources>

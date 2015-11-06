@@ -25,4 +25,8 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
     />
+<<<<<<< HEAD
 <!-- From: file:/Users/swiese/fbandroid-sdk/facebook/res/layout/com_facebook_activity_layout.xml --><!-- From: file:/D:/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/layout/com_facebook_activity_layout.xml -->
+=======
+<!-- From: file:/Users/swiese/fbandroid-sdk/facebook/res/layout/com_facebook_activity_layout.xml --><!-- From: file:/C:/Users/SIRAPAT/Documents/GitHub/Ladkrabang-Country/LadkrabangCountry-Master/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/layout/com_facebook_activity_layout.xml -->
+>>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
