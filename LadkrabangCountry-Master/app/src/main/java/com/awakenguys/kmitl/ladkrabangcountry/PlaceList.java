@@ -18,22 +18,28 @@ import org.springframework.hateoas.client.Traverson;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class PlaceList extends AppCompatActivity {
+
+    private List<String> placeNames;
+    private ArrayAdapter<String> adapter;
+    private AsyncTask showPlaceListTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listview);
         Bundle bundle = getIntent().getExtras();
-        String[] places = bundle.getStringArray("places");
+        String catName = bundle.getString("catName");
+
+        placeNames = new ArrayList<String>();
         final ListView  listView = (ListView) findViewById(android.R.id.list);
-        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, android.R.id.text1, places);
+        adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, android.R.id.text1, placeNames);
 
         listView.setAdapter(adapter);
-
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
@@ -47,6 +53,54 @@ public class PlaceList extends AppCompatActivity {
 
         });
 
+        showPlaceListTask = new ShowPlaceListTask().execute(catName);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        showPlaceListTask.cancel(true);
+    }
+
+    public class ShowPlaceListTask extends AsyncTask<String,String,Object>{
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            placeNames.clear();
+            adapter.clear();
+        }
+
+        @Override
+        protected Object doInBackground(String... params) {
+            ObjectProvider provider = new ObjectProvider();
+            String name;
+            try {
+                int index=0;
+                while(!isCancelled()) {
+                    name = provider.getPlaceNameByCategory(params[0],index);
+                    if(name==null)break;
+                    publishProgress(name);
+                    index++;
+                }
+                return null;
+            } catch (URISyntaxException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+            placeNames.add(values[0]);
+            adapter.notifyDataSetChanged();
+        }
+
+        @Override
+        protected void onPostExecute(Object o) {
+            super.onPostExecute(o);
+        }
     }
 
     public class GetPlace extends AsyncTask<String,Void,Object> {

@@ -119,6 +119,28 @@ public class ObjectProvider  {
         }
     }
 
+    public String getPlaceNameByCategory(String str,int index) throws URISyntaxException{
+        String name = null;
+        try {
+            if(str.equals("ทั้งหมด")){
+                traverson = new Traverson(new URI(url+"places?sort=name,asc"), MediaTypes.HAL_JSON);
+                Traverson.TraversalBuilder traversalBuilder = traverson
+                            .follow("$._embedded.places[" + index + "]._links.self.href");
+                name = traversalBuilder.toObject("$.name");
+            }
+            else {
+                traverson = new Traverson(new URI(url + "places/search/findByCategoryOrderByNameAsc?category=" + str), MediaTypes.HAL_JSON);
+                Traverson.TraversalBuilder traversalBuilder = traverson
+                        .follow("$._embedded.places[" + index + "]._links.self.href");
+                name = traversalBuilder.toObject("$.name");
+            }
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            return name;
+        }
+    }
+
     public List<String> getPlacesNameByNameLike(String str) throws URISyntaxException{
         List<String> names = new ArrayList<String>();
         try {

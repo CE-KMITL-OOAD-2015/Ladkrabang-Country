@@ -24,6 +24,7 @@ import java.util.List;
 public class SearchPage extends AppCompatActivity {
     List<String> placeNames;
     ArrayAdapter<String> adapter;
+    AsyncTask searchTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +49,11 @@ public class SearchPage extends AppCompatActivity {
             public boolean onQueryTextSubmit(String query) {
                 placeNames.clear();
                 adapter.clear();
-                new SearchTask().execute(query);
+                if(searchTask!=null)
+                {
+                    searchTask.cancel(true);
+                }
+                searchTask = new SearchTask().execute(query);
                 return true;
             }
 
@@ -57,8 +62,6 @@ public class SearchPage extends AppCompatActivity {
                 //new SearchTask().execute(newText);
                 return true;
             }
-
-
         });
 
         placeNames = new ArrayList<String>();
@@ -76,7 +79,6 @@ public class SearchPage extends AppCompatActivity {
                 new GetPlace().execute(itemValue);
             }
         });
-
     }
 
     @Override
@@ -110,16 +112,14 @@ public class SearchPage extends AppCompatActivity {
             ObjectProvider provider = new ObjectProvider();
             String name;
             try {
-
                 int index=0;
-                while(true)
+                while(!isCancelled())
                 {
                     name = provider.getPlaceNameByNameLike(params[0],index);
                     if(name==null)break;
                     publishProgress(name);
                     index++;
                 }
-
                 return null;
             } catch (URISyntaxException e) {
                 e.printStackTrace();
