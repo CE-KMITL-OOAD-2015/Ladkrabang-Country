@@ -22,7 +22,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PlaceList extends AppCompatActivity {
-
     private List<String> placeNames;
     private ArrayAdapter<String> adapter;
     private AsyncTask showPlaceListTask;

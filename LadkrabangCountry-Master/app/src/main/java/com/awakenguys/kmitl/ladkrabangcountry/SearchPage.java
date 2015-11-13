@@ -22,9 +22,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SearchPage extends AppCompatActivity {
-    List<String> placeNames;
-    ArrayAdapter<String> adapter;
-    AsyncTask searchTask;
+    private List<String> placeNames;
+    private ArrayAdapter<String> adapter;
+    private AsyncTask searchTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
