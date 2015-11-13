@@ -7,8 +7,6 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.awakenguys.kmitl.ladkrabangcountry.HTTPRequest;
-import com.awakenguys.kmitl.ladkrabangcountry.ObjectProvider;
 import com.awakenguys.kmitl.ladkrabangcountry.model.User;
 
 public class Authentication extends Activity {
@@ -17,9 +15,10 @@ public class Authentication extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_loading);
         mContext = this;
         if(user==null||user.getLevel()==2) login();
+
     }
 
 

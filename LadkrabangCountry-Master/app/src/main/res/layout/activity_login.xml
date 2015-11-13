@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".First"
     android:id="@+id/page1"
-    android:background="@drawable/first3">
+    android:background="@drawable/app_logo">
 
     <com.facebook.login.widget.LoginButton
         android:id="@+id/login_button"
