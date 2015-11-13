@@ -54,7 +54,7 @@ public class PlaceList extends AppCompatActivity {
         protected Object doInBackground(String... params) {
             ObjectProvider provider = new ObjectProvider();
             try {
-                List<Place> place = provider.getPlacesByNameLike(params[0]);
+                List<Place> place = provider.getPlacesByNameLike(params[0].replace(" ","+"));
                 return place;
             } catch (URISyntaxException e) {
                 e.printStackTrace();

@@ -23,6 +23,11 @@
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- set 1st page here-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
 
@@ -50,7 +55,7 @@
         <activity android:name=".CatList" >
         </activity>
         <activity android:name=".PlaceList" />
-
+        <activity android:name=".Authentication" />
         <activity android:name=".Building"
             android:screenOrientation="portrait">
         </activity>
@@ -106,14 +111,10 @@
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".First"
+            android:name=".LogInActivity"
             android:label="@string/Ladkrabang_Country"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <!-- set 1st page here-->
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity
             android:name=".TableTrainOut"

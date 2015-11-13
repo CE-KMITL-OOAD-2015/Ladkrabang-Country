@@ -35,6 +35,11 @@
             android:name="com.awakenguys.kmitl.ladkrabangcountry.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- set 1st page here -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.facebook.FacebookActivity"
@@ -56,6 +61,7 @@
         <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.CatList" >
         </activity>
         <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.PlaceList" />
+        <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.Authentication" />
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Building"
             android:screenOrientation="portrait" >
@@ -109,14 +115,9 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.awakenguys.kmitl.ladkrabangcountry.First"
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.LogInActivity"
             android:label="@string/Ladkrabang_Country"
             android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <!-- set 1st page here -->
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.TableTrainOut"

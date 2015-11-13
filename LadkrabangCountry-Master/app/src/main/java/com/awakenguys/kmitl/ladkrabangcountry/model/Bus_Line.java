@@ -1,10 +1,6 @@
 package com.awakenguys.kmitl.ladkrabangcountry.model;
 
-/**
- * Created by Xync on 05-Nov-15.
- */
 public class Bus_Line {
-
     private String id;
     private String line;
     private String route;

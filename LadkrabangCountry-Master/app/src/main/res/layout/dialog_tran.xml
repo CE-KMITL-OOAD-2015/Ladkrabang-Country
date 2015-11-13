@@ -29,7 +29,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/goBKK"
-        android:id="@+id/button2"
+        android:id="@+id/guest_button"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.10"
         android:onClick="Menu_Train" />/>

@@ -102,8 +102,8 @@
     <orderEntry type="library" exported="" name="spring-plugin-core-1.2.0.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="spring-android-rest-template-1.0.1.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="spring-beans-4.0.9.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="jackson-databind-2.6.3" level="project" />
     <orderEntry type="library" exported="" name="json-smart-2.2" level="project" />
+    <orderEntry type="library" exported="" name="jackson-databind-2.6.3" level="project" />
     <orderEntry type="library" exported="" name="spring-aop-4.0.9.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="play-services-maps-8.1.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-basement-8.1.0" level="project" />

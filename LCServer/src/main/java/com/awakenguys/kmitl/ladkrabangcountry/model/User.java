@@ -16,10 +16,9 @@ public class User {
     public User() {
     }
 
-    public User(String fb_id, String name, boolean banned, int level) {
+    public User(String fb_id, String name, int level) {
         this.fb_id = fb_id;
         this.name = name;
-        this.banned = banned;
         this.level = level;
     }
 

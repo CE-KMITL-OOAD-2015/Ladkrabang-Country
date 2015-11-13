@@ -11,6 +11,5 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 public interface PlaceRepo extends MongoRepository<Place, String> {
     List<Place> findByNameLikeOrderByNameAsc(@Param("name") String name);
     List<Place> findByCategoryOrderByNameAsc(@Param("category") String category);
-    //List<Place> findByLocationNear(Point location, Distance distance);
 }
 

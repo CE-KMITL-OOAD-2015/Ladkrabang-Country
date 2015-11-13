@@ -2053,7 +2053,6 @@ containing a value of this type.
         public static final int box_count=0x7f0d0029;
         public static final int bus=0x7f0d006f;
         public static final int button=0x7f0d002a;
-        public static final int button2=0x7f0d0068;
         public static final int buttonPanel=0x7f0d0041;
         public static final int cancel_action=0x7f0d0083;
         public static final int category=0x7f0d0070;
@@ -2081,6 +2080,7 @@ containing a value of this type.
         public static final int expand_activities_button=0x7f0d003b;
         public static final int expanded_menu=0x7f0d004e;
         public static final int facebook_profile=0x7f0d008f;
+        public static final int guest_button=0x7f0d0068;
         public static final int home=0x7f0d0004;
         public static final int homeAsUp=0x7f0d000d;
         public static final int home_icon=0x7f0d0090;
@@ -2212,8 +2212,8 @@ containing a value of this type.
         public static final int abc_search_view=0x7f040017;
         public static final int abc_select_dialog_material=0x7f040018;
         public static final int activity_contact_us=0x7f040019;
-        public static final int activity_first=0x7f04001a;
-        public static final int activity_listview=0x7f04001b;
+        public static final int activity_listview=0x7f04001a;
+        public static final int activity_login=0x7f04001b;
         public static final int activity_main=0x7f04001c;
         public static final int activity_main__review=0x7f04001d;
         public static final int activity_main__tran=0x7f04001e;
@@ -2258,7 +2258,7 @@ containing a value of this type.
     public static final class menu {
         public static final int guest_anotherpage_menu=0x7f0e0000;
         public static final int guest_menu=0x7f0e0001;
-        public static final int login_success_menu=0x7f0e0002;
+        public static final int logged_in_menu=0x7f0e0002;
         public static final int menu_announcement=0x7f0e0003;
         public static final int menu_contact_us=0x7f0e0004;
         public static final int menu_default=0x7f0e0005;

@@ -2,6 +2,7 @@ package com.awakenguys.kmitl.ladkrabangcountry.model;
 
 
 
+
 public class Place {
     private String id;
     private String name;

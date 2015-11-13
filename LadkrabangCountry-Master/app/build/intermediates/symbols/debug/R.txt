@@ -638,7 +638,6 @@ int id bottom 0x7f0d002c
 int id box_count 0x7f0d0029
 int id bus 0x7f0d006f
 int id button 0x7f0d002a
-int id button2 0x7f0d0068
 int id buttonPanel 0x7f0d0041
 int id cancel_action 0x7f0d0083
 int id category 0x7f0d0070
@@ -666,6 +665,7 @@ int id end_padder 0x7f0d008e
 int id expand_activities_button 0x7f0d003b
 int id expanded_menu 0x7f0d004e
 int id facebook_profile 0x7f0d008f
+int id guest_button 0x7f0d0068
 int id home 0x7f0d0004
 int id homeAsUp 0x7f0d000d
 int id home_icon 0x7f0d0090
@@ -793,8 +793,8 @@ int layout abc_search_dropdown_item_icons_2line 0x7f040016
 int layout abc_search_view 0x7f040017
 int layout abc_select_dialog_material 0x7f040018
 int layout activity_contact_us 0x7f040019
-int layout activity_first 0x7f04001a
-int layout activity_listview 0x7f04001b
+int layout activity_listview 0x7f04001a
+int layout activity_login 0x7f04001b
 int layout activity_main 0x7f04001c
 int layout activity_main__review 0x7f04001d
 int layout activity_main__tran 0x7f04001e
@@ -837,7 +837,7 @@ int layout select_dialog_singlechoice_material 0x7f040042
 int layout support_simple_spinner_dropdown_item 0x7f040043
 int menu guest_anotherpage_menu 0x7f0e0000
 int menu guest_menu 0x7f0e0001
-int menu login_success_menu 0x7f0e0002
+int menu logged_in_menu 0x7f0e0002
 int menu menu_announcement 0x7f0e0003
 int menu menu_contact_us 0x7f0e0004
 int menu menu_default 0x7f0e0005

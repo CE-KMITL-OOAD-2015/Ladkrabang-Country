@@ -24,8 +24,6 @@ public class LCServerApplication implements CommandLineRunner {
     private VanRouteRepo vanRouteRepo;
     @Autowired
     private TrainStationRepo trainStationRepo;
-    @Autowired
-    private UserRepo userRepo;
 
 
     public static void main(String[] args) {

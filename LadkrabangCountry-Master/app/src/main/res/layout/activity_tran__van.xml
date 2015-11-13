@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MAP"
-        android:id="@+id/button2"
+        android:id="@+id/guest_button"
         android:layout_alignParentBottom="true"
         android:layout_alignEnd="@+id/button"
         android:layout_marginBottom="43dp"
