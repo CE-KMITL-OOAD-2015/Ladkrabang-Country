@@ -119,6 +119,7 @@ public class ObjectProvider  {
         }
     }
 
+    //use in PlaceList (get just one String of place name)
     public String getPlaceNameByCategory(String str,int index) throws URISyntaxException{
         String name = null;
         try {
@@ -162,7 +163,7 @@ public class ObjectProvider  {
         }
     }
 
-    //use in SearchPage
+    //use in SearchPage (get just one String of place name)
     public String getPlaceNameByNameLike(String str,int index) throws URISyntaxException{
         String name = null;
         try {

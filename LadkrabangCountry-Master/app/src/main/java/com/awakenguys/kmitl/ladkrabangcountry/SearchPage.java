@@ -51,6 +51,7 @@ public class SearchPage extends AppCompatActivity {
                 adapter.clear();
                 if(searchTask!=null)
                 {
+                    //stop old keyword search
                     searchTask.cancel(true);
                 }
                 searchTask = new SearchTask().execute(query);
@@ -84,6 +85,7 @@ public class SearchPage extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        //stop asynctask when exit from this activity
         if(searchTask!=null)
         {
             searchTask.cancel(true);

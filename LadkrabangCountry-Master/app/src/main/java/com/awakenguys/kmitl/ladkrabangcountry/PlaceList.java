@@ -58,6 +58,7 @@ public class PlaceList extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        //stop asynctask when exit from this activity
         showPlaceListTask.cancel(true);
     }
 
