@@ -18,9 +18,12 @@ import android.widget.SearchView;
 import com.awakenguys.kmitl.ladkrabangcountry.model.Place;
 
 import java.net.URISyntaxException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class SearchPage extends AppCompatActivity {
+    List<String> placeNames;
+    ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +46,8 @@ public class SearchPage extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextSubmit(String query) {
+                placeNames.clear();
+                adapter.clear();
                 new SearchTask().execute(query);
                 return true;
             }
@@ -55,6 +60,23 @@ public class SearchPage extends AppCompatActivity {
 
 
         });
+
+        placeNames = new ArrayList<String>();
+
+        //moved from show place list
+        final ListView listView = (ListView) findViewById(R.id.listView);
+        adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, android.R.id.text1, placeNames);
+        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String itemValue = (String) listView.getItemAtPosition(position);
+                new GetPlace().execute(itemValue);
+            }
+        });
+
     }
 
     @Override
@@ -81,14 +103,24 @@ public class SearchPage extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private class SearchTask extends AsyncTask<String,Void,Object> {
-
+    private class SearchTask extends AsyncTask<String,String,Object> {
+        
         @Override
         protected Object doInBackground(String... params) {
             ObjectProvider provider = new ObjectProvider();
+            String name;
             try {
-                List<String> names = provider.getPlacesNameByNameLike(params[0]);
-                return names;
+
+                int index=0;
+                while(true)
+                {
+                    name = provider.getPlaceNameByNameLike(params[0],index);
+                    if(name==null)break;
+                    publishProgress(name);
+                    index++;
+                }
+
+                return null;
             } catch (URISyntaxException e) {
                 e.printStackTrace();
             }
@@ -96,28 +128,36 @@ public class SearchPage extends AppCompatActivity {
         }
 
         @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+            placeNames.add(values[0]);
+            adapter.notifyDataSetChanged();
+
+        }
+
+        @Override
         protected void onPostExecute(Object obj) {
-            List<String> list = (List<String>) obj;
-            showPlacesList(list);
+            //List<String> list = (List<String>) obj;
+            //showPlacesList(list);
         }
     }
 
-    public void showPlacesList(List<String> names){
-        final ListView listView = (ListView) findViewById(R.id.listView);
-        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, android.R.id.text1, names);
-
-        listView.setAdapter(adapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
-                String itemValue = (String) listView.getItemAtPosition(position);
-                new GetPlace().execute(itemValue);
-            }
-        });
-    }
+//    public void showPlacesList(List<String> names){
+//        final ListView listView = (ListView) findViewById(R.id.listView);
+//        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+//                android.R.layout.simple_list_item_1, android.R.id.text1, names);
+//
+//        listView.setAdapter(adapter);
+//
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
+//                String itemValue = (String) listView.getItemAtPosition(position);
+//                new GetPlace().execute(itemValue);
+//            }
+//        });
+//    }
 
     public class GetPlace extends AsyncTask<String,Void,Object> {
 

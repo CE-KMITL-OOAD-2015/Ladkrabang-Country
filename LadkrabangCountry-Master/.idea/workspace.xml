@@ -9,14 +9,9 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="bc6f5c93-f0d8-48ad-9f3a-1be5b2ee4017" name="Default" comment="" />
-=======
-    <list default="true" id="28c47927-cf61-48cf-b2b0-f2dbdf0c4e58" name="Default" comment="" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
+    <list default="true" id="5e1cac0b-ccc5-41f3-b615-60055b85eabc" name="Default" comment="" />
     <ignored path="LadkrabangCountry-Master.iws" />
     <ignored path=".idea/workspace.xml" />
-    <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,140 +36,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-<<<<<<< HEAD
-      <file leaf-file-name="CatList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/CatList.java">
+      <file leaf-file-name="SearchPage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/SearchPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="106" column="11" selection-start-line="106" selection-start-column="11" selection-end-line="109" selection-end-column="39" />
+            <state vertical-scroll-proportion="3.8196204">
+              <caret line="114" column="27" selection-start-line="114" selection-start-column="27" selection-end-line="114" selection-end-column="27" />
               <folding>
-                <element signature="e#1393#1401#0" expanded="true" />
-                <element signature="e#1571#1975#0" expanded="true" />
-                <element signature="e#1974#1975#0" expanded="true" />
+                <element signature="e#2449#2763#0" expanded="true" />
+                <element signature="e#2762#2763#0" expanded="true" />
+                <element signature="method#onCreateOptionsMenu#0;class#SearchPage#0" expanded="false" />
+                <element signature="method#onOptionsItemSelected#0;class#SearchPage#0" expanded="false" />
+                <element signature="class#GetPlace#0;class#SearchPage#0" expanded="false" />
+                <element signature="method#showMap#0;class#SearchPage#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="First.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/First.java">
+      <file leaf-file-name="ArrayAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Android/sdk1/sources/android-23/android/widget/ArrayAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-=======
-      <file leaf-file-name="Tran_Bus_Second.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Tran_Bus_Second.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
+              <caret line="285" column="0" selection-start-line="285" selection-start-column="0" selection-end-line="285" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="AsyncTask.java" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Android/sdk/sources/android-23/android/os/AsyncTask.java">
+        <entry file="file://$USER_HOME$/AppData/Local/Android/sdk1/sources/android-23/android/os/AsyncTask.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+              <caret line="228" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
               <folding>
-                <element signature="e#10947#10948#0" expanded="true" />
-              </folding>
-=======
-      <file leaf-file-name="Tran_Motorcycle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Tran_Motorcycle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tran_Train.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Tran_Train.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tran_Van.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Tran_Van.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Van_Map_1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Van_Map_1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Van_Map_2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Van_Map_2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contactUs.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/contactUs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main_building.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Main_building.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="71" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapsActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/MapsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="PlaceList.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/PlaceList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61167514">
-              <caret line="76" column="33" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1084#1092#0" expanded="true" />
-                <element signature="e#1261#1660#0" expanded="true" />
-                <element signature="e#1659#1660#0" expanded="true" />
+                <element signature="e#12204#12626#0" expanded="true" />
+                <element signature="e#12625#12626#0" expanded="true" />
+                <element signature="e#24884#24885#0" expanded="true" />
+                <element signature="e#24934#24935#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -184,87 +82,49 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/ObjectProvider.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+              <caret line="142" column="13" selection-start-line="142" selection-start-column="13" selection-end-line="142" selection-end-column="13" />
               <folding>
-                <element signature="e#742#749#0" expanded="true" />
-                <element signature="e#3162#3169#0" expanded="true" />
+                <element signature="e#4894#4902#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_listview.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_listview.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.793103">
-              <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-              <folding>
-                <element signature="e#223#258#0" expanded="true" />
-                <element signature="e#284#319#0" expanded="true" />
-                <element signature="e#343#376#0" expanded="true" />
-                <element signature="e#403#436#0" expanded="true" />
-=======
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="8.06469">
-              <caret line="176" column="1" selection-start-line="176" selection-start-column="1" selection-end-line="176" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5547#5548#0" expanded="true" />
-                <element signature="e#5580#5581#0" expanded="true" />
-                <element signature="e#5626#5627#0" expanded="true" />
-                <element signature="e#5658#5659#0" expanded="true" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_first.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_first.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <file leaf-file-name="CatList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/CatList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+              <caret line="72" column="54" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Activity.java" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Android/sdk/sources/android-23/android/app/Activity.java">
+      <file leaf-file-name="PlaceList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/PlaceList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6238" column="0" selection-start-line="6238" selection-start-column="0" selection-end-line="6238" selection-end-column="0" />
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Authentication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Authentication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogInActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/LogInActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -272,16 +132,6 @@
       </file>
     </leaf>
   </component>
-<<<<<<< HEAD
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-=======
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
   <component name="GradleLocalSettings">
     <option name="availableProjects">
       <map>
@@ -1433,12 +1283,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-<<<<<<< HEAD
-        <entry key="$PROJECT_DIR$" value="4337750400455" />
-        <entry key="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master" value="4337756939751" />
-=======
-        <entry key="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master" value="4340261183973" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
+        <entry key="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master" value="4342263607989" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1616,8 +1461,8 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar" />
-                            <option value="D:/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-maps/8.1.0/play-services-maps-8.1.0.aar" />
-                            <option value="D:/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.1.0/appcompat-v7-23.1.0.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk1/extras/google/m2repository/com/google/android/gms/play-services-maps/8.1.0/play-services-maps-8.1.0.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk1/extras/android/m2repository/com/android/support/appcompat-v7/23.1.0/appcompat-v7-23.1.0.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-android-sdk/4.7.0/2156d98a10c1e6cf2bed68b7d9adfb9b83e8793e/facebook-android-sdk-4.7.0.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.hateoas/spring-hateoas/0.19.0.RELEASE/77b3b15c301d2517356b76304a2670df33ef2e2c/spring-hateoas-0.19.0.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.2.2.RELEASE/963d6c9d0b546b6313fb51618ed5c080e8981ddc/spring-core-4.2.2.RELEASE.jar" />
@@ -1626,8 +1471,8 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.0.0/26b8555596b3fb9652c1ffe193fa9123945b32cc/json-path-2.0.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.6.3/5c4fcae53dd82e2c549b8322d78c6ff47c94c8a8/jackson-databind-2.6.3.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.2/53200a9d80fff3106dc435de1350cdd20b757819/json-smart-2.2.jar" />
-                            <option value="D:/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-base/8.1.0/play-services-base-8.1.0.aar" />
-                            <option value="D:/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.1.0/support-v4-23.1.0.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk1/extras/google/m2repository/com/google/android/gms/play-services-base/8.1.0/play-services-base-8.1.0.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk1/extras/android/m2repository/com/android/support/support-v4/23.1.0/support-v4-23.1.0.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.0.9.RELEASE/295ecbf61e2313b4472947a1b3084022ba09e524/spring-beans-4.0.9.RELEASE.jar" />
@@ -1636,10 +1481,10 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.10/5b338f206827d88acd890739f400a9b7664e5984/slf4j-api-1.7.10.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.6.0/a0990e2e812ac6639b6ce955c91b13228500476e/jackson-annotations-2.6.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.3/142ce64dcd709a4b5f6e7d71305a31d3893d077/jackson-core-2.6.3.jar" />
-                            <option value="D:/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-basement/8.1.0/play-services-basement-8.1.0.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk1/extras/google/m2repository/com/google/android/gms/play-services-basement/8.1.0/play-services-basement-8.1.0.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.0.9.RELEASE/256abd04e9c25f84ef98b18e4b89051b8ec68ba2/spring-expression-4.0.9.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" />
-                            <option value="D:/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk1/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/app" />
@@ -1651,93 +1496,117 @@
               <option name="name" value="app" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/announce" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/antlr" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/base-services" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/base-services-groovy" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/build-comparison" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/build-init" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/cli" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/code-quality" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/core" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/dependency-management" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/diagnostics" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/ear" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/ide" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/ide-native" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/internal-integ-testing" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/internal-testing" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/ivy" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/jacoco" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/javascript" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/jetty" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/language-groovy" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/language-java" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/language-jvm" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/language-native" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/language-scala" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/launcher" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/maven" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/messaging" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/src/model-core" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/ant-1.9.3.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/ant-launcher-1.9.3.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/gradle-base-services-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/gradle-base-services-groovy-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/gradle-cli-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/gradle-core-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/gradle-docs-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/gradle-launcher-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/gradle-messaging-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/gradle-model-core-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/gradle-model-groovy-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/gradle-native-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/gradle-open-api-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/gradle-resources-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/gradle-tooling-api-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/gradle-ui-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/gradle-wrapper-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/groovy-all-2.4.4.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-announce-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-antlr-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-build-comparison-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-build-init-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-code-quality-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-dependency-management-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-diagnostics-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-ear-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-ide-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-ide-native-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-ivy-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-jacoco-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-javascript-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-jetty-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-language-groovy-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-language-java-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-language-jvm-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-language-native-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-language-scala-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-maven-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-osgi-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-platform-base-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-platform-jvm-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-platform-native-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-platform-play-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-plugin-development-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-plugin-use-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-plugins-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-publish-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-reporting-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-resources-http-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-resources-s3-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-resources-sftp-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-scala-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-signing-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-sonar-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-test-kit-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-testing-native-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/gradle-tooling-api-builders-2.8.jar" />
-                  <option value="D:/Downloads/Documents/1-58/gradle-2.8/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/announce" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/antlr" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/base-services" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/base-services-groovy" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/build-comparison" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/build-init" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/cli" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/code-quality" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/core" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/dependency-management" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/diagnostics" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/ear" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/ide" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/ide-native" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/internal-integ-testing" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/internal-testing" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/ivy" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/jacoco" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/javascript" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/jetty" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/language-groovy" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/language-java" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/language-jvm" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/language-native" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/language-scala" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/launcher" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/maven" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/messaging" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/model-core" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/model-groovy" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/native" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/open-api" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/osgi" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/platform-base" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/platform-jvm" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/platform-native" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/platform-play" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/plugin-development" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/plugin-use" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/plugins" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/publish" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/reporting" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/resources" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/resources-http" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/resources-s3" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/resources-sftp" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/scala" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/signing" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/sonar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/testing-native" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/tooling-api" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/tooling-api-builders" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/ui" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/src/wrapper" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/ant-1.9.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/ant-launcher-1.9.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/gradle-base-services-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/gradle-base-services-groovy-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/gradle-cli-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/gradle-core-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/gradle-docs-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/gradle-launcher-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/gradle-messaging-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/gradle-model-core-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/gradle-model-groovy-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/gradle-native-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/gradle-open-api-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/gradle-resources-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/gradle-tooling-api-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/gradle-ui-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/gradle-wrapper-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/groovy-all-2.3.10.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-announce-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-antlr-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-build-comparison-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-build-init-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-code-quality-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-dependency-management-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-diagnostics-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-ear-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-ide-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-ide-native-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-ivy-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-jacoco-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-javascript-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-jetty-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-language-groovy-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-language-java-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-language-jvm-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-language-native-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-language-scala-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-maven-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-osgi-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-platform-base-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-platform-jvm-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-platform-native-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-platform-play-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-plugin-development-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-plugin-use-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-plugins-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-publish-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-reporting-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-resources-http-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-resources-s3-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-resources-sftp-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-scala-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-signing-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-sonar-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-testing-native-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/gradle-tooling-api-builders-2.4.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -1754,36 +1623,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/local.properties" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Building.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main_building.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Main_Place.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_contact_us.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/contactUs.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/ContactUs.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/model/Bus_Line.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/model/Place.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/model/Station.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/model/User.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/model/Van_Route.java" />
-        <option value="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_pick.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/faculty_all.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main_place.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_placeslist.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_catlist.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/ObjectProvider.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_listview.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/CatList.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Authentication.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/PlaceList.java" />
-=======
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/guest_anotherpage_menu.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/MainActivity.java" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
+        <option value="$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/ObjectProvider.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/SearchPage.java" />
       </list>
     </option>
   </component>
@@ -1794,7 +1639,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -1819,92 +1664,10 @@
       <sortByType />
     </navigator>
     <panes>
-<<<<<<< HEAD
-      <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="Scratches" />
-      <pane id="ProjectPane">
-=======
-      <pane id="Scratches" />
-      <pane id="AndroidView">
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LadkrabangCountry-Master" />
-<<<<<<< HEAD
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-=======
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LadkrabangCountry-Master" />
-<<<<<<< HEAD
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-=======
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LadkrabangCountry-Master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LadkrabangCountry-Master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LadkrabangCountry-Master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LadkrabangCountry-Master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LadkrabangCountry-Master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LadkrabangCountry-Master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LadkrabangCountry-Master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1912,10 +1675,6 @@
               <option name="myItemId" value="LadkrabangCountry-Master" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1930,53 +1689,10 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="LadkrabangCountry-Master" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mipmap" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LadkrabangCountry-Master" />
-<<<<<<< HEAD
-=======
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LadkrabangCountry-Master" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1995,23 +1711,6 @@
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="LadkrabangCountry-Master" />
-<<<<<<< HEAD
-=======
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LadkrabangCountry-Master" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -2021,6 +1720,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ladkrabangcountry" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2057,47 +1760,63 @@
           </PATH>
         </subPane>
       </pane>
-<<<<<<< HEAD
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.lastSelected" value="com.genymobile.genymotion.ide.idea.GdmSettings" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="android.sdk.path" value="D:/Android/sdk" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/sdk1" />
     <property name="recentsLimit" value="5" />
-    <property name="android.project.structure.last.selected" value="app" />
+    <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="SH44NWM01132" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_23" />
+    <property name="FullScreen" value="false" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="d7ebab10" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_21_x86" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\src\main\java\com\awakenguys\kmitl\ladkrabangcountry" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\src\main\java\com\awakenguys\kmitl\ladkrabangcountry" />
-    </key>
-=======
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
-    </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="E7AZCY797904" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_23_x86" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../OOAD/LadkrabangCountry_Master" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-  </component>
   <component name="RunManager" selected="Android Application.app">
+    <configuration default="false" name="ContactUs" type="AndroidRunConfigurationType" factoryName="Android Application" temporary="true">
+      <module name="app" />
+      <option name="ACTIVITY_CLASS" value="com.awakenguys.kmitl.ladkrabangcountry.ContactUs" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="specific_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -2175,15 +1894,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -2195,11 +1905,11 @@
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
+        <value defaultName="moduleWithDependencies" />
       </option>
       <envs />
       <patterns />
@@ -2237,7 +1947,7 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
+        <value defaultName="moduleWithDependencies" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
@@ -2277,9 +1987,15 @@
       <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Android Application.app" />
+      <item index="1" class="java.lang.String" itemvalue="Android Application.ContactUs" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Android Application.ContactUs" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -2292,883 +2008,355 @@
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-<<<<<<< HEAD
-      <changelist id="bc6f5c93-f0d8-48ad-9f3a-1be5b2ee4017" name="Default" comment="" />
-      <created>1446736278192</created>
+      <changelist id="5e1cac0b-ccc5-41f3-b615-60055b85eabc" name="Default" comment="" />
+      <created>1447421868930</created>
       <option name="number" value="Default" />
-      <updated>1446736278192</updated>
-=======
-      <changelist id="28c47927-cf61-48cf-b2b0-f2dbdf0c4e58" name="Default" comment="" />
-      <created>1446758455015</created>
-      <option name="number" value="Default" />
-      <updated>1446758455015</updated>
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
+      <updated>1447421868930</updated>
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3460925" sideWeight="0.46369138" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5181543" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32695374" sideWeight="0.48184568" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.49394855" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.4969743" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41396934" sideWeight="0.8479576" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863715" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863715" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39872408" sideWeight="0.49394855" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-=======
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
-    <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32027256" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1482602" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.47881997" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-<<<<<<< HEAD
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/ObjectProvider.java</url>
-          <line>99</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/SearchPage.java</url>
+          <line>145</line>
           <properties />
-          <option name="timeStamp" value="28" />
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/ObjectProvider.java</url>
-          <line>104</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/SearchPage.java</url>
+          <line>117</line>
           <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/ObjectProvider.java</url>
-          <line>105</line>
-          <properties />
-          <option name="timeStamp" value="30" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="31" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1927711">
-          <caret line="45" column="17" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Android/sdk/platforms/android-23/data/res/values/ids.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="37.407406">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Tran_Bus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.148148">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.814815">
-          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tran__bus.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tran__motorcycle.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tran__bus__second.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-=======
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/m_list1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/profile_picture.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_tran.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_bus.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_contact_us.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_post.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-<<<<<<< HEAD
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/TableTrainOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5185184">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/SearchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6296296">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Van_Map_2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5185184">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Van_Map_1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5185184">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-=======
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Tran_Van.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.148148">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-=======
-    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-23/android/os/Bundle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Tran_Train.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6296296">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Tran_Motorcycle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6296296">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main_place.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.62069">
-          <caret line="81" column="41" selection-start-line="81" selection-start-column="41" selection-end-line="81" selection-end-column="41" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_first.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.413794">
-          <caret line="40" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-<<<<<<< HEAD
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/color.xml">
-      <provider selected="true" editor-type-id="text-editor">
-=======
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.206897">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main__review.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5185184">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="157" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/building_all.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.62069">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="82" selection-start-line="51" selection-start-column="82" selection-end-line="51" selection-end-column="82" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/home_icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/color.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Android/sdk/sources/android-23/android/app/ListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0">
-          <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
-=======
-        <state vertical-scroll-proportion="-1.8888888">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_contact_us.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.275862">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://D:/Android/sdk/sources/android-23/android/app/Instrumentation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1126" column="0" selection-start-line="1126" selection-start-column="0" selection-end-line="1126" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.074074">
-          <caret line="16" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://D:/Android/sdk/sources/android-23/android/widget/ListView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3963" column="0" selection-start-line="3963" selection-start-column="0" selection-end-line="3963" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Android/sdk/sources/android-23/android/os/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/First.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://D:/Android/sdk/sources/android-23/android/os/Looper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Android/sdk/sources/android-23/android/app/ActivityThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2593" column="0" selection-start-line="2593" selection-start-column="0" selection-end-line="2593" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/guest_anotherpage_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Main_Place.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Main_Review.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Main_Review.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="9" selection-start-line="34" selection-start-column="8" selection-end-line="37" selection-end-column="9" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Main_Tran.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-<<<<<<< HEAD
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-=======
-          <caret line="47" column="71" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="71" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/MapsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/TableTrainOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="71" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://D:/Android/sdk/sources/android-23/android/widget/AbsListView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1284" column="0" selection-start-line="1284" selection-start-column="0" selection-end-line="1284" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Tran_Bus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/ContactUs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Android/sdk/sources/android-23/android/widget/AdapterView.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/TableTrainOut.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="315" column="0" selection-start-line="315" selection-start-column="0" selection-end-line="315" selection-end-column="0" />
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Android/sdk/sources/android-23/android/app/Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6238" column="0" selection-start-line="6238" selection-start-column="0" selection-end-line="6238" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Tran_Bus_Second.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://D:/Android/sdk/sources/android-23/android/os/AsyncTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
-          <folding>
-            <element signature="e#10947#10948#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/First.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Tran_Motorcycle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Tran_Train.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Tran_Van.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Van_Map_1.java">
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-<<<<<<< HEAD
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_first.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_listview.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.793103">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding>
-            <element signature="e#223#258#0" expanded="true" />
-            <element signature="e#284#319#0" expanded="true" />
-            <element signature="e#343#376#0" expanded="true" />
-            <element signature="e#403#436#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/ObjectProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding>
-            <element signature="e#742#749#0" expanded="true" />
-            <element signature="e#3162#3169#0" expanded="true" />
+            <element signature="e#4894#4902#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/HTTPRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/LogInActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Authentication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="94" column="61" selection-start-line="94" selection-start-column="61" selection-end-line="94" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_loading.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/ContactUs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/HTTPRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/LogInActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Authentication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/ContactUs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/HTTPRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/HTTPRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/TableTrainOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.7568307">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9480875">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_contact_us.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45400593">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/ContactUs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6967213">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_loading.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Authentication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/LogInActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/PlaceList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/CatList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="106" column="11" selection-start-line="106" selection-start-column="11" selection-end-line="109" selection-end-column="39" />
+          <caret line="72" column="54" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/ObjectProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="142" column="13" selection-start-line="142" selection-start-column="13" selection-end-line="142" selection-end-column="13" />
           <folding>
-            <element signature="e#1393#1401#0" expanded="true" />
-            <element signature="e#1571#1975#0" expanded="true" />
-            <element signature="e#1974#1975#0" expanded="true" />
+            <element signature="e#4894#4902#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/PlaceList.java">
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk1/sources/android-23/android/os/AsyncTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61167514">
-          <caret line="76" column="33" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="228" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1084#1092#0" expanded="true" />
-            <element signature="e#1261#1660#0" expanded="true" />
-            <element signature="e#1659#1660#0" expanded="true" />
-=======
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Van_Map_2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/contactUs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Main_building.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="71" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/MapsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="8.06469">
-          <caret line="176" column="1" selection-start-line="176" selection-start-column="1" selection-end-line="176" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5547#5548#0" expanded="true" />
-            <element signature="e#5580#5581#0" expanded="true" />
-            <element signature="e#5626#5627#0" expanded="true" />
-            <element signature="e#5658#5659#0" expanded="true" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
+            <element signature="e#12204#12626#0" expanded="true" />
+            <element signature="e#12625#12626#0" expanded="true" />
+            <element signature="e#24884#24885#0" expanded="true" />
+            <element signature="e#24934#24935#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Android</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>LadkrabangCountry-Master</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk1/sources/android-23/android/widget/ArrayAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="285" column="0" selection-start-line="285" selection-start-column="0" selection-end-line="285" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37658226">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/SearchPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.8196204">
+          <caret line="114" column="27" selection-start-line="114" selection-start-column="27" selection-end-line="114" selection-end-column="27" />
+          <folding>
+            <element signature="e#2449#2763#0" expanded="true" />
+            <element signature="e#2762#2763#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#SearchPage#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#SearchPage#0" expanded="false" />
+            <element signature="class#GetPlace#0;class#SearchPage#0" expanded="false" />
+            <element signature="method#showMap#0;class#SearchPage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

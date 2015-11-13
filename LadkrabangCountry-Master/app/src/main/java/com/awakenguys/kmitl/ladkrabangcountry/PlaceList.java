@@ -21,6 +21,7 @@ import java.net.URISyntaxException;
 import java.util.List;
 
 public class PlaceList extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

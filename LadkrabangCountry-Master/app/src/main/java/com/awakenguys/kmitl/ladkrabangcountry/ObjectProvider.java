@@ -140,6 +140,22 @@ public class ObjectProvider  {
         }
     }
 
+    //use in SearchPage
+    public String getPlaceNameByNameLike(String str,int index) throws URISyntaxException{
+        String name = null;
+        try {
+            traverson = new Traverson(new URI(url + "places/search/findByNameLikeIgnoreCaseOrderByNameAsc?name=" + str), MediaTypes.HAL_JSON);
+                Traverson.TraversalBuilder traversalBuilder = traverson
+                        .follow("$._embedded.places[" + index + "]._links.self.href");
+                name = traversalBuilder.toObject("$.name");
+                return name;
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            return name;
+        }
+    }
+
     public User getUserByFbId(String fbId) {
         User user = null;
         try {

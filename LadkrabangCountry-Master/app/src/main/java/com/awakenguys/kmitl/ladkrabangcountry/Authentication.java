@@ -18,6 +18,7 @@ public class Authentication extends Activity {
         setContentView(R.layout.activity_loading);
         mContext = this;
         if(user==null||user.getLevel()==2) login();
+        else finish();
 
     }
 
