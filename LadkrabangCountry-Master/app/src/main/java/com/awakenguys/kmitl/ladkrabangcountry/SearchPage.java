@@ -82,6 +82,15 @@ public class SearchPage extends AppCompatActivity {
     }
 
     @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(searchTask!=null)
+        {
+            searchTask.cancel(true);
+        }
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.guest_anotherpage_menu, menu);
