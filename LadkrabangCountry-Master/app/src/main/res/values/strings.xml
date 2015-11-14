@@ -57,4 +57,5 @@
     <string name="canceled_facebooklogin">Canceled</string>
     <string name="failed_facebooklogin">Failed</string>
     <string name="facebook_app_id">896823010399553</string>
+    <string name="title_activity_review_box">ReviewBox</string>
 </resources>

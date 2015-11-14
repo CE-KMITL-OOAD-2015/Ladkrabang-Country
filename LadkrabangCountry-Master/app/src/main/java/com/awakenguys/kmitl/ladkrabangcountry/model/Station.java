@@ -3,7 +3,6 @@ package com.awakenguys.kmitl.ladkrabangcountry.model;
 
 
 
-
 public abstract class Station {
     private String id;
     private String name;

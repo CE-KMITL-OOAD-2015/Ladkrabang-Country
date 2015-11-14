@@ -41,7 +41,7 @@ public class Main_Review extends ActionBarActivity {
     }
     public void Menu_Post(View view)
     {
-        Intent intent = new Intent(this,Post.class);
+        Intent intent = new Intent(this,PostActivity.class);
         startActivity(intent);
     }
 }

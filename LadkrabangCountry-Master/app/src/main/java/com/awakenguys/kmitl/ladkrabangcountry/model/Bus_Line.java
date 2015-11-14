@@ -1,5 +1,6 @@
 package com.awakenguys.kmitl.ladkrabangcountry.model;
 
+
 /**
  * Created by Xync on 05-Nov-15.
  */

@@ -4,6 +4,8 @@ package com.awakenguys.kmitl.ladkrabangcountry.model;
 
 public class Place {
     private String id;
+
+
     private String name;
     private String category;
     private float lat;

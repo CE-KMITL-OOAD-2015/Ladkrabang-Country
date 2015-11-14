@@ -5,8 +5,6 @@ import org.springframework.data.annotation.Id;
 
 public class Place {
     @Id private String id;
-
-
     private String name;
     private String category;
     private float lat;

@@ -2,236 +2,172 @@
 <items version="2" >
 
     <item
-<<<<<<< HEAD
-        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\5.0.3\dcc2193db20e19e1feca8b1240dbbc4e190824fa\asm-5.0.3.jar"
+        jar="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="dcc2193db20e19e1feca8b1240dbbc4e190824fa">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\asm-5.0.3-cb08ca089e68fabac201e5216141df08c5ad5162.jar" />
-    </item>
-    <item
-        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\net.minidev\accessors-smart\1.1\a527213f2fea112a04c9bdf0ec0264e34104cd08\accessors-smart-1.1.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="a527213f2fea112a04c9bdf0ec0264e34104cd08">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\accessors-smart-1.1-ab9e92da39425e37fdc3a066889a4eca4906d196.jar" />
-=======
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="482de223655d06253cc6a4955d653f8994169500">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-605d84b36c2c1b0490dc6e2f6a8045d427b24021.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="325788a04b436a0bccbc5b4c54cf0f12ebdcbd2d">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-a0db6b3da7aaba988cccf33b0e89a67f509c7dd3.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="3c729e6d76a36c5dc27e6a4c4009296f49eaa88a">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-e4ee19a9796d1696c53c47529adcecef735a8a85.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="82825756edeeb3b56b15e73b2edd56e93da5a444">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-89350b3703049d196836f3d1ecfcfec8367bc542.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="dcb5b75baf05d92e61d5706737200ee55949f97b">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-adc23cf2d9a5e181e29c2e6d514c53517df07bf1.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d294caf562c4c678b2ef351662a0ca6f1a4d06c0">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-5d943cbde6a7c427fc238683e973250339080268.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="3aed37c38c56679602255dd72ef356da5d327cda">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-8497f95686848d9d8d3d584f69d019bb6e4ac358.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="997773777cf3904c11d6764fe3b7668538220e49">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-e24fe6938030e09fa875a79750190d1d70006d07.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d61920aba361832a9545a43fa8c9453eb02f18f7">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-b4438ab3f0f5971dfdaf1d8a2760d09e9b8e2301.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="17449c47df35c754b257532052f1270c444f7993">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-0a1f312f5c057e6adb896d37c92d949ff93f3689.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d93480da1d303122ee67dc3bc23e6297bdef9951">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-358032880f38ab2c95c5fac90e8d6e4700fb0110.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.7.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="5bdb38b7e4b6094891648c1dc4dc08589b460f97">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-5a2280815d877a631bdd169ef417e3db78bf1c90.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\libs\internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="0632f06970823b7e3436f649bfa65b47035c91d0">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-ef42c215189a1cef0bdd191010c41f5c4023502a.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="3178362320bcf51228835b60ff978efadfd1f783">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-d16c705165d19777eb7ce7a8fb10fafef8135df7.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="82054090e487d78e163a988557db62d809fa9b95">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-12d9ce799091506877e8fef5dc1627b4b8cf14ea.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="97f3b099801a9ad9d70e835b9125273e986eb68d">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-db29d7092013fac211f1cae2b04348c9f49baf5e.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-9bebe00a98bc8b765c4bedffaceba1b4c778df2d.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="b92002cb2f0e11a226ac5bac6dff1dc2a9d0b774">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-4dca3a4de5696c00607fe4b17ca06c5d6e30087e.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="993834cb17d07d51b92db89d2c330243592ebf77">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-f29599768d0fac167f2901feb2e8ef94ea3719ab.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-0ca6397b278e537c405abb34adb3ccd54231d2d6.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-8b158c7a418e253bb6b8ac4d1b0173072178fafa.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-feb9b6e8ca7ae9aac5576f232dcedc9cafa193aa.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-41ffa64f3f997434045c86dc4fb760593ac81214.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="3b05c18f60969ecc2ba49c0409c4b96be2d9cb0c">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-524196550740bde196599242f151794ace361481.jar" />
-    </item>
-    <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
         sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-d9f649bde84f35e2eec161d8a51e94125ebaad5d.jar" />
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-75d7eb155b6c00a02057df913866b1ca109b9f88.jar" />
     </item>
     <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.1.0\jars\classes.jar"
+        jar="C:\Users\siriporn\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.6.0\a0990e2e812ac6639b6ce955c91b13228500476e\jackson-annotations-2.6.0.jar"
         jumboMode="false"
-        revision="23.0.1"
-        sha1="041d93cf0533591c29d1d7263b2fa114dbfb20bd">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-609bc30300e1a7e80e1adab4280403917e68628f.jar" />
+        revision="23.0.2"
+        sha1="a0990e2e812ac6639b6ce955c91b13228500476e">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\jackson-annotations-2.6.0-76be2f94e22597e15e83e2e3ee53f477a908ecde.jar" />
     </item>
     <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.1.0\jars\classes.jar"
+        jar="C:\Users\siriporn\.gradle\caches\modules-2\files-2.1\org.springframework.plugin\spring-plugin-core\1.2.0.RELEASE\f380e7760032e7d929184f8ad8a33716b75c0657\spring-plugin-core-1.2.0.RELEASE.jar"
         jumboMode="false"
-        revision="23.0.1"
-        sha1="9cf8c0ef60847621c7ad00b4f78dbfc9daba4af2">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-688643448b3075e8e37b647a98c23f34480a2c18.jar" />
+        revision="23.0.2"
+        sha1="f380e7760032e7d929184f8ad8a33716b75c0657">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-plugin-core-1.2.0.RELEASE-f00fef140ba28d6fd580509830bb41b3cb2052ab.jar" />
     </item>
     <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.1.0\jars\classes.jar"
+        jar="C:\Users\siriporn\.gradle\caches\modules-2\files-2.1\org.springframework\spring-context\4.0.9.RELEASE\13015a0ff2a9bed4686a0f1d8d85a2ae57034e3a\spring-context-4.0.9.RELEASE.jar"
         jumboMode="false"
-        revision="23.0.1"
-        sha1="2a7e47da654546f9457deb6132364f1bf33a1857">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-5a8fb03109afc71621a6b52cd74df75b66245243.jar" />
+        revision="23.0.2"
+        sha1="13015a0ff2a9bed4686a0f1d8d85a2ae57034e3a">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-context-4.0.9.RELEASE-c43752057a58e83e153af9145b85a3ad7da598ad.jar" />
     </item>
     <item
-        jar="C:\Users\SIRAPAT\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.0\6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd\bolts-android-1.2.0.jar"
+        jar="C:\Users\siriporn\.gradle\caches\modules-2\files-2.1\org.springframework\spring-core\4.2.2.RELEASE\963d6c9d0b546b6313fb51618ed5c080e8981ddc\spring-core-4.2.2.RELEASE.jar"
         jumboMode="false"
-        revision="23.0.1"
+        revision="23.0.2"
+        sha1="963d6c9d0b546b6313fb51618ed5c080e8981ddc">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-core-4.2.2.RELEASE-888acc60fe21abbc3af7b78692093e9a4f6b07d8.jar" />
+    </item>
+    <item
+        jar="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.7.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5bdb38b7e4b6094891648c1dc4dc08589b460f97">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-6c5b45b6b4c542fe6a9fbf7ab839686b7f99212e.jar" />
+    </item>
+    <item
+        jar="C:\Users\siriporn\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.0\6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd\bolts-android-1.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
         sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\bolts-android-1.2.0-6ce0bc1c69bc96cd61e55115c44495a1def844fe.jar" />
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\bolts-android-1.2.0-07e62feec212ad24872507185222978ad71585ca.jar" />
     </item>
     <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.1.0\jars\classes.jar"
+        jar="C:\Users\siriporn\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.6.3\5c4fcae53dd82e2c549b8322d78c6ff47c94c8a8\jackson-databind-2.6.3.jar"
         jumboMode="false"
-        revision="23.0.1"
-        sha1="95758a2905669affbffc5ddd262921d375674fad">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-f9c827596b359a3c82ef45ddb7302743a0343c68.jar" />
+        revision="23.0.2"
+        sha1="5c4fcae53dd82e2c549b8322d78c6ff47c94c8a8">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\jackson-databind-2.6.3-3214ee1ea1ac0eb82edae425189137aeceec9a70.jar" />
     </item>
     <item
-        jar="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jar="C:\Users\siriporn\.gradle\caches\modules-2\files-2.1\com.jayway.jsonpath\json-path\2.0.0\26b8555596b3fb9652c1ffe193fa9123945b32cc\json-path-2.0.0.jar"
         jumboMode="false"
-        revision="23.0.1"
+        revision="23.0.2"
+        sha1="26b8555596b3fb9652c1ffe193fa9123945b32cc">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\json-path-2.0.0-80563b2b3c417cef8ae5b8fbc0cc5023bdd26d63.jar" />
+    </item>
+    <item
+        jar="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
         sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
-        <dex dex="C:\Users\SIRAPAT\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-f0b13a78cbfb69cf939b3d9522cca55a6efb8fce.jar" />
->>>>>>> 7522252ba766ab2278164cad05428e3604745d3b
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-073c96b1eea5d30a61093dea02e7e89114958ce7.jar" />
+    </item>
+    <item
+        jar="C:\Users\siriporn\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.10\5b338f206827d88acd890739f400a9b7664e5984\slf4j-api-1.7.10.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5b338f206827d88acd890739f400a9b7664e5984">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\slf4j-api-1.7.10-8f907b2420db0a4d2e563ac98908397dd0ce2a4a.jar" />
+    </item>
+    <item
+        jar="C:\Users\siriporn\.gradle\caches\modules-2\files-2.1\net.minidev\json-smart\2.2\53200a9d80fff3106dc435de1350cdd20b757819\json-smart-2.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="53200a9d80fff3106dc435de1350cdd20b757819">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\json-smart-2.2-34822dfa40587c6f5e6771715799ed02896d52eb.jar" />
+    </item>
+    <item
+        jar="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-63d938714a6a4eff46df73200c4c49c8364ef3c0.jar" />
+    </item>
+    <item
+        jar="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-4201d50cc55faec222dd4e81491baf9eeb3500fa.jar" />
+    </item>
+    <item
+        jar="C:\Users\siriporn\.gradle\caches\modules-2\files-2.1\org.springframework.android\spring-android-rest-template\1.0.1.RELEASE\e132d929bd181941f79b0d63edafb8a86ae6fd33\spring-android-rest-template-1.0.1.RELEASE.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e132d929bd181941f79b0d63edafb8a86ae6fd33">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-android-rest-template-1.0.1.RELEASE-8796a16e7d42c41643e061cbde9b0cbf9b079bbb.jar" />
+    </item>
+    <item
+        jar="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2a7e47da654546f9457deb6132364f1bf33a1857">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-474075d61f52960286e7ee76380c6fd0b11ca868.jar" />
+    </item>
+    <item
+        jar="C:\Users\siriporn\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-bc38a674104aaa4b42e88024bb6bc31702c9bf97.jar" />
+    </item>
+    <item
+        jar="C:\Users\siriporn\.gradle\caches\modules-2\files-2.1\org.springframework\spring-aop\4.0.9.RELEASE\f1a538c0ba95442ccf9a5e897d9a9895a637c539\spring-aop-4.0.9.RELEASE.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f1a538c0ba95442ccf9a5e897d9a9895a637c539">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-aop-4.0.9.RELEASE-4c70edac27091db30af412c2802780fdd9895409.jar" />
+    </item>
+    <item
+        jar="C:\Users\siriporn\.gradle\caches\modules-2\files-2.1\org.springframework\spring-beans\4.0.9.RELEASE\295ecbf61e2313b4472947a1b3084022ba09e524\spring-beans-4.0.9.RELEASE.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="295ecbf61e2313b4472947a1b3084022ba09e524">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-beans-4.0.9.RELEASE-bc60bf8b0df870345f5bf409a125293bd3388f1f.jar" />
+    </item>
+    <item
+        jar="C:\Users\siriporn\.gradle\caches\modules-2\files-2.1\org.springframework\spring-expression\4.0.9.RELEASE\256abd04e9c25f84ef98b18e4b89051b8ec68ba2\spring-expression-4.0.9.RELEASE.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="256abd04e9c25f84ef98b18e4b89051b8ec68ba2">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-expression-4.0.9.RELEASE-cb8cef11a3830ccee910b3db540af651082209d7.jar" />
+    </item>
+    <item
+        jar="C:\Users\siriporn\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.6.3\142ce64dcd709a4b5f6e7d71305a31d3893d077\jackson-core-2.6.3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="0142ce64dcd709a4b5f6e7d71305a31d3893d077">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\jackson-core-2.6.3-55c7263d2233ddc77c9b0af0a6127847f98fa111.jar" />
+    </item>
+    <item
+        jar="C:\Users\siriporn\.gradle\caches\modules-2\files-2.1\org.springframework.hateoas\spring-hateoas\0.19.0.RELEASE\77b3b15c301d2517356b76304a2670df33ef2e2c\spring-hateoas-0.19.0.RELEASE.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="77b3b15c301d2517356b76304a2670df33ef2e2c">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-hateoas-0.19.0.RELEASE-4acf02458a353c370898856ce1a4df83c081aa19.jar" />
+    </item>
+    <item
+        jar="C:\Users\siriporn\.gradle\caches\modules-2\files-2.1\aopalliance\aopalliance\1.0\235ba8b489512805ac13a8f9ea77a1ca5ebe3e8\aopalliance-1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="0235ba8b489512805ac13a8f9ea77a1ca5ebe3e8">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\aopalliance-1.0-636b621eebe17ae77a2e7920ed08a4ad7f523142.jar" />
+    </item>
+    <item
+        jar="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="82825756edeeb3b56b15e73b2edd56e93da5a444">
+        <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-a18ff8fc8f57f763618f1968ad19cbcee922e82b.jar" />
     </item>
 
 </items>

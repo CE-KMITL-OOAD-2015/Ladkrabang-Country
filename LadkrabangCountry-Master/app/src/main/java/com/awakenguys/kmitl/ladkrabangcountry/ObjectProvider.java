@@ -1,9 +1,11 @@
 package com.awakenguys.kmitl.ladkrabangcountry;
 
 import com.awakenguys.kmitl.ladkrabangcountry.model.Place;
+import com.awakenguys.kmitl.ladkrabangcountry.model.Review;
 
 import org.springframework.hateoas.MediaTypes;
 import org.springframework.hateoas.client.Traverson;
+import org.springframework.http.MediaType;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -20,14 +22,20 @@ public class ObjectProvider  {
 
     public List<Place> getAllPlaces() throws URISyntaxException{
         traverson = new Traverson(new URI(url+"places?sort=name,asc"), MediaTypes.HAL_JSON);
-        int size = traverson.follow("$._links.self.href").toObject("$.page.totalElements");
+        int all = traverson.follow("$._links.self.href").toObject("$.page.totalElements");
+        int size = traverson.follow("$._links.self.href").toObject("$.page.size");
+        int pages = traverson.follow("$._links.self.href").toObject("$.page.totalPages");
         List<Place> places = new ArrayList<Place>();
         Place place = new Place();
-        for(int i = 0;i<size;i++){
+        for(int i = 0,j = 0;i<all && j<size;i++){
             Traverson.TraversalBuilder traversalBuilder = traverson
-                    .follow("$._embedded.places[" + i + "]._links.self.href");
+                    .follow("$._embedded.places[" + j + "]._links.self.href");
             place = traversalBuilder.toObject(Place.class);
             places.add(place);
+            if(j==size){
+                traverson.follow("next");
+                j=0;
+            }
         }
         return places;
     }
@@ -111,7 +119,7 @@ public class ObjectProvider  {
     }
 
     public List<String> getPlacesNameByNameLike(String str) throws URISyntaxException{
-        List names = new ArrayList<String>();
+        List<String> names = new ArrayList<String>();
         try {
             traverson = new Traverson(new URI(url + "places/search/findByNameLikeIgnoreCaseOrderByNameAsc?name=" + str), MediaTypes.HAL_JSON);
             String name;
@@ -130,6 +138,27 @@ public class ObjectProvider  {
             return names;
         }
     }
+
+    public Review getReviewByIndex(int index){
+
+        int all = traverson.follow("$._links.self.href").toObject("$.page.totalElements");
+        int size = traverson.follow("$._links.self.href").toObject("$.page.size");
+        int page = index/size;
+        index = index % size;
+        try {
+            traverson = new Traverson(new URI(url+"reviews?page="+page+"&sort=name,asc"), MediaTypes.HAL_JSON);
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+        Review review = new Review();
+
+            Traverson.TraversalBuilder traversalBuilder = traverson
+                    .follow("$._embedded.places[" + index + "]._links.self.href");
+            review = traversalBuilder.toObject(Review.class);
+
+        return review;
+    }
+
 
 
 }

@@ -13,14 +13,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 
 
-public class Post extends ActionBarActivity {
+public class PostActivity extends ActionBarActivity {
 
     private static final int SELECT_PHOTO = 1;
     private TextView text;
@@ -42,6 +44,18 @@ public class Post extends ActionBarActivity {
                 Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
                 photoPickerIntent.setType("image/*");
                 startActivityForResult(photoPickerIntent, SELECT_PHOTO);
+
+            }
+        });
+
+        //----------------------------------------------------------
+        Button postButton = (Button) findViewById(R.id.postButton);
+        postButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                post();
+                finish();
             }
         });
     }
@@ -64,7 +78,22 @@ public class Post extends ActionBarActivity {
             return true;
         }
 
+
         return super.onOptionsItemSelected(item);
+    }
+    //Edittext to String and send to server
+    private void post(){
+        EditText txtDescription = (EditText) findViewById(R.id.edittext);
+        EditText txtDescription2 = (EditText) findViewById(R.id.edittext2);
+       // TextView txtDescription2 = (TextView) findViewById(R.id.edittext2);
+        String topic = txtDescription.getText().toString();
+        String content = txtDescription2.getText().toString();
+        HTTPRequest rq = new HTTPRequest();
+
+
+         rq.execute("http://203.151.92.199:8888/addreview?topic="+topic+"&content="+content+"&author=oil");
+
+        Toast.makeText(PostActivity.this,"Success!",Toast.LENGTH_SHORT).show();
     }
 
     @Override
