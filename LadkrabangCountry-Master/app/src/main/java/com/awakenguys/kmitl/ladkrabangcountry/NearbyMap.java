@@ -21,7 +21,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class NearbyMap extends FragmentActivity implements OnMapReadyCallback {
 
     GoogleMap map;
     LocationManager locationManager;
@@ -45,7 +45,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 == PackageManager.PERMISSION_GRANTED) {
             map.setMyLocationEnabled(true);
         } else {
-            Toast.makeText(MapsActivity.this, "Permission denied.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(NearbyMap.this, "Permission denied.", Toast.LENGTH_SHORT).show();
         }
 
 
@@ -56,7 +56,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 (LocationManager.PASSIVE_PROVIDER);
 
         if (myLocation == null) {
-            Toast.makeText(MapsActivity.this, "Cannot get current location." +
+            Toast.makeText(NearbyMap.this, "Cannot get current location." +
                     " Make sure location is enabled on the device and staying outdoor.", Toast.LENGTH_SHORT).show();
             LatLng mapCenter = new LatLng(13.728137, 100.777847);
             map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter, 15.2f));
@@ -94,7 +94,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            Toast.makeText(MapsActivity.this ,"Loading nearby places ...", Toast.LENGTH_LONG).show();
+            Toast.makeText(NearbyMap.this ,"Loading nearby places ...", Toast.LENGTH_LONG).show();
         }
 
         @Override

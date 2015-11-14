@@ -50,7 +50,7 @@ public class Main_Place extends ActionBarActivity {
     }
 
     public void nearby_place(View view){
-    Intent intent = new Intent(this,MapsActivity.class);
+    Intent intent = new Intent(this,NearbyMap.class);
     startActivity(intent);
 }
 

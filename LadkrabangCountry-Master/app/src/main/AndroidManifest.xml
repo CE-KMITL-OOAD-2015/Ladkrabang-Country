@@ -59,7 +59,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".MapsActivity"
+            android:name=".NearbyMap"
             android:label="@string/title_activity_maps"
             android:screenOrientation="portrait" >
         </activity>

@@ -69,7 +69,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.awakenguys.kmitl.ladkrabangcountry.MapsActivity"
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.NearbyMap"
             android:label="@string/title_activity_maps"
             android:screenOrientation="portrait" >
         </activity>
