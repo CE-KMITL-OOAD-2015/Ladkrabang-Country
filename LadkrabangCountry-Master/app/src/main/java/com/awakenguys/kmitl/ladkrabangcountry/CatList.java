@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.net.URISyntaxException;
 import java.util.List;
@@ -20,7 +21,6 @@ public class CatList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listview);
         final ListView  listView = (ListView) findViewById(android.R.id.list);
-        listView.setEmptyView( findViewById( R.id.empty_list_view ) );
         String[] catList = new String[]{
                 "คณะวิศวกรรมศาสตร์",
                 "คณะวิทยาศาสตร์",
@@ -38,7 +38,8 @@ public class CatList extends AppCompatActivity {
 
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, catList);
-
+        TextView emptyView = (TextView) findViewById(R.id.emptyList);
+        emptyView.setVisibility(View.INVISIBLE);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

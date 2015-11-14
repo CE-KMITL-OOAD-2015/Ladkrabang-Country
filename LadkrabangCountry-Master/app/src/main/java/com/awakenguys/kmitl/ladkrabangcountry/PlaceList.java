@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.awakenguys.kmitl.ladkrabangcountry.model.Place;
 
@@ -21,7 +22,7 @@ public class PlaceList extends AppCompatActivity {
     private List<String> placeNames;
     private ArrayAdapter<String> adapter;
     private AsyncTask showPlaceListTask;
-
+    private TextView emptyView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,9 +32,11 @@ public class PlaceList extends AppCompatActivity {
 
         placeNames = new ArrayList<String>();
         final ListView  listView = (ListView) findViewById(android.R.id.list);
-        listView.setEmptyView( findViewById( R.id.empty_list_view ) );
+        emptyView = (TextView) findViewById(R.id.emptyList);
+        emptyView.setVisibility(View.INVISIBLE);
         adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, placeNames);
+        //if(placeNames.size()==0) listView.setVisibility(View.INVISIBLE);
 
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -97,6 +100,7 @@ public class PlaceList extends AppCompatActivity {
         @Override
         protected void onPostExecute(Object o) {
             super.onPostExecute(o);
+            if(placeNames.size()==0) emptyView.setVisibility(View.VISIBLE);
         }
     }
 

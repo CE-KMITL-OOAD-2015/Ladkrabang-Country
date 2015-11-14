@@ -13,6 +13,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.awakenguys.kmitl.ladkrabangcountry.model.Place;
 
@@ -24,7 +26,7 @@ public class SearchPage extends AppCompatActivity {
     private List<String> placeNames;
     private ArrayAdapter<String> adapter;
     private AsyncTask searchTask;
-
+    private TextView emptyView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,13 +37,9 @@ public class SearchPage extends AppCompatActivity {
         searchView.setIconifiedByDefault(false);
         searchView.setQueryHint("Enter keyword");
         searchView.setSubmitButtonEnabled(true);
-        /*searchView.setOnSearchClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String query = searchView.getQuery().toString();
-                new SearchTask().execute(query);
-            }
-        });*/
+        emptyView = (TextView) findViewById(R.id.emptyList);
+        emptyView.setVisibility(View.INVISIBLE);
+
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener(){
 
             @Override
@@ -59,18 +57,17 @@ public class SearchPage extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                if(searchTask!=null)
-                {
+                if (searchTask != null) {
                     searchTask.cancel(true);
                 }
                 placeNames.clear();
                 adapter.clear();
-                if(searchTask!=null)
-                {
-                    //stop old keyword search
-                    searchTask.cancel(true);
+                if(newText.length()!=0) {
+                    if (searchTask != null) {
+                        searchTask.cancel(true);
+                    }
+                    searchTask = new SearchTask().execute(newText);
                 }
-                searchTask = new SearchTask().execute(newText);
                 return true;
             }
         });
@@ -149,6 +146,12 @@ public class SearchPage extends AppCompatActivity {
         }
 
         @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            emptyView.setVisibility(View.INVISIBLE);
+        }
+
+        @Override
         protected void onProgressUpdate(String... values) {
             super.onProgressUpdate(values);
             placeNames.add(values[0]);
@@ -160,6 +163,7 @@ public class SearchPage extends AppCompatActivity {
         protected void onPostExecute(Object obj) {
             //List<String> list = (List<String>) obj;
             //showPlacesList(list);
+            if(placeNames.size()==0) emptyView.setVisibility(View.VISIBLE);
         }
     }
 
