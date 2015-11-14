@@ -20,7 +20,8 @@ public class CatList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listview);
         final ListView  listView = (ListView) findViewById(android.R.id.list);
-        String[] catlist = new String[]{
+        listView.setEmptyView( findViewById( R.id.empty_list_view ) );
+        String[] catList = new String[]{
                 "คณะวิศวกรรมศาสตร์",
                 "คณะวิทยาศาสตร์",
                 "คณะสถาปัตยกรรมศาสตร์",
@@ -36,7 +37,7 @@ public class CatList extends AppCompatActivity {
                 "ทั้งหมด"};
 
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, android.R.id.text1, catlist);
+                android.R.layout.simple_list_item_1, android.R.id.text1, catList);
 
         listView.setAdapter(adapter);
 
@@ -90,7 +91,7 @@ public class CatList extends AppCompatActivity {
 //
 //        @Override
 //        protected Object doInBackground(String... params) {
-//            ObjectProvider provider = new ObjectProvider();
+//            ContentProvider provider = new bjectProvider();
 //            try {
 //                List<String> names = provider.getPlacesNameByCategory(params[0]);
 //                return names;

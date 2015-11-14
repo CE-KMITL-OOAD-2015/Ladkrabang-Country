@@ -31,6 +31,7 @@ public class PlaceList extends AppCompatActivity {
 
         placeNames = new ArrayList<String>();
         final ListView  listView = (ListView) findViewById(android.R.id.list);
+        listView.setEmptyView( findViewById( R.id.empty_list_view ) );
         adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, placeNames);
 
@@ -69,7 +70,7 @@ public class PlaceList extends AppCompatActivity {
 
         @Override
         protected Object doInBackground(String... params) {
-            ObjectProvider provider = new ObjectProvider();
+            ContentProvider provider = new ContentProvider();
             String name;
             try {
                 int index=0;
@@ -103,7 +104,7 @@ public class PlaceList extends AppCompatActivity {
 
         @Override
         protected Object doInBackground(String... params) {
-            ObjectProvider provider = new ObjectProvider();
+            ContentProvider provider = new ContentProvider();
 
                 List<Place> place = provider.getPlacesByNameLike(params[0]);
                 return place;

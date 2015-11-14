@@ -59,7 +59,18 @@ public class SearchPage extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                //new SearchTask().execute(newText);
+                if(searchTask!=null)
+                {
+                    searchTask.cancel(true);
+                }
+                placeNames.clear();
+                adapter.clear();
+                if(searchTask!=null)
+                {
+                    //stop old keyword search
+                    searchTask.cancel(true);
+                }
+                searchTask = new SearchTask().execute(newText);
                 return true;
             }
         });
@@ -119,7 +130,7 @@ public class SearchPage extends AppCompatActivity {
         
         @Override
         protected Object doInBackground(String... params) {
-            ObjectProvider provider = new ObjectProvider();
+            ContentProvider provider = new ContentProvider();
             String name;
             try {
                 int index=0;
@@ -173,7 +184,7 @@ public class SearchPage extends AppCompatActivity {
 
         @Override
         protected Object doInBackground(String... params) {
-            ObjectProvider provider = new ObjectProvider();
+            ContentProvider provider = new ContentProvider();
                 List<Place> place = provider.getPlacesByNameLike(params[0].replace(" ","+"));
                 return place;
 

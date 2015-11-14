@@ -19,10 +19,7 @@ public class Profile extends Activity {
         mContext = this;
         if(user==null||user.getLevel()==2) login();
         else finish();
-<<<<<<< HEAD:LadkrabangCountry-Master/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Profile.java
-=======
 
->>>>>>> search-boom:LadkrabangCountry-Master/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Authentication.java
     }
 
 
@@ -86,7 +83,7 @@ public class Profile extends Activity {
 
         private User login(User login_user) {
             //LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile", "user_friends", "email"));
-            ObjectProvider provider = new ObjectProvider();
+            ContentProvider provider = new ContentProvider();
             User user = provider.getUserByFbId(login_user.getFbId());
             try {
 

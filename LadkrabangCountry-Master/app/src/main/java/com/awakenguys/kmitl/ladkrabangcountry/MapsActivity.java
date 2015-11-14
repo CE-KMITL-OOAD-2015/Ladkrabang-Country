@@ -2,30 +2,23 @@ package com.awakenguys.kmitl.ladkrabangcountry;
 import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
-import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
-import android.location.LocationProvider;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.content.ContextCompat;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.awakenguys.kmitl.ladkrabangcountry.model.Place;
-import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
@@ -57,7 +50,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
         this.map = map;
-
         locationManager = (LocationManager) getSystemService
                 (Context.LOCATION_SERVICE);
         myLocation = locationManager.getLastKnownLocation
@@ -81,7 +73,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private class GetPlacesTask extends AsyncTask<Location,Place,List<Place>> {
         @Override
         protected List<Place> doInBackground(Location... params) {
-            ObjectProvider provider = new ObjectProvider();
+            ContentProvider provider = new ContentProvider();
             List<String> latAxis = provider.getNearbyPlacesByLat(params[0].getLatitude(),
                     params[0].getLongitude());
             List<String> lngAxis = provider.getNearbyPlacesByLng(params[0].getLatitude(),

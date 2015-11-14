@@ -15,7 +15,7 @@ import java.util.List;
 
 
 
-public class ObjectProvider  {
+public class ContentProvider {
 
     private final String url = "http://203.151.92.199:8888/";
     private Traverson traverson;
@@ -165,7 +165,7 @@ public class ObjectProvider  {
         }
     }
 
-<<<<<<< HEAD
+
     //use in SearchPage
     public String getPlaceNameByNameLike(String str,int index) throws URISyntaxException{
         String name = null;
@@ -175,17 +175,7 @@ public class ObjectProvider  {
                     .follow("$._embedded.places[" + index + "]._links.self.href");
             name = traversalBuilder.toObject("$.name");
             return name;
-=======
-    //use in SearchPage (get just one String of place name)
-    public String getPlaceNameByNameLike(String str,int index) throws URISyntaxException{
-        String name = null;
-        try {
-            traverson = new Traverson(new URI(url + "places/search/findByNameLikeIgnoreCaseOrderByNameAsc?name=" + str), MediaTypes.HAL_JSON);
-                Traverson.TraversalBuilder traversalBuilder = traverson
-                        .follow("$._embedded.places[" + index + "]._links.self.href");
-                name = traversalBuilder.toObject("$.name");
-                return name;
->>>>>>> search-boom
+
         } catch (Exception e) {
             throw e;
         } finally {

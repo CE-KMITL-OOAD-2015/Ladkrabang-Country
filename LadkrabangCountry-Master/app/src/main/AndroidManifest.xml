@@ -158,8 +158,6 @@
         </activity>
         <activity android:name=".Announce_Create" >
         </activity>
-        <activity android:name=".NearbyPlace" >
-        </activity>
     </application>
 
 
