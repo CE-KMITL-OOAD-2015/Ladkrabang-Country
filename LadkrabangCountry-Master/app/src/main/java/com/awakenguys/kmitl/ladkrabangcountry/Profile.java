@@ -19,6 +19,10 @@ public class Profile extends Activity {
         mContext = this;
         if(user==null||user.getLevel()==2) login();
         else finish();
+<<<<<<< HEAD:LadkrabangCountry-Master/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Profile.java
+=======
+
+>>>>>>> search-boom:LadkrabangCountry-Master/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Authentication.java
     }
 
 

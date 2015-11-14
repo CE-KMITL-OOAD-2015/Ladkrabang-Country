@@ -48,7 +48,7 @@ public class CatList extends AppCompatActivity {
 
                 // ListView Clicked item value
                 String itemValue = (String) listView.getItemAtPosition(position);
-                new GetPlacesName().execute(itemValue);
+                showPlacesList(itemValue);
             }
 
         });
@@ -79,36 +79,35 @@ public class CatList extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void showPlacesList(String[] places){
+    public void showPlacesList(String catName){
         Intent intent = new Intent(this,PlaceList.class);
-        intent.putExtra("places", places);
+        intent.putExtra("catName", catName);
         startActivity(intent);
     }
 
 
-    private class GetPlacesName extends AsyncTask<String,Void,Object> {
-
-        @Override
-        protected Object doInBackground(String... params) {
-            ObjectProvider provider = new ObjectProvider();
-            try {
-                List<String> names = provider.getPlacesNameByCategory(params[0]);
-                return names;
-            } catch (URISyntaxException e) {
-                e.printStackTrace();
-            }
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(Object obj) {
-            List<String> list = (List<String>) obj;
-            String[] placeslist = new String[list.size()];
-            list.toArray(placeslist);
-            showPlacesList(placeslist);
-        }
-    }
-
+//    private class GetPlacesName extends AsyncTask<String,Void,Object> {
+//
+//        @Override
+//        protected Object doInBackground(String... params) {
+//            ObjectProvider provider = new ObjectProvider();
+//            try {
+//                List<String> names = provider.getPlacesNameByCategory(params[0]);
+//                return names;
+//            } catch (URISyntaxException e) {
+//                e.printStackTrace();
+//            }
+//            return null;
+//        }
+//
+//        @Override
+//        protected void onPostExecute(Object obj) {
+//            List<String> list = (List<String>) obj;
+//            String[] placeslist = new String[list.size()];
+//            list.toArray(placeslist);
+//            showPlacesList(placeslist);
+//        }
+//    }
 }
 
 

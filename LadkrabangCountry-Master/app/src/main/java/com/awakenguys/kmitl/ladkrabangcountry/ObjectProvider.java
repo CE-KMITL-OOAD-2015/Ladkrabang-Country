@@ -121,6 +121,29 @@ public class ObjectProvider  {
         }
     }
 
+    //use in PlaceList (get just one String of place name)
+    public String getPlaceNameByCategory(String str,int index) throws URISyntaxException{
+        String name = null;
+        try {
+            if(str.equals("ทั้งหมด")){
+                traverson = new Traverson(new URI(url+"places?sort=name,asc"), MediaTypes.HAL_JSON);
+                Traverson.TraversalBuilder traversalBuilder = traverson
+                            .follow("$._embedded.places[" + index + "]._links.self.href");
+                name = traversalBuilder.toObject("$.name");
+            }
+            else {
+                traverson = new Traverson(new URI(url + "places/search/findByCategoryOrderByNameAsc?category=" + str), MediaTypes.HAL_JSON);
+                Traverson.TraversalBuilder traversalBuilder = traverson
+                        .follow("$._embedded.places[" + index + "]._links.self.href");
+                name = traversalBuilder.toObject("$.name");
+            }
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            return name;
+        }
+    }
+
     public List<String> getPlacesNameByNameLike(String str) throws URISyntaxException{
         List<String> names = new ArrayList<String>();
         try {
@@ -142,6 +165,7 @@ public class ObjectProvider  {
         }
     }
 
+<<<<<<< HEAD
     //use in SearchPage
     public String getPlaceNameByNameLike(String str,int index) throws URISyntaxException{
         String name = null;
@@ -151,6 +175,17 @@ public class ObjectProvider  {
                     .follow("$._embedded.places[" + index + "]._links.self.href");
             name = traversalBuilder.toObject("$.name");
             return name;
+=======
+    //use in SearchPage (get just one String of place name)
+    public String getPlaceNameByNameLike(String str,int index) throws URISyntaxException{
+        String name = null;
+        try {
+            traverson = new Traverson(new URI(url + "places/search/findByNameLikeIgnoreCaseOrderByNameAsc?name=" + str), MediaTypes.HAL_JSON);
+                Traverson.TraversalBuilder traversalBuilder = traverson
+                        .follow("$._embedded.places[" + index + "]._links.self.href");
+                name = traversalBuilder.toObject("$.name");
+                return name;
+>>>>>>> search-boom
         } catch (Exception e) {
             throw e;
         } finally {
