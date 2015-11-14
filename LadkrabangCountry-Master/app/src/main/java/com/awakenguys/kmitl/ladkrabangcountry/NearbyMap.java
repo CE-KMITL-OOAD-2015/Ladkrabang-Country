@@ -1,21 +1,28 @@
 package com.awakenguys.kmitl.ladkrabangcountry;
+
 import android.Manifest;
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.content.ContextCompat;
 import android.widget.Toast;
 
 import com.awakenguys.kmitl.ladkrabangcountry.model.Place;
+import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.UiSettings;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.ArrayList;
@@ -26,7 +33,8 @@ public class NearbyMap extends FragmentActivity implements OnMapReadyCallback {
     GoogleMap map;
     LocationManager locationManager;
     Location myLocation;
-
+    AsyncTask getPlacesTask;
+    Marker blueMarker;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,9 +46,8 @@ public class NearbyMap extends FragmentActivity implements OnMapReadyCallback {
     }
 
 
-
     @Override
-    public void onMapReady(GoogleMap map) {
+    public void onMapReady(final GoogleMap map) {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
             map.setMyLocationEnabled(true);
@@ -52,8 +59,87 @@ public class NearbyMap extends FragmentActivity implements OnMapReadyCallback {
         this.map = map;
         locationManager = (LocationManager) getSystemService
                 (Context.LOCATION_SERVICE);
-        myLocation = locationManager.getLastKnownLocation
-                (LocationManager.PASSIVE_PROVIDER);
+
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 15, new android.location.LocationListener() {
+                    @Override
+                    public void onLocationChanged(Location location) {
+                        if (getPlacesTask != null) {
+                            getPlacesTask.cancel(true);
+                        }
+                        blueMarker.remove();
+                        LatLng latLng = new LatLng(myLocation.getLatitude(), myLocation.getLongitude());
+                        blueMarker = map.addMarker(new MarkerOptions().position(latLng).title("Your last known location")
+                                .icon(BitmapDescriptorFactory
+                                        .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+                    }
+
+                    @Override
+                    public void onStatusChanged(String provider, int status, Bundle extras) {
+
+                    }
+
+                    @Override
+                    public void onProviderEnabled(String provider) {
+
+                    }
+
+                    @Override
+                    public void onProviderDisabled(String provider) {
+
+                    }
+                });
+                myLocation = locationManager.getLastKnownLocation
+                        (LocationManager.PASSIVE_PROVIDER);
+            map.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+            @Override
+            public void onMapClick(LatLng latLng) {
+                if (getPlacesTask != null) {
+                    getPlacesTask.cancel(true);
+                }
+
+
+                map.clear();
+                Location location = new Location("clickEvent");
+                location.setLatitude(latLng.latitude);
+                location.setLongitude(latLng.longitude);
+                map.addMarker(new MarkerOptions().position(latLng).title("Selected location").icon(BitmapDescriptorFactory
+                        .defaultMarker(BitmapDescriptorFactory.HUE_ORANGE)));
+                blueMarker = map.addMarker(new MarkerOptions().position(new LatLng(myLocation.getLatitude(),
+                        myLocation.getLongitude())).title("Your last known location").icon(BitmapDescriptorFactory
+                        .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+                getPlacesTask = new GetPlacesTask().execute(location);
+            }
+        });
+
+
+        map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                if (marker.getTitle().equals("Your last known location")) {
+
+
+                    if(blueMarker.isInfoWindowShown()){
+                        blueMarker.hideInfoWindow();
+                    }
+                    else {
+                        if (getPlacesTask != null) {
+                            getPlacesTask.cancel(true);
+                        }
+                        map.clear();
+
+                        LatLng mapCenter = new LatLng(myLocation.getLatitude(), myLocation.getLongitude());
+                        blueMarker = map.addMarker(new MarkerOptions().position(mapCenter).title("Your last known location")
+                                .icon(BitmapDescriptorFactory
+                                        .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+                        blueMarker.showInfoWindow();
+                        //map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter, 16));
+                        getPlacesTask = new GetPlacesTask().execute(myLocation);
+                    }
+                }
+                return false;
+            }
+
+        });
 
         if (myLocation == null) {
             Toast.makeText(NearbyMap.this, "Cannot get current location." +
@@ -65,9 +151,13 @@ public class NearbyMap extends FragmentActivity implements OnMapReadyCallback {
             LatLng mapCenter = new LatLng(myLocation.getLatitude(), myLocation.getLongitude());
             //map.addMarker(new MarkerOptions().position(mapCenter).title("Marker in Sydney"));
             map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter, 16));
-            new GetPlacesTask().execute(myLocation);
+            blueMarker = map.addMarker(new MarkerOptions().position(mapCenter).title("Your last known location")
+                    .icon(BitmapDescriptorFactory
+                            .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+            getPlacesTask = new GetPlacesTask().execute(myLocation);
         }
     }
+
 
 
     private class GetPlacesTask extends AsyncTask<Location,Place,List<Place>> {
@@ -94,7 +184,9 @@ public class NearbyMap extends FragmentActivity implements OnMapReadyCallback {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            Toast.makeText(NearbyMap.this ,"Loading nearby places ...", Toast.LENGTH_LONG).show();
+            Toast.makeText(NearbyMap.this ,"           Loading nearby places ...\n" +
+                    "Touch to select location for search."
+                    , Toast.LENGTH_LONG).show();
         }
 
         @Override
@@ -104,6 +196,14 @@ public class NearbyMap extends FragmentActivity implements OnMapReadyCallback {
             map.addMarker(new MarkerOptions().position(latLng).title(values[0].getName()));
         }
 
+        @Override
+        protected void onPostExecute(List<Place> places) {
+            super.onPostExecute(places);
+            if(places.size()==0) Toast.makeText(NearbyMap.this ,"No nearby place found."
+                    , Toast.LENGTH_SHORT).show();
+            else Toast.makeText(NearbyMap.this ,"Search finished"
+                    , Toast.LENGTH_SHORT).show();
+        }
     }
 }
 
