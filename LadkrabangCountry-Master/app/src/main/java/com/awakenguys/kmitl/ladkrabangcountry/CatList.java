@@ -11,8 +11,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.awakenguys.kmitl.ladkrabangcountry.model.Place;
-
 import java.net.URISyntaxException;
 import java.util.List;
 

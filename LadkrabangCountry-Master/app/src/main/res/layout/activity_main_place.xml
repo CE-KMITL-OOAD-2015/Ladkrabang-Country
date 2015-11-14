@@ -36,7 +36,7 @@
             android:background="@drawable/janeee"
             android:layout_gravity="center_horizontal"
             android:fontFamily="@string/abc_action_bar_home_description_format"
-            android:onClick="Nearby_Building"/>
+            android:onClick="nearby_place"/>
 
     </LinearLayout>
 

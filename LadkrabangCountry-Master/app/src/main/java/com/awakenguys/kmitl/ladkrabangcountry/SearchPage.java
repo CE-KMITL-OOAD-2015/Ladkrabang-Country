@@ -10,7 +10,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.AutoCompleteTextView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
@@ -124,13 +123,10 @@ public class SearchPage extends AppCompatActivity {
         @Override
         protected Object doInBackground(String... params) {
             ObjectProvider provider = new ObjectProvider();
-            try {
                 List<Place> place = provider.getPlacesByNameLike(params[0].replace(" ","+"));
                 return place;
-            } catch (URISyntaxException e) {
-                e.printStackTrace();
-            }
-            return null;
+
+
         }
 
         @Override

@@ -40,14 +40,19 @@ public class Main_Place extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
     public void cat_place(View view) {
-        Intent intent1 = new Intent(this,CatList.class);
-        startActivity(intent1);
+        Intent intent = new Intent(this,CatList.class);
+        startActivity(intent);
     }
 
     public void search_place(View view) {
-        Intent intent1 = new Intent(this,SearchPage.class);
-        startActivity(intent1);
+        Intent intent = new Intent(this,SearchPage.class);
+        startActivity(intent);
     }
+
+    public void nearby_place(View view){
+    Intent intent = new Intent(this,MapsActivity.class);
+    startActivity(intent);
+}
 
 
 }

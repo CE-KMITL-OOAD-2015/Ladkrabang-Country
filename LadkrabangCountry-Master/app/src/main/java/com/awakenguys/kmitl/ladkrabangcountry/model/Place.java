@@ -2,9 +2,7 @@ package com.awakenguys.kmitl.ladkrabangcountry.model;
 
 
 
-
 public class Place {
-    private String id;
     private String name;
     private String category;
     private float lat;
@@ -20,13 +18,6 @@ public class Place {
         this.lng = lng;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public float getLat() {
         return lat;
@@ -63,7 +54,6 @@ public class Place {
     @Override
     public String toString() {
         return "Place{" +
-                "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", category='" + category + '\'' +
                 '}';

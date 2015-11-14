@@ -9,7 +9,7 @@ public class Review {
     private String topic;
     private String content;
     private String img_path;
-    private String author;
+    private String authorId;
     private float rating = 0;
     private int total = 0;
     private long create_date = new Date().getTime();
@@ -17,17 +17,17 @@ public class Review {
     public Review() {
     }
 
-    public Review(String topic, String content, String author) {
+    public Review(String topic, String content, String authorId) {
         this.topic = topic;
         this.content = content;
-        this.author = author;
+        this.authorId = authorId;
     }
 
-    public Review(String topic, String content, String img_path, String author) {
+    public Review(String topic, String content, String img_path, String authorId) {
         this.topic = topic;
         this.content = content;
         this.img_path = img_path;
-        this.author = author;
+        this.authorId = authorId;
     }
 
     public String getId() {
@@ -62,12 +62,12 @@ public class Review {
         this.img_path = img_path;
     }
 
-    public String getAuthor() {
-        return author;
+    public String getAuthorId() {
+        return authorId;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setAuthorId(String authorId) {
+        this.authorId = authorId;
     }
 
     public float getRating() {
@@ -101,7 +101,7 @@ public class Review {
                 ", topic='" + topic + '\'' +
                 ", content='" + content + '\'' +
                 ", img_path='" + img_path + '\'' +
-                ", author='" + author + '\'' +
+                ", authorId='" + authorId + '\'' +
                 ", rating=" + rating +
                 ", total=" + total +
                 ", create_date=" + create_date +

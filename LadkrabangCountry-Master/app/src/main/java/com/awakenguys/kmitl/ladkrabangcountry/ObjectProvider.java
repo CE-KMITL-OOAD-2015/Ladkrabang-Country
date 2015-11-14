@@ -19,7 +19,7 @@ public class ObjectProvider  {
 
     private final String url = "http://203.151.92.199:8888/";
     private Traverson traverson;
-
+    //private Traverson.TraversalBuilder traversalBuilder;
 
     public List<Place> getAllPlaces() throws URISyntaxException{
         traverson = new Traverson(new URI(url+"places?sort=name,asc"), MediaTypes.HAL_JSON);
@@ -41,10 +41,10 @@ public class ObjectProvider  {
         return places;
     }
 
-    public List<Place> getPlacesByNameLike(String str) throws URISyntaxException {
+    public List<Place> getPlacesByNameLike(String str)  {
         List places = new ArrayList<Place>();
         try {
-            traverson = new Traverson(new URI(url + "places/search/findByNameLikeIgnoreCaseOrderByNameAsc?name=" + str), MediaTypes.HAL_JSON);
+            traverson = new Traverson(new URI(url + "places/search/findByNameLikeIgnoreCaseOrderByNameAsc?name=" + str.replace(" ","+")), MediaTypes.HAL_JSON);
             Place place = new Place();
             int i = 0;
             while(true){
@@ -56,16 +56,18 @@ public class ObjectProvider  {
                 i++;
             }
         } catch (URISyntaxException e) {
-            throw e;
+            e.printStackTrace();
         } finally {
             return places;
         }
     }
 
+
+
     public List<Place> getPlacesByCategory(String str) throws URISyntaxException {
         List places = new ArrayList<Place>();
         try {
-            traverson = new Traverson(new URI(url + "places/search/findByCategoryOrderByNameAsc?category=" + str), MediaTypes.HAL_JSON);
+            traverson = new Traverson(new URI(url + "places/search/findByCategoryOrderByNameAsc?category=" + str.replace(" ","+")), MediaTypes.HAL_JSON);
             Place place = new Place();
             int i = 0;
             while(true){
@@ -100,7 +102,7 @@ public class ObjectProvider  {
         }
         else {
             try {
-                traverson = new Traverson(new URI(url + "places/search/findByCategoryOrderByNameAsc?category=" + str), MediaTypes.HAL_JSON);
+                traverson = new Traverson(new URI(url + "places/search/findByCategoryOrderByNameAsc?category=" + str.replace(" ","+")), MediaTypes.HAL_JSON);
                 String name;
                 int i = 0;
                 while (true) {
@@ -122,7 +124,7 @@ public class ObjectProvider  {
     public List<String> getPlacesNameByNameLike(String str) throws URISyntaxException{
         List<String> names = new ArrayList<String>();
         try {
-            traverson = new Traverson(new URI(url + "places/search/findByNameLikeIgnoreCaseOrderByNameAsc?name=" + str), MediaTypes.HAL_JSON);
+            traverson = new Traverson(new URI(url + "places/search/findByNameLikeIgnoreCaseOrderByNameAsc?name=" + str.replace(" ","+")), MediaTypes.HAL_JSON);
             String name;
             int i = 0;
             while (true) {
@@ -137,6 +139,22 @@ public class ObjectProvider  {
             throw e;
         } finally {
             return names;
+        }
+    }
+
+    //use in SearchPage
+    public String getPlaceNameByNameLike(String str,int index) throws URISyntaxException{
+        String name = null;
+        try {
+            traverson = new Traverson(new URI(url + "places/search/findByNameLikeIgnoreCaseOrderByNameAsc?name=" + str.replace(" ","+")), MediaTypes.HAL_JSON);
+            Traverson.TraversalBuilder traversalBuilder = traverson
+                    .follow("$._embedded.places[" + index + "]._links.self.href");
+            name = traversalBuilder.toObject("$.name");
+            return name;
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            return name;
         }
     }
 
@@ -167,13 +185,98 @@ public class ObjectProvider  {
         }
         Review review = new Review();
 
-            Traverson.TraversalBuilder traversalBuilder = traverson
-                    .follow("$._embedded.places[" + index + "]._links.self.href");
-            review = traversalBuilder.toObject(Review.class);
+        Traverson.TraversalBuilder traversalBuilder = traverson
+                .follow("$._embedded.places[" + index + "]._links.self.href");
+        review = traversalBuilder.toObject(Review.class);
 
         return review;
     }
 
+    public List<String> getNearbyPlacesByLat(double lat, double lng){
+        List<String> latAxis = new ArrayList<String>();
+        String name = null;
+        try {
+            int i = 0;
+            while(true){
+                traverson = new Traverson(new URI(url + "places/search/findByLatBetween?from="
+                        +(lat-0.0008)+"&to=" + (lat+0.0008)),MediaTypes.HAL_JSON);
+                Traverson.TraversalBuilder traversalBuilder = traverson
+                        .follow("$._embedded.places[" + i + "]._links.self.href");
+                name = traversalBuilder.toObject("$.name");
+                //if(place.getName()==null) break;
+                latAxis.add(name);
+                i++;
 
+            }
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        } finally {
+
+            return latAxis;
+        }
+    }
+
+    public List<String> getNearbyPlacesByLng(double lat, double lng){
+        List<String> lngAxis = new ArrayList<String>();
+        String name = null;
+        try {
+            int i = 0;
+            while(true) {
+                traverson = new Traverson(new URI(url + "places/search/findByLngBetween?from="
+                        + (lng - 0.0008) + "&to=" + (lng + 0.0008)), MediaTypes.HAL_JSON);
+                Traverson.TraversalBuilder traversalBuilder = traverson
+                        .follow("$._embedded.places[" + i + "]._links.self.href");
+                name = traversalBuilder.toObject("$.name");
+                //if(place.getName()==null) break;
+                lngAxis.add(name);
+                i++;
+            }
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        } finally {
+
+            return lngAxis;
+        }
+    }
+
+
+    /*public List<String> getNearbyPlaces(double lat, double lng){
+        List<String> latAxis = new ArrayList<String>();
+        List<String> lngAxis = new ArrayList<String>();
+        String name = null;
+        try {
+            int i = 0;
+            while(true) {
+                traverson = new Traverson(new URI(url + "places/search/findByLatBetween?from="
+                        + (lat - 0.0008) + "&to=" + (lat + 0.0008)), MediaTypes.HAL_JSON);
+                Traverson.TraversalBuilder traversalBuilder = traverson
+                        .follow("$._embedded.places[" + i + "]._links.self.href");
+                name = traversalBuilder.toObject("$.name");
+                if(name()==null) break;
+                lngAxis.add(name);
+                i++;
+            }
+                name = null;
+
+                i = 0;
+            while (true) {
+                traverson = new Traverson(new URI(url + "places/search/findByLngBetween?from="
+                        + (lng - 0.0008) + "&to=" + (lng + 0.0008)), MediaTypes.HAL_JSON);
+                Traverson.TraversalBuilder traversalBuilder = traverson
+                        .follow("$._embedded.places[" + i + "]._links.self.href");
+                name = traversalBuilder.toObject("$.name");
+                //if(place.getName()==null) break;
+                lngAxis.add(name);
+                i++;
+
+            }
+
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        } finally {
+            latAxis.retainAll(lngAxis);
+            return latAxis;
+        }
+    }*/
 
 }

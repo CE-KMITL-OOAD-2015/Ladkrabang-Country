@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">Ladkrabang Country</string>
-    <string name="kmitl_building">KMITL BUILDING</string>
+    <string name="kmitl_building">KMITL PLACES</string>
     <string name="kmitl_tran">KMITL TRANSPORTATION</string>
     <string name="transportation">TRANSPORTATION</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_maps">Map</string>
     <string name="action_login">action_login</string>
-    <string name="title_activity_main_building">Building</string>
+    <string name="title_activity_main_building">Places</string>
     <string name="title_activity_main__tran">Transportation</string>
     <string name="title_activity_tran_train">tran_train</string>
 
@@ -36,7 +36,7 @@
     <string name="bus1013">สาย1013</string>
     <string name="info143">ต้นทางจากศูนย์การค้าแฮปปี้แลนด์ > คลองจั่น > ผ่านการเคหะชุมชนร่มเกล้า > ถนนเจ้าคุณทหาร > เข้าถนนฉลองกรุง > ปลายทางที่ > สถาบันเทคโนโลยี
 พระจอมเกล้าเจ้าคุณทหารลาดกระบัง</string>
-    <string name="title_activity_search_page">SearchPage</string>
+    <string name="title_activity_search_page">Search</string>
 
     <string-array name="countries_array">
         <item>Afghanistan</item>
@@ -57,4 +57,12 @@
     <string name="canceled_facebooklogin">Canceled</string>
     <string name="failed_facebooklogin">Failed</string>
     <string name="facebook_app_id">896823010399553</string>
+    <string name="title_activity_announce__view">Announce_View</string>
+
+    <string name="latitude_label">Latitude</string>
+    <string name="longitude_label">Longitude</string>
+
+    <string name="no_location_detected">
+        No location detected. Make sure location is enabled on the device.
+    </string>
 </resources>

@@ -13,7 +13,7 @@ public class HTTPRequest {
         try {
             URL url;
             HttpURLConnection urlcon;
-            url = new URL(targetURL);
+            url = new URL(targetURL.replace(" ","+"));
             urlcon = (HttpURLConnection) url.openConnection();
             urlcon.setRequestMethod("GET");
             urlcon.setRequestProperty("User-Agent", "Mozilla 5.0");

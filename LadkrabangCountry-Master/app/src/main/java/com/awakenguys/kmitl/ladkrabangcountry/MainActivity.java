@@ -1,6 +1,5 @@
 package com.awakenguys.kmitl.ladkrabangcountry;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,13 +9,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import com.awakenguys.kmitl.ladkrabangcountry.model.User;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookSdk;
 import com.facebook.login.LoginManager;
-
-import java.util.Arrays;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -30,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         AccessToken accessToken = AccessToken.getCurrentAccessToken();
         //if (accessToken == null) {
 
-        startActivity(new Intent(this, Authentication.class));
+        startActivity(new Intent(this, Profile.class));
         invalidateOptionsMenu();
 
             /*else
@@ -75,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
-        if (Authentication.isLoggedIn()&&Authentication.getUser().getLevel()!=2) { //logged in
+        if (Profile.isLoggedIn()&& Profile.getUser().getLevel()!=2) { //logged in
             MenuInflater inflater = getMenuInflater();
             inflater.inflate(R.menu.logged_in_menu, menu);
             MenuItem menuItem = menu.findItem(R.id.nameFB);
@@ -96,14 +92,14 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.logout_icon) {
             LoginManager.getInstance().logOut();
-            Authentication.logout();
+            Profile.logout();
             startActivity(new Intent(this, MainActivity.class));
             finish();
             return true;
         }
         else if (id == R.id.login_icon) {
             Toast.makeText(MainActivity.this, "Loading...", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(this, Authentication.class));
+            startActivity(new Intent(this, Profile.class));
             invalidateOptionsMenu();
             return true;
         }
