@@ -3,12 +3,13 @@ package com.awakenguys.kmitl.ladkrabangcountry;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 
-public class Main_Place extends ActionBarActivity {
+public class Main_Place extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

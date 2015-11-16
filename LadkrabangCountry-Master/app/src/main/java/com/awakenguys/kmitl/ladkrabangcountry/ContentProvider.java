@@ -67,7 +67,7 @@ public class ContentProvider {
     public List<Place> getPlacesByCategory(String str) throws URISyntaxException {
         List places = new ArrayList<Place>();
         try {
-            traverson = new Traverson(new URI(url + "places/search/findByCategoryOrderByNameAsc?category=" + str.replace(" ","+")), MediaTypes.HAL_JSON);
+            traverson = new Traverson(new URI(url + "places/search/findByCategoryLikeOrderByNameAsc?category=" + str.replace(" ","+")), MediaTypes.HAL_JSON);
             Place place = new Place();
             int i = 0;
             while(true){

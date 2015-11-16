@@ -12,6 +12,12 @@ import com.awakenguys.kmitl.ladkrabangcountry.model.User;
 public class Profile extends Activity {
     private static User user = null;
     private static Context mContext;
+    private static String picURI;
+
+    public static String getPicURI() {
+        return picURI;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,11 +55,11 @@ public class Profile extends Activity {
             if (resultCode == RESULT_OK) {
 
                 User user;
-                //String fbId = data.getStringExtra("fbId");
+                String fbId = data.getStringExtra("fbId");
                 String fullName = data.getStringExtra("fullName");
-                //String profileImg = data.getStringExtra("profileImg");
+                picURI = data.getStringExtra("profileImg");
                 if(fullName.equals("Guest")) user = new User(null,"Guest",2);
-                else user = new User(data.getStringExtra("fbId"), fullName, 1);
+                else user = new User(data.getStringExtra(fbId), fullName, 1);
                 new LogInTask().execute(user);
             }
         }else Toast.makeText(Profile.this, "error!"

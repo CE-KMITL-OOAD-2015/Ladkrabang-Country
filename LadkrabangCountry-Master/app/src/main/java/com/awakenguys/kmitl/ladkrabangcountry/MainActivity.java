@@ -1,6 +1,8 @@
 package com.awakenguys.kmitl.ladkrabangcountry;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -10,14 +12,16 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.facebook.AccessToken;
-import com.facebook.CallbackManager;
 import com.facebook.FacebookSdk;
 import com.facebook.login.LoginManager;
 
+import java.io.InputStream;
+import java.net.URL;
+
 
 public class MainActivity extends AppCompatActivity {
-    CallbackManager callbackManager;
-
+    MenuItem menuItem;
+    Drawable fbPic = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,58 +29,29 @@ public class MainActivity extends AppCompatActivity {
         FacebookSdk.sdkInitialize(getApplicationContext());
         AccessToken accessToken = AccessToken.getCurrentAccessToken();
         //if (accessToken == null) {
-
         startActivity(new Intent(this, Profile.class));
         invalidateOptionsMenu();
-
-            /*else
-            {
-                Toast.makeText(MainActivity.this,"Welcome Guest"
-                        ,Toast.LENGTH_SHORT).show();
-            }*/
-
-
-        // }
-        //FacebookSdk.sdkInitialize(getApplicationContext());
-
-        //startActivityForResult(new Intent(this, LogInActivity.class), 1);
-        //Bundle bundle = getIntent().getExtras();
     }
-//
-//    @Override
-//    public void onSaveInstanceState(Bundle savedInstanceState) {
-//        super.onSaveInstanceState(savedInstanceState);
-//        if(auth.isLoggedIn()) {
-//            savedInstanceState.putString("id", auth.getUser().getId());
-//            savedInstanceState.putString("fbId", auth.getUser().getFbId());
-//            savedInstanceState.putString("name", auth.getUser().getName());
-//            savedInstanceState.putInt("level", auth.getUser().getLevel());
-//            savedInstanceState.putStringArrayList("ratedReview", auth.getUser().getRatedReviews());
-//        }
-//    }
-//
-//    @Override
-//    public void onRestoreInstanceState(Bundle savedInstanceState) {
-//        super.onRestoreInstanceState(savedInstanceState);
-//        String id = savedInstanceState.getString("id");
-//        String fbId = savedInstanceState.getString("fbId");
-//        String name = savedInstanceState.getString("name");
-//        int level = savedInstanceState.getInt("level");
-//        ArrayList<String> ratedReview = savedInstanceState.getStringArrayList("ratedReview");
-//        auth.setUser(new User(id, fbId, name, level, false, ratedReview));
-//    }
 
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-
+        invalidateOptionsMenu();
         if (Profile.isLoggedIn()&& Profile.getUser().getLevel()!=2) { //logged in
+            String fullName = Profile.getUser().getName();
             MenuInflater inflater = getMenuInflater();
             inflater.inflate(R.menu.logged_in_menu, menu);
-            MenuItem menuItem = menu.findItem(R.id.nameFB);
+            menuItem = menu.findItem(R.id.profile);
+            menuItem.setTitle(fullName);
+            if(fbPic==null) new GetProfilePicTask().execute();
+            menuItem.setIcon(fbPic);
+
+
+
         } else { //guest
             getMenuInflater().inflate(R.menu.guest_menu, menu);
+            invalidateOptionsMenu();
         }
         return true;
     }
@@ -86,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        invalidateOptionsMenu();
+
         int id = item.getItemId();
 
 
@@ -98,10 +73,8 @@ public class MainActivity extends AppCompatActivity {
             finish();
             return true;
         }
-        else if (id == R.id.login_icon) {
-            Toast.makeText(MainActivity.this, "Loading...", Toast.LENGTH_SHORT).show();
+        else if (id == R.id.login_menu) {
             startActivity(new Intent(this, Profile.class));
-            invalidateOptionsMenu();
             return true;
         }
 
@@ -136,7 +109,25 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume(){
         super.onResume();
+        invalidateOptionsMenu();
 
+    }
+    class GetProfilePicTask extends AsyncTask{
+
+        @Override
+        protected Object doInBackground(Object[] params) {
+            InputStream inputStream = null;
+
+            try {
+                inputStream = new URL(Profile.getPicURI()).openStream();
+                fbPic = Drawable.createFromStream(inputStream, "facebook-pictures");
+                invalidateOptionsMenu();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            return null;
+        }
     }
 
 }

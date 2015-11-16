@@ -2708,7 +2708,6 @@ containing a value of this type.
         public static final int action_mode_bar_stub=0x7f0d006c;
         public static final int action_mode_close_button=0x7f0d0052;
         public static final int action_settings=0x7f0d00b6;
-        public static final int actions=0x7f0d00b9;
         public static final int activity_chooser_view_content=0x7f0d0053;
         public static final int adjust_height=0x7f0d0032;
         public static final int adjust_width=0x7f0d0033;
@@ -2767,6 +2766,7 @@ containing a value of this type.
         public static final int fill_vertical=0x7f0d0021;
         public static final int fixed=0x7f0d0042;
         public static final int guest_button=0x7f0d0084;
+        public static final int guest_name=0x7f0d00b7;
         public static final int home=0x7f0d0004;
         public static final int homeAsUp=0x7f0d000f;
         public static final int home_icon=0x7f0d00b5;
@@ -2795,7 +2795,7 @@ containing a value of this type.
         public static final int list_item=0x7f0d0057;
         public static final int locate=0x7f0d0094;
         public static final int login_button=0x7f0d0083;
-        public static final int login_icon=0x7f0d00b8;
+        public static final int login_menu=0x7f0d00b8;
         public static final int logout_icon=0x7f0d00ba;
         public static final int longitude_text=0x7f0d0093;
         public static final int map=0x7f0d0091;
@@ -2804,7 +2804,6 @@ containing a value of this type.
         public static final int middle=0x7f0d0031;
         public static final int mini=0x7f0d002f;
         public static final int multiply=0x7f0d0026;
-        public static final int nameFB=0x7f0d00b7;
         public static final int navigation_header_container=0x7f0d00a1;
         public static final int nearby=0x7f0d008f;
         public static final int never=0x7f0d003a;
@@ -2818,6 +2817,7 @@ containing a value of this type.
         public static final int parentPanel=0x7f0d005c;
         public static final int pick_image_button=0x7f0d0095;
         public static final int pin=0x7f0d001b;
+        public static final int profile=0x7f0d00b9;
         public static final int progress_circular=0x7f0d0006;
         public static final int progress_horizontal=0x7f0d0007;
         public static final int radio=0x7f0d006a;
@@ -3008,6 +3008,8 @@ containing a value of this type.
         public static final int guest_icon=0x7f030001;
         public static final int home_icon=0x7f030002;
         public static final int ic_launcher=0x7f030003;
+        public static final int logout_icon=0x7f030004;
+        public static final int menu=0x7f030005;
     }
     public static final class string {
         public static final int Ladkrabang_Country=0x7f060045;
