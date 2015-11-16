@@ -16,11 +16,12 @@
         <Button
             android:layout_width="fill_parent"
             android:layout_height="60dp"
-            android:background="@drawable/m_list1"
+            android:background="@drawable/m_list1111"
             android:longClickable="false"
             android:textColor="#ff000000"
             android:padding="10sp"
             android:layout_weight="0.70"
+            android:onClick=" Menu_Announce"
             android:layout_marginRight="2dp"
             android:layout_marginLeft="3dp" />
 

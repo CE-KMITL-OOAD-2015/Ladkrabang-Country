@@ -34,7 +34,7 @@ public class PostActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.post_activity);
         if(Profile.getUser().getLevel()== User.GUEST){
-            Toast.makeText(PostActivity.this, "You must login before post.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(PostActivity.this, "Youl must login before post.", Toast.LENGTH_SHORT).show();
             finish();
             startActivity(new Intent(this, Profile.class));
         }

@@ -50,10 +50,15 @@ public class Announce_View extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    /*public void Info_announce(View view)
+    public void Info_announce(View view)
     {
         Intent intent = new Intent(this,Announce_Info.class);
         startActivity(intent);
-    }*/
+    }
+    public void create_announce(View view)
+    {
+        Intent intent = new Intent(this,Announce_Create.class);
+        startActivity(intent);
+    }
 
 }

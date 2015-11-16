@@ -92,6 +92,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,Main_Review.class);
         startActivity(intent);
     }
+    public void Menu_Announce(View view)
+    {
+        Intent intent = new Intent(this,Announce_View.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onDestroy(){
