@@ -12,7 +12,7 @@ import com.awakenguys.kmitl.ladkrabangcountry.model.User;
 public class Profile extends Activity {
     private static User user = null;
     private static Context mContext;
-    private static String picURI;
+    private static String picURI = null;
 
     public static String getPicURI() {
         return picURI;
@@ -23,24 +23,21 @@ public class Profile extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loading);
         mContext = this;
-        if(user==null||user.getLevel()==2) login();
+        if(user==null||user.getLevel()==User.GUEST) login();
         else finish();
-
     }
-
-
 
     public static boolean isLoggedIn() {
         return user != null;
     }
 
     public static User getUser() {
-
         return user;
     }
 
     public static void logout() {
         user = null;
+        picURI = null;
     }
 
 
@@ -58,8 +55,8 @@ public class Profile extends Activity {
                 String fbId = data.getStringExtra("fbId");
                 String fullName = data.getStringExtra("fullName");
                 picURI = data.getStringExtra("profileImg");
-                if(fullName.equals("Guest")) user = new User(null,"Guest",2);
-                else user = new User(data.getStringExtra(fbId), fullName, 1);
+                if(fullName.equals("Guest")) user = new User(null,"Guest",User.GUEST);
+                else user = new User(fbId, fullName, User.MEMBER);
                 new LogInTask().execute(user);
             }
         }else Toast.makeText(Profile.this, "error!"
@@ -84,15 +81,12 @@ public class Profile extends Activity {
             setUser(user);
             ((Activity)mContext).finish();
             Toast.makeText(Profile.this, "Welcome "+user.getName(), Toast.LENGTH_SHORT).show();
-
         }
 
         private User login(User login_user) {
-            //LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile", "user_friends", "email"));
             ContentProvider provider = new ContentProvider();
             User user = provider.getUserByFbId(login_user.getFbId());
             try {
-
                 if (user == null) {
                     if (login_user.getLevel() != 2) {
                         HTTPRequest rq = new HTTPRequest();
@@ -109,9 +103,5 @@ public class Profile extends Activity {
                 return user;
             }
         }
-
-
-
-
     }
 }

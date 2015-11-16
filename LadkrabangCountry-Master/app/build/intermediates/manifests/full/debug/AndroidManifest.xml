@@ -167,6 +167,18 @@
         </activity>
         <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.Announce_Create" >
         </activity>
+        <activity
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.VanMap2"
+            android:label="@string/title_activity_maps_2" >
+        </activity>
+        <activity
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.VanMap"
+            android:label="@string/title_activity_maps_" >
+        </activity>
+        <activity
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.MotorcycleMap"
+            android:label="@string/title_activity_maps_activity__motorcycle" >
+        </activity>
     </application>
 
 </manifest>

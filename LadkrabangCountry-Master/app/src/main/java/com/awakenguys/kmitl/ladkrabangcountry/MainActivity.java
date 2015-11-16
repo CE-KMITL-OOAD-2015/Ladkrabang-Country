@@ -26,9 +26,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        FacebookSdk.sdkInitialize(getApplicationContext());
-        AccessToken accessToken = AccessToken.getCurrentAccessToken();
-        //if (accessToken == null) {
         startActivity(new Intent(this, Profile.class));
         invalidateOptionsMenu();
     }
@@ -46,9 +43,6 @@ public class MainActivity extends AppCompatActivity {
             menuItem.setTitle(fullName);
             if(fbPic==null) new GetProfilePicTask().execute();
             menuItem.setIcon(fbPic);
-
-
-
         } else { //guest
             getMenuInflater().inflate(R.menu.guest_menu, menu);
             invalidateOptionsMenu();
@@ -77,8 +71,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, Profile.class));
             return true;
         }
-
-
         return super.onOptionsItemSelected(item);
     }
 

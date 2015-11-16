@@ -36,8 +36,6 @@ public class PlaceList extends AppCompatActivity {
         emptyView.setVisibility(View.INVISIBLE);
         adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, placeNames);
-        //if(placeNames.size()==0) listView.setVisibility(View.INVISIBLE);
-
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -51,7 +49,6 @@ public class PlaceList extends AppCompatActivity {
             }
 
         });
-
         showPlaceListTask = new ShowPlaceListTask().execute(catName);
     }
 
@@ -112,8 +109,6 @@ public class PlaceList extends AppCompatActivity {
 
                 List<Place> place = provider.getPlacesByNameLike(params[0]);
                 return place;
-
-
         }
 
         @Override
@@ -131,8 +126,6 @@ public class PlaceList extends AppCompatActivity {
                         + ", " + place.getLng() + " (" + place.getName() + ")"));
         intent.setComponent(new ComponentName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity"));
         startActivity(intent);
-
-
     }
 
 

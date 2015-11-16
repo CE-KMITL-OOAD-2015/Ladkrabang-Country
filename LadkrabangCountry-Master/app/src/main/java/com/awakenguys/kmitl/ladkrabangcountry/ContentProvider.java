@@ -102,7 +102,7 @@ public class ContentProvider {
         }
         else {
             try {
-                traverson = new Traverson(new URI(url + "places/search/findByCategoryOrderByNameAsc?category=" + str.replace(" ","+")), MediaTypes.HAL_JSON);
+                traverson = new Traverson(new URI(url + "places/search/findByCategoryLikeOrderByNameAsc?category=" + str.replace(" ","+")), MediaTypes.HAL_JSON);
                 String name;
                 int i = 0;
                 while (true) {
@@ -132,7 +132,7 @@ public class ContentProvider {
                 name = traversalBuilder.toObject("$.name");
             }
             else {
-                traverson = new Traverson(new URI(url + "places/search/findByCategoryOrderByNameAsc?category=" + str), MediaTypes.HAL_JSON);
+                traverson = new Traverson(new URI(url + "places/search/findByCategoryLikeOrderByNameAsc?category=" + str), MediaTypes.HAL_JSON);
                 Traverson.TraversalBuilder traversalBuilder = traverson
                         .follow("$._embedded.places[" + index + "]._links.self.href");
                 name = traversalBuilder.toObject("$.name");

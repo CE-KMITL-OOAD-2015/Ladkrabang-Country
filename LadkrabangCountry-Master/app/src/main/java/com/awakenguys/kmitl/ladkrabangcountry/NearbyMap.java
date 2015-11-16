@@ -42,7 +42,6 @@ public class NearbyMap extends FragmentActivity implements OnMapReadyCallback {
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-
     }
 
 
@@ -54,7 +53,6 @@ public class NearbyMap extends FragmentActivity implements OnMapReadyCallback {
         } else {
             Toast.makeText(NearbyMap.this, "Permission denied.", Toast.LENGTH_SHORT).show();
         }
-
 
         this.map = map;
         locationManager = (LocationManager) getSystemService
@@ -70,7 +68,6 @@ public class NearbyMap extends FragmentActivity implements OnMapReadyCallback {
 
         } else {
             LatLng mapCenter = new LatLng(myLocation.getLatitude(), myLocation.getLongitude());
-            //map.addMarker(new MarkerOptions().position(mapCenter).title("Marker in Sydney"));
             map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter, 16));
             blueMarker = map.addMarker(new MarkerOptions().position(mapCenter).title("Your last known location")
                     .icon(BitmapDescriptorFactory
@@ -81,7 +78,6 @@ public class NearbyMap extends FragmentActivity implements OnMapReadyCallback {
         locationManager.requestLocationUpdates(LocationManager.PASSIVE_PROVIDER, 1000, 0, new android.location.LocationListener() {
                     @Override
                     public void onLocationChanged(Location location) {
-
                         myLocation = location;
                         blueMarker.remove();
                         LatLng latLng = new LatLng(myLocation.getLatitude(), myLocation.getLongitude());
@@ -127,13 +123,10 @@ public class NearbyMap extends FragmentActivity implements OnMapReadyCallback {
             }
         });
 
-
         map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
                 if (marker.getTitle().equals("Your last known location")) {
-
-
                     if(blueMarker.isInfoWindowShown()){
                         if (getPlacesTask != null) {
                             getPlacesTask.cancel(true);
@@ -167,11 +160,7 @@ public class NearbyMap extends FragmentActivity implements OnMapReadyCallback {
             }
 
         });
-
-
     }
-
-
 
     private class GetPlacesTask extends AsyncTask<Location,Place,List<Place>> {
         Toast progress;
@@ -190,7 +179,6 @@ public class NearbyMap extends FragmentActivity implements OnMapReadyCallback {
                 places.add(place);
                 publishProgress(place);
             }
-            
             return places;
         }
 

@@ -41,14 +41,12 @@ public class Tran_Van extends ActionBarActivity {
     }
     public void VanMap1(View view)
     {
-        Intent intent = new Intent(this,Van_Map_1.class);
+        Intent intent = new Intent(this,VanMap.class);
         startActivity(intent);
-
     }
     public void VanMap2(View view)
     {
-        Intent intent = new Intent(this,Van_Map_2.class);
+        Intent intent = new Intent(this,VanMap2.class);
         startActivity(intent);
-
     }
 }

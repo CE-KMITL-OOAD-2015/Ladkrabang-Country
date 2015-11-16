@@ -3,7 +3,6 @@ package com.awakenguys.kmitl.ladkrabangcountry;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -97,7 +96,7 @@ public class Main_Tran extends AppCompatActivity implements View.OnClickListener
     }
 
     public void Menu_Motorcycle(View view) {
-        Intent intent = new Intent(this, Tran_Motorcycle.class);
+        Intent intent = new Intent(this, MotorcycleMap.class);
         startActivity(intent);
     }
 

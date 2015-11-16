@@ -10,6 +10,9 @@ public class User {
     private String name;
     private  int level;
     private boolean banned;
+    public static final int ADMIN = 0;
+    public static final int MEMBER = 1;
+    public static final int GUEST = 2;
     ArrayList<String> ratedReviews = new ArrayList<String>();
 
     public User() {

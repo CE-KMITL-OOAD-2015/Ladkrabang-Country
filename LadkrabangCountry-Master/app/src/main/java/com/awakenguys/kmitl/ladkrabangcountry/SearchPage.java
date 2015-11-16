@@ -39,7 +39,6 @@ public class SearchPage extends AppCompatActivity {
         searchView.setSubmitButtonEnabled(true);
         emptyView = (TextView) findViewById(R.id.emptyList);
         emptyView.setVisibility(View.INVISIBLE);
-
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener(){
 
             @Override
@@ -71,7 +70,6 @@ public class SearchPage extends AppCompatActivity {
                 return true;
             }
         });
-
         placeNames = new ArrayList<String>();
 
         //moved from show place list
@@ -118,8 +116,6 @@ public class SearchPage extends AppCompatActivity {
             startActivity(new Intent(this, MainActivity.class));
             return true;
         }
-
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -156,7 +152,6 @@ public class SearchPage extends AppCompatActivity {
             super.onProgressUpdate(values);
             placeNames.add(values[0]);
             adapter.notifyDataSetChanged();
-
         }
 
         @Override
@@ -191,8 +186,6 @@ public class SearchPage extends AppCompatActivity {
             ContentProvider provider = new ContentProvider();
                 List<Place> place = provider.getPlacesByNameLike(params[0].replace(" ","+"));
                 return place;
-
-
         }
 
         @Override
