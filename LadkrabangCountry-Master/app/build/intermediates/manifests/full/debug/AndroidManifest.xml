@@ -110,11 +110,6 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.awakenguys.kmitl.ladkrabangcountry.Tran_Motorcycle"
-            android:label="@string/title_activity_tran__motorcycle"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.First"
             android:label="@string/Ladkrabang_Country"
             android:screenOrientation="portrait" >
@@ -135,22 +130,12 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.awakenguys.kmitl.ladkrabangcountry.Van_Map_1"
-            android:label="@string/title_activity_van__map_1"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.awakenguys.kmitl.ladkrabangcountry.Van_Map_2"
-            android:label="@string/title_activity_van__map_2"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.SearchPage"
             android:label="@string/title_activity_search_page"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.awakenguys.kmitl.ladkrabangcountry.Post"
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.PostActivity"
             android:label="@string/title_activity_post"
             android:screenOrientation="portrait" >
         </activity>
@@ -168,6 +153,18 @@
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Tran_Bus_Second"
             android:label="@string/title_activity_tran__bus__second"
             android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.Maps_Activity2"
+            android:label="@string/title_activity_maps_2" >
+        </activity>
+        <activity
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.Maps_Activity"
+            android:label="@string/title_activity_maps_" >
+        </activity>
+        <activity
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.MapsActivity_Motorcycle"
+            android:label="@string/title_activity_maps_activity__motorcycle" >
         </activity>
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity

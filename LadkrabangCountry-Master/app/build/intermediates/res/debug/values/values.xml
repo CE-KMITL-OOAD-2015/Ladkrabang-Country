@@ -511,6 +511,9 @@
     <string name="title_activity_main__tran">Transportation</string>
     <string name="title_activity_main_building">Building</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps_">Map</string>
+    <string name="title_activity_maps_2">Map</string>
+    <string name="title_activity_maps_activity__motorcycle">Map</string>
     <string name="title_activity_menu__van">Menu_Van</string>
     <string name="title_activity_post">Share</string>
     <string name="title_activity_search_page">SearchPage</string>

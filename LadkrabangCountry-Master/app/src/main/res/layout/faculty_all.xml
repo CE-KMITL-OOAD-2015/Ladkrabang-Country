@@ -6,6 +6,7 @@
     tools:context="com.awakenguys.kmitl.ladkrabangcountry"
     tools:ignore="MergeRootFrame">
 
+
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="fill_parent"
@@ -28,7 +29,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight=".30"
-                android:background="#ffc258"
                 android:text="คณะวิศวกรรมศาสตร์"
                 android:textColor="#ff030001"
                 android:tag="วิศวกรรมศาสตร์"
@@ -39,7 +39,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight=".70"
-                android:background="#fde091"
                 android:longClickable="false"
                 android:text="คณะวิทยาศาสตร์"
                 android:textColor="#ff000000"
@@ -49,7 +48,6 @@
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffc258"
                 android:text="คณะสถาปัตยกรรมศาสตร์"
                 android:textColor="#ff030001"
                 android:tag="สถาปัตยกรรมศาสตร์"
@@ -58,7 +56,6 @@
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="#fde091"
                 android:text="คณะครุศาสตร์อุตสาหกรรม"
                 android:textColor="#ff030001"
                 android:tag="ครุศาสตร์อุตสาหกรรม"
@@ -68,7 +65,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight=".70"
-                android:background="#ffc258"
                 android:text="คณะอุตสาหกรรมการเกษตร"
                 android:textColor="#ff030001"
                 android:tag="อุตสาหกรรมการเกษตร"
@@ -77,7 +73,6 @@
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="#fde091"
                 android:text="คณะเทคโนโลยีการเกษตร"
                 android:textColor="#ff030001"
                 android:tag="เทคโนโลยีการเกษตร"
@@ -86,7 +81,6 @@
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffc258"
                 android:text="คณะเทคโนโลยีสารสนเทศ"
                 android:textColor="#ff030001"
                 android:tag="เทคโนโลยีสารสนเทศ"
@@ -95,7 +89,6 @@
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="#fde091"
                 android:text="วิทยาลัยนานาชาติ"
                 android:textColor="#ff030001"
                 android:tag="วิทยาลัยนานาชาติ"
@@ -104,7 +97,6 @@
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffc258"
                 android:text="วิทยาลัยนาโนเทคโนโลยี"
                 android:textColor="#ff030001"
                 android:tag="วิทยาลัยนาโนเทคโนโลยี"
@@ -113,7 +105,6 @@
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="#fde091"
                 android:text="วิทยาลัยการบริหารและการจัดการ"
                 android:textColor="#ff030001"
                 android:tag="วิทยาลัยการบริหารและการจัดการ"
@@ -122,7 +113,6 @@
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffc258"
                 android:text="วิทยาลัยนวัตกรรมการจัดการข้อมูล"
                 android:textColor="#ff030001"
                 android:tag="วิทยาลัยนวัตกรรมการจัดการข้อมูล"
@@ -131,7 +121,6 @@
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="#fde091"
                 android:text="ทั่วไป"
                 android:textColor="#ff030001"
                 android:tag="ทั่วไป"
@@ -140,7 +129,6 @@
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffc258"
                 android:text="ทั้งหมด"
                 android:textColor="#ff030001"
                 android:tag=""
