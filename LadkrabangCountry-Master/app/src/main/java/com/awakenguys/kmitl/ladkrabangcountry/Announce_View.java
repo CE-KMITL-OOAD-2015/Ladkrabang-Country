@@ -16,7 +16,7 @@ public class Announce_View extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_announce__view);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+/*        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -26,7 +26,7 @@ public class Announce_View extends AppCompatActivity {
 
             }
 
-        });
+        });*/
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
