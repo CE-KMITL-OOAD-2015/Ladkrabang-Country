@@ -32,14 +32,14 @@ public class PostActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_post);
+        setContentView(R.layout.post_activity);
         if(Profile.getUser().getLevel()== User.GUEST){
             Toast.makeText(PostActivity.this, "You must login before post.", Toast.LENGTH_SHORT).show();
             finish();
             startActivity(new Intent(this, Profile.class));
         }
 
-        Button button = (Button) findViewById(R.id.pick_image_button);
+        Button button = (Button) findViewById(R.id.postButton);
         text = (TextView) findViewById(R.id.text);
         imageView = (ImageView) findViewById(R.id.image);
         button.setOnClickListener(new View.OnClickListener() {
