@@ -38,7 +38,7 @@ public class Announce_Create extends AppCompatActivity {
     }
     public void Menu_Post(View view)
     {
-        Intent intent = new Intent(this,PostActivity.class);
+        Intent intent = new Intent(this,Review_Create.class);
         startActivity(intent);
     }
     //------------------------------------------------------

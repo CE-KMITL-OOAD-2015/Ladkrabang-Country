@@ -9,10 +9,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
-import com.facebook.AccessToken;
-import com.facebook.FacebookSdk;
 import com.facebook.login.LoginManager;
 
 import java.io.InputStream;
@@ -89,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void Menu_Reviewing(View view)
     {
-        Intent intent = new Intent(this,Main_Review.class);
+        Intent intent = new Intent(this,Review_View.class);
         startActivity(intent);
     }
     public void Menu_Announce(View view)

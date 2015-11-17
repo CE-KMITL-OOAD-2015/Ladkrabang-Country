@@ -25,14 +25,7 @@
         android:layout_centerHorizontal="true" />
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-        <ListView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/myListView"
-            >
-        </ListView>
-    </ScrollView>
+        android:layout_height="fill_parent"></ScrollView>
     <include layout="@layout/content_announce__listview"
         android:id="@+id/fix" />
     <android.support.design.widget.FloatingActionButton
@@ -41,9 +34,20 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:onClick="create_announce"
-        android:src="@drawable/com_facebook_button_like_icon_selected"
+        android:src="@drawable/add"
         android:layout_alignBottom="@+id/fix"
         android:layout_alignRight="@+id/fix"
-        android:layout_alignEnd="@+id/fix" />
+        android:layout_alignEnd="@+id/fix"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/myListView"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+    </ListView>
 </RelativeLayout>
 

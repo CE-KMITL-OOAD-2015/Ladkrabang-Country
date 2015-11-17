@@ -98,12 +98,12 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".PostActivity"
+            android:name=".Review_Create"
             android:label="@string/title_activity_post"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".Main_Review"
+            android:name=".Review_View"
             android:label="@string/title_activity_main__review"
             android:screenOrientation="portrait" >
         </activity>
@@ -114,7 +114,7 @@
         </activity>
         <activity
             android:name=".Announce_View"
-            android:label="@string/title_activity_announce__view">
+            android:label="@string/title_activity_announce__view" >
         </activity>
         <activity android:name=".Announce_Create" >
         </activity>
@@ -138,10 +138,7 @@
             android:name=".Announce_Info"
             android:label="@string/title_activity_announce__info" >
         </activity>
-        <activity
-            android:name=".Announce_Listview"
-            android:label="@string/title_activity_announce__listview"
-            android:theme="@style/AppTheme.NoActionBar" >
+        <activity android:name=".Review_Info" >
         </activity>
     </application>
 

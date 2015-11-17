@@ -5,6 +5,145 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.awakenguys.kmitl.ladkrabangcountry.ContactUs"
-    android:background="@drawable/contact_us">
+    android:background="@drawable/frame500">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="สถาบันพระจอมเกล้าเจ้าคุณทหารลาดกระบัง"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="เลขที่ 1 ซอยฉลองกรุง 1 เขตลาดกระบัง"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="กรุงเทพมหานคร ประเทศไทย 10250"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="100dp"
+        android:text="ติดต่อสถาบัน" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="120dp"
+        android:text="โทรศัพท์" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:textSize="15dp"
+        android:layout_marginTop="120dp"
+        android:text="                 023298000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="140dp"
+        android:text="โทรศัพท์" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:textSize="15dp"
+        android:layout_marginTop="140dp"
+        android:text="                 023298099" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="160dp"
+        android:text="ติดต่องานประชาสัมพันธ E-mail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="180dp"
+        android:text="E-mail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="email"
+        android:textSize="15dp"
+        android:layout_marginTop="180dp"
+        android:text="                 pr@kmitl.ac.th" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="200dp"
+        android:text="ติดต่องานทะเบียนนักศึกษา" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="220dp"
+        android:text="E-mail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="email"
+        android:textSize="15dp"
+        android:layout_marginTop="220dp"
+        android:text="                 registra@kmitl.ac.th" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="260dp"
+        android:text="ติดต่อผู้ดูแลแอพพลิเคชั่น" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="280dp"
+        android:text="โทรศัพท์" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:textSize="15dp"
+        android:layout_marginTop="280dp"
+        android:text="                 0806296245" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="300dp"
+        android:text="E-mail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="email"
+        android:textSize="15dp"
+        android:layout_marginTop="300dp"
+        android:text="                 s6011216@kmitl.ac.th" />
 
 </RelativeLayout>

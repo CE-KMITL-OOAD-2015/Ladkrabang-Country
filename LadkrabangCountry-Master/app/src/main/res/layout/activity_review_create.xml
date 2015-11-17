@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.awakenguys.kmitl.ladkrabangcountry.Review_Create">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:weightSum="1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <ImageButton
+            android:id="@+id/image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/camera"
+            android:background="@color/actionbar_background" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview"/>
+        <EditText
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:layout_weight="0.10"
+            android:id="@+id/edittext"
+            android:autoText="true"
+            android:hint="Topic"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/orange2"
+            android:textColorHint="#cbcbcb" />
+        <EditText
+            android:layout_width="355dp"
+            android:layout_height="155dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/edittext2"
+            android:hint="Content here"
+            android:gravity="top"
+            android:selectAllOnFocus="false"
+            android:textColor="@color/orange"
+            android:textColorHint="#cbcbcb"
+            android:layout_weight="0.08" />
+
+
+
+
+        //----------------button_Tag--------------
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            //----------------------------------------------
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/location2"
+                android:visibility="invisible"
+                android:id="@+id/locate"
+                android:background="#231F20"
+                android:layout_marginRight="16dp"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post"
+                android:background="@color/orange"
+                android:id="@+id/postButton"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+        </LinearLayout>
+</RelativeLayout>

@@ -26,7 +26,7 @@ public class Announce_View extends AppCompatActivity {
 
         listView = (ListView)findViewById(R.id.myListView);
         values = new String[] {
-                "Android","iphone","Waaa","sssss","ssssss","aaaaaa"
+                "ผักกาดๆๆๆๆๆๆมีงานที่ตึกโหล","ยังประกาศไม่ได้","โอ้ย","เหนื่อย","มาๆๆๆ","เลือ่นๆๆ","ประกาศต่อไป","ส่งพฤหัสนี้","ทำยังไง","ทำๆ","เส็จๆ","คะแนนเต็ม"
         };
         ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1,android.R.id.text1,values);

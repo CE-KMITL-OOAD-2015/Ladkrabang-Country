@@ -2815,7 +2815,7 @@ containing a value of this type.
         public static final int middle=0x7f0d0031;
         public static final int mini=0x7f0d002f;
         public static final int multiply=0x7f0d0026;
-        public static final int myListView=0x7f0d0089;
+        public static final int myListView=0x7f0d008a;
         public static final int navigation_header_container=0x7f0d00a9;
         public static final int nearby=0x7f0d0099;
         public static final int never=0x7f0d003a;
@@ -2830,7 +2830,7 @@ containing a value of this type.
         public static final int pin=0x7f0d001b;
         public static final int postButton=0x7f0d00c1;
         public static final int profile=0x7f0d00c7;
-        public static final int profile_edit_fab=0x7f0d008a;
+        public static final int profile_edit_fab=0x7f0d0089;
         public static final int progress_circular=0x7f0d0006;
         public static final int progress_horizontal=0x7f0d0007;
         public static final int radio=0x7f0d006a;
@@ -2941,7 +2941,7 @@ containing a value of this type.
         public static final int activity_loading=0x7f04001f;
         public static final int activity_login=0x7f040020;
         public static final int activity_main=0x7f040021;
-        public static final int activity_main__review=0x7f040022;
+        public static final int activity_review_View =0x7f040022;
         public static final int activity_main__tran=0x7f040023;
         public static final int activity_main_place=0x7f040024;
         public static final int activity_map=0x7f040025;
@@ -2989,7 +2989,7 @@ containing a value of this type.
         public static final int notification_template_media=0x7f04004f;
         public static final int notification_template_part_chronometer=0x7f040050;
         public static final int notification_template_part_time=0x7f040051;
-        public static final int post_activity=0x7f040052;
+        public static final int activity_review_create =0x7f040052;
         public static final int profile_picture=0x7f040053;
         public static final int select_dialog_item_material=0x7f040054;
         public static final int select_dialog_multichoice_material=0x7f040055;
