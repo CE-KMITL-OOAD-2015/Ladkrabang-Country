@@ -108,12 +108,12 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.awakenguys.kmitl.ladkrabangcountry.PostActivity"
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.Review_Create"
             android:label="@string/title_activity_post"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.awakenguys.kmitl.ladkrabangcountry.Main_Review"
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.Review_View"
             android:label="@string/title_activity_main__review"
             android:screenOrientation="portrait" >
         </activity>
@@ -148,10 +148,7 @@
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Announce_Info"
             android:label="@string/title_activity_announce__info" >
         </activity>
-        <activity
-            android:name="com.awakenguys.kmitl.ladkrabangcountry.Announce_Listview"
-            android:label="@string/title_activity_announce__listview"
-            android:theme="@style/AppTheme.NoActionBar" >
+        <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.Review_Info" >
         </activity>
     </application>
 

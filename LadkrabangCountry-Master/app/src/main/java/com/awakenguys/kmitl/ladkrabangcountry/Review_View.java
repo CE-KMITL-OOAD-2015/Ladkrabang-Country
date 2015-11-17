@@ -13,7 +13,7 @@ public class Review_View extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_review_View);
+        setContentView(R.layout.activity_review_view);
     }
 
 
