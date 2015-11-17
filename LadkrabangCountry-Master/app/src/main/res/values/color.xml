@@ -9,7 +9,8 @@
     <color name="light_blue">#78e7bc</color>
     <color name="green">#a7f039</color>
     <color name="yellow">#f2f26f</color>
-    <color name="gray">#92a989</color>
+    <color name="light_grey">#cfffffff</color>
+    <color name="gray">#ffe0e0e0</color>
     <color name="gray2">#8c8c8c</color>
-    <color name="actionbar_background">#ffffff</color>
+    <color name="white">#ffffff</color>
 </resources>

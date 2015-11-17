@@ -111,8 +111,8 @@
     <orderEntry type="library" exported="" name="appcompat-v7-23.1.0" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-23.1.0" level="project" />
     <orderEntry type="library" exported="" name="jackson-core-2.6.3" level="project" />
-    <orderEntry type="library" exported="" name="spring-expression-4.0.9.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="spring-hateoas-0.19.0.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="spring-expression-4.0.9.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="spring-android-rest-template-1.0.1.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="design-23.1.0" level="project" />
     <orderEntry type="library" exported="" name="jackson-databind-2.6.3" level="project" />
@@ -123,5 +123,6 @@
     <orderEntry type="library" exported="" name="facebook-android-sdk-4.7.0" level="project" />
     <orderEntry type="library" exported="" name="slf4j-api-1.7.10" level="project" />
     <orderEntry type="library" exported="" name="spring-context-4.0.9.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="org.apache.http.legacy-android-23" level="project" />
   </component>
 </module>

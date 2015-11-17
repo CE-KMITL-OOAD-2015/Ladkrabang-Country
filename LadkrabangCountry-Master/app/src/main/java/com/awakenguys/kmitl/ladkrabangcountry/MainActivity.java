@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.awakenguys.kmitl.ladkrabangcountry.model.Review;
 import com.facebook.AccessToken;
 import com.facebook.FacebookSdk;
 import com.facebook.login.LoginManager;
@@ -89,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void Menu_Reviewing(View view)
     {
-        Intent intent = new Intent(this,Main_Review.class);
+        Intent intent = new Intent(this,ReviewList.class);
         startActivity(intent);
     }
 

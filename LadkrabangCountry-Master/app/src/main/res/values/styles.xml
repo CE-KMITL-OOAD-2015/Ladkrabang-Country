@@ -5,7 +5,7 @@
         <item name="colorPrimary">@color/orange</item>
         <item name="colorPrimaryDark">@color/dark_orange</item>
         <item name="colorAccent">@color/orange2</item>
-        <item name="android:windowBackground">@color/actionbar_background</item>
+        <item name="android:windowBackground">@color/white</item>
     </style>
 
 

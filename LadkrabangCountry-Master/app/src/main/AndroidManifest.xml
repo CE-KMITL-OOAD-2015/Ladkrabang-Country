@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <!--
  The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -22,13 +23,11 @@
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <!-- set 1st page here -->
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name="com.facebook.FacebookActivity"
@@ -47,12 +46,10 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="@string/google_maps_key" />
 
-
         <activity android:name=".CatList" >
         </activity>
         <activity android:name=".PlaceList" />
         <activity android:name=".Profile" />
-
         <activity
             android:name=".Building"
             android:screenOrientation="portrait" >
@@ -67,10 +64,8 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-
             android:name=".Main_Place"
             android:label="@string/title_activity_main_building" >
-
         </activity>
         <activity
             android:name=".Main_Tran"
@@ -101,19 +96,16 @@
             android:name=".Tran_Bus"
             android:label="@string/title_activity_tran__bus"
             android:screenOrientation="portrait" >
-
         </activity>
         <activity
             android:name=".Tran_Motorcycle"
             android:label="@string/title_activity_tran__motorcycle"
             android:screenOrientation="portrait" >
-
         </activity>
         <activity
             android:name=".LogInActivity"
             android:label="@string/Ladkrabang_Country"
             android:screenOrientation="portrait" >
-
         </activity>
         <activity
             android:name=".TableTrainOut"
@@ -121,7 +113,6 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-
             android:name=".ContactUs"
             android:label="@string/title_activity_contact_us" >
         </activity>
@@ -133,7 +124,6 @@
         <activity
             android:name=".Van_Map_2"
             android:label="@string/title_activity_van__map_2"
-
             android:screenOrientation="portrait" >
         </activity>
         <activity
@@ -162,14 +152,12 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-
             android:name=".Announce_View"
             android:label="@string/title_activity_announce__view"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity android:name=".Announce_Create" >
         </activity>
-
         <activity
             android:name=".VanMap2"
             android:label="@string/title_activity_maps_2" >
@@ -181,9 +169,9 @@
         <activity
             android:name=".MotorcycleMap"
             android:label="@string/title_activity_maps_activity__motorcycle" >
-
+        </activity>
+        <activity android:name=".ReviewList" >
         </activity>
     </application>
-
 
 </manifest>

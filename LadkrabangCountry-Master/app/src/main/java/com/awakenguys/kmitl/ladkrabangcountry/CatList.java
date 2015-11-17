@@ -38,8 +38,7 @@ public class CatList extends AppCompatActivity {
 
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, catList);
-        TextView emptyView = (TextView) findViewById(R.id.emptyList);
-        emptyView.setVisibility(View.INVISIBLE);
+
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
