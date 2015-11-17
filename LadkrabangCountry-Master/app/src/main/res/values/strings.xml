@@ -70,5 +70,6 @@
     <string name="title_activity_maps_2">Map</string>
     <string name="title_activity_maps_">Map</string>
     <string name="title_activity_maps_activity__motorcycle">Map</string>
+    <string name="title_activity_train_arrival_time">TrainArrivalTime</string>
 
 </resources>

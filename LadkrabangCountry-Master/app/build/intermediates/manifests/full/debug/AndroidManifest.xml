@@ -179,6 +179,15 @@
             android:name="com.awakenguys.kmitl.ladkrabangcountry.MotorcycleMap"
             android:label="@string/title_activity_maps_activity__motorcycle" >
         </activity>
+        <activity
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.TrainArrivalTime"
+            android:label="@string/title_activity_train_arrival_time"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.model.TrainArrivalTimeActivity" >
+        </activity>
+        <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.TrainArrivalTimeActivity" >
+        </activity>
     </application>
 
 </manifest>

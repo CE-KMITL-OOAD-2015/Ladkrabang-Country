@@ -2,193 +2,193 @@
 <items version="2" >
 
     <item
-        jar="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-baf79da9ada2a578d4570129bfcebeb691e9b59b.jar" />
-    </item>
-    <item
-        jar="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.3.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="01a90bbb9495a8bbf6f3cfdf12f1b35caaa9524b">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-cdc87f067477048ebff344d20c505d81d5fd17cc.jar" />
-    </item>
-    <item
-        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\net.minidev\json-smart\2.2\53200a9d80fff3106dc435de1350cdd20b757819\json-smart-2.2.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="53200a9d80fff3106dc435de1350cdd20b757819">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\json-smart-2.2-61d5db7aba1f9d9d6d58627583a52152d17b0013.jar" />
-    </item>
-    <item
-        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.6.0\a0990e2e812ac6639b6ce955c91b13228500476e\jackson-annotations-2.6.0.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="a0990e2e812ac6639b6ce955c91b13228500476e">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\jackson-annotations-2.6.0-be7c8862cdb513885067ef6a6b33980d4c1367b6.jar" />
-    </item>
-    <item
-        jar="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-6b32ac50b2572f121786af2635d1d4bd5cf55435.jar" />
-    </item>
-    <item
-        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\org.springframework.android\spring-android-rest-template\1.0.1.RELEASE\e132d929bd181941f79b0d63edafb8a86ae6fd33\spring-android-rest-template-1.0.1.RELEASE.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="e132d929bd181941f79b0d63edafb8a86ae6fd33">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-android-rest-template-1.0.1.RELEASE-ea62c658b8347deefb00069a6b9ea3693a4b37b7.jar" />
-    </item>
-    <item
-        jar="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="345a1b5cf5b144ce18ba6962bc66a7e2f26c1c1b">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-7db3bfca771db807a0f562040956fd3a496e111b.jar" />
-    </item>
-    <item
-        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.6.3\142ce64dcd709a4b5f6e7d71305a31d3893d077\jackson-core-2.6.3.jar"
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.6.3\142ce64dcd709a4b5f6e7d71305a31d3893d077\jackson-core-2.6.3.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="0142ce64dcd709a4b5f6e7d71305a31d3893d077">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\jackson-core-2.6.3-839a5b901b3d0562a27ea984257b800e61521398.jar" />
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\jackson-core-2.6.3-03c5bd72d05473f9fc4798aeb56ba5c537831345.jar" />
     </item>
     <item
-        jar="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.3.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="6d9ed9a288364688e7fcf6704776284dac1eb42e">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-99432159a7e13da0a3aa787c88460f530e0dbf47.jar" />
-    </item>
-    <item
-        jar="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.3.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="77f9593d979f4347344be233bd0d888315f79517">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-f522148f97887a1d6a9c18bda3d17b5aa2e57cac.jar" />
-    </item>
-    <item
-        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\org.springframework\spring-expression\4.0.9.RELEASE\256abd04e9c25f84ef98b18e4b89051b8ec68ba2\spring-expression-4.0.9.RELEASE.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="256abd04e9c25f84ef98b18e4b89051b8ec68ba2">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-expression-4.0.9.RELEASE-0b135c733bf60dedeedd0c9dd738e13d5459333b.jar" />
-    </item>
-    <item
-        jar="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-1aac72d4a805b07ff03b1b2785204ec5e6ca1035.jar" />
-    </item>
-    <item
-        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\org.springframework.hateoas\spring-hateoas\0.19.0.RELEASE\77b3b15c301d2517356b76304a2670df33ef2e2c\spring-hateoas-0.19.0.RELEASE.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="77b3b15c301d2517356b76304a2670df33ef2e2c">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-hateoas-0.19.0.RELEASE-636780e51fe88410f0f2b33f012abc9c7c1e1885.jar" />
-    </item>
-    <item
-        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\org.springframework\spring-context\4.0.9.RELEASE\13015a0ff2a9bed4686a0f1d8d85a2ae57034e3a\spring-context-4.0.9.RELEASE.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="13015a0ff2a9bed4686a0f1d8d85a2ae57034e3a">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-context-4.0.9.RELEASE-e4c105cad2816a42e90f9893bef641ac2d6cf298.jar" />
-    </item>
-    <item
-        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\aopalliance\aopalliance\1.0\235ba8b489512805ac13a8f9ea77a1ca5ebe3e8\aopalliance-1.0.jar"
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\aopalliance\aopalliance\1.0\235ba8b489512805ac13a8f9ea77a1ca5ebe3e8\aopalliance-1.0.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="0235ba8b489512805ac13a8f9ea77a1ca5ebe3e8">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\aopalliance-1.0-1499a03d4016d0760205bbca2b8ab82d02491a3b.jar" />
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\aopalliance-1.0-a5353eae7aeac5452c83b6cd87fa33b06b25655d.jar" />
     </item>
     <item
-        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\org.springframework.plugin\spring-plugin-core\1.2.0.RELEASE\f380e7760032e7d929184f8ad8a33716b75c0657\spring-plugin-core-1.2.0.RELEASE.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="f380e7760032e7d929184f8ad8a33716b75c0657">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-plugin-core-1.2.0.RELEASE-d57f4dfe2351ae295e33408fbd06622f0dd6485a.jar" />
-    </item>
-    <item
-        jar="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.7.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="5bdb38b7e4b6094891648c1dc4dc08589b460f97">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-89389447b31cb1ac884fbb606f50a253e88c2fca.jar" />
-    </item>
-    <item
-        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.0\6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd\bolts-android-1.2.0.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\bolts-android-1.2.0-a80f88c39f7e5ea0f59d0a1f454af48ca4b5c7a6.jar" />
-    </item>
-    <item
-        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\com.jayway.jsonpath\json-path\2.0.0\26b8555596b3fb9652c1ffe193fa9123945b32cc\json-path-2.0.0.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="26b8555596b3fb9652c1ffe193fa9123945b32cc">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\json-path-2.0.0-1985f3b5e6ed69efc45f8442a175c6d0c2c796ac.jar" />
-    </item>
-    <item
-        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.6.3\5c4fcae53dd82e2c549b8322d78c6ff47c94c8a8\jackson-databind-2.6.3.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="5c4fcae53dd82e2c549b8322d78c6ff47c94c8a8">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\jackson-databind-2.6.3-51c69f0482903687c1487787c1d7351538c0597e.jar" />
-    </item>
-    <item
-        jar="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-8df09346dc74f898e51afeeceb228d5f739abe59.jar" />
-    </item>
-    <item
-        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.10\5b338f206827d88acd890739f400a9b7664e5984\slf4j-api-1.7.10.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="5b338f206827d88acd890739f400a9b7664e5984">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\slf4j-api-1.7.10-f279107b45f892fbf8a1e5aefe937c5622abb128.jar" />
-    </item>
-    <item
-        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\org.springframework\spring-aop\4.0.9.RELEASE\f1a538c0ba95442ccf9a5e897d9a9895a637c539\spring-aop-4.0.9.RELEASE.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="f1a538c0ba95442ccf9a5e897d9a9895a637c539">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-aop-4.0.9.RELEASE-f16e42280b721935b87a3482c406302265e60cad.jar" />
-    </item>
-    <item
-        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-c820c2757b9c153a2fdd49f347072aa131e38fe7.jar" />
-    </item>
-    <item
-        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\org.springframework\spring-beans\4.0.9.RELEASE\295ecbf61e2313b4472947a1b3084022ba09e524\spring-beans-4.0.9.RELEASE.jar"
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\org.springframework\spring-beans\4.0.9.RELEASE\295ecbf61e2313b4472947a1b3084022ba09e524\spring-beans-4.0.9.RELEASE.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="295ecbf61e2313b4472947a1b3084022ba09e524">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-beans-4.0.9.RELEASE-bde0a3668c3ddbb39d4242914e5d68b004e90ea4.jar" />
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-beans-4.0.9.RELEASE-68ed4d585dfb141a4eb19efaaccdeff4dd515f97.jar" />
     </item>
     <item
-        jar="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jar="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-afb1ac6abd4da53a49508594a323bc9e00f0378d.jar" />
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-a394eab33bc673b487a6e98b3108d2f775433ff6.jar" />
     </item>
     <item
-        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\org.springframework\spring-core\4.2.2.RELEASE\963d6c9d0b546b6313fb51618ed5c080e8981ddc\spring-core-4.2.2.RELEASE.jar"
+        jar="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-4869c64bd7730dbbb4468c06e24c3ad3a4fcbc81.jar" />
+    </item>
+    <item
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\org.springframework\spring-aop\4.0.9.RELEASE\f1a538c0ba95442ccf9a5e897d9a9895a637c539\spring-aop-4.0.9.RELEASE.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f1a538c0ba95442ccf9a5e897d9a9895a637c539">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-aop-4.0.9.RELEASE-c8ff42eeb910885410e4d26e9a90cdaebc57ac39.jar" />
+    </item>
+    <item
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.0\6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd\bolts-android-1.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\bolts-android-1.2.0-2dcc4fe939471f6a32ee60a6f56ce39d2e599a36.jar" />
+    </item>
+    <item
+        jar="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="01a90bbb9495a8bbf6f3cfdf12f1b35caaa9524b">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-c0fb2189bbed8ff30e27d569c5350a19bc6a5ba2.jar" />
+    </item>
+    <item
+        jar="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.7.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5bdb38b7e4b6094891648c1dc4dc08589b460f97">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-3d7b47814a30b608af5506b2e8af240ee54b1aed.jar" />
+    </item>
+    <item
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.6.3\5c4fcae53dd82e2c549b8322d78c6ff47c94c8a8\jackson-databind-2.6.3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c4fcae53dd82e2c549b8322d78c6ff47c94c8a8">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\jackson-databind-2.6.3-4885812c3a5114f7482e610f811eb0c0754ff550.jar" />
+    </item>
+    <item
+        jar="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="345a1b5cf5b144ce18ba6962bc66a7e2f26c1c1b">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-38270325fbb58684b0977b6eb628a8da26b225ee.jar" />
+    </item>
+    <item
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\net.minidev\json-smart\2.2\53200a9d80fff3106dc435de1350cdd20b757819\json-smart-2.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="53200a9d80fff3106dc435de1350cdd20b757819">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\json-smart-2.2-764930c050558fb0f3ff127c9c4714391b9e1ea4.jar" />
+    </item>
+    <item
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\org.springframework\spring-context\4.0.9.RELEASE\13015a0ff2a9bed4686a0f1d8d85a2ae57034e3a\spring-context-4.0.9.RELEASE.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="13015a0ff2a9bed4686a0f1d8d85a2ae57034e3a">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-context-4.0.9.RELEASE-32d7386500af8a69713f9161a3e524508f22b5f6.jar" />
+    </item>
+    <item
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\com.jayway.jsonpath\json-path\2.0.0\26b8555596b3fb9652c1ffe193fa9123945b32cc\json-path-2.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="26b8555596b3fb9652c1ffe193fa9123945b32cc">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\json-path-2.0.0-42400b504dcfb99dd2777f96478e7402e121f0ef.jar" />
+    </item>
+    <item
+        jar="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-b76a72a0782d7853d7afab84ac01fdeda79db3a0.jar" />
+    </item>
+    <item
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\org.springframework\spring-expression\4.0.9.RELEASE\256abd04e9c25f84ef98b18e4b89051b8ec68ba2\spring-expression-4.0.9.RELEASE.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="256abd04e9c25f84ef98b18e4b89051b8ec68ba2">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-expression-4.0.9.RELEASE-fee492571bac0cfea1453c8357e04cd651db7f62.jar" />
+    </item>
+    <item
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\org.springframework\spring-core\4.2.2.RELEASE\963d6c9d0b546b6313fb51618ed5c080e8981ddc\spring-core-4.2.2.RELEASE.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="963d6c9d0b546b6313fb51618ed5c080e8981ddc">
-        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-core-4.2.2.RELEASE-f9684f08646a5c9a61a9997b51e3adc9a72be91f.jar" />
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-core-4.2.2.RELEASE-bd34e98b6f2959216a466c8fc43feb0c19a3044a.jar" />
+    </item>
+    <item
+        jar="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-468f03aaa686615807a987e8b23d902c8db50c1f.jar" />
+    </item>
+    <item
+        jar="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-3e744e04cc6a7a1b0a8998eae73b8e72d40eb2dd.jar" />
+    </item>
+    <item
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\org.springframework.hateoas\spring-hateoas\0.19.0.RELEASE\77b3b15c301d2517356b76304a2670df33ef2e2c\spring-hateoas-0.19.0.RELEASE.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="77b3b15c301d2517356b76304a2670df33ef2e2c">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-hateoas-0.19.0.RELEASE-d11c3aaff49cb9bab5b67bd1f559264cd27bce77.jar" />
+    </item>
+    <item
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.10\5b338f206827d88acd890739f400a9b7664e5984\slf4j-api-1.7.10.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5b338f206827d88acd890739f400a9b7664e5984">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\slf4j-api-1.7.10-d91ea01e678cc7226777064e362d65506aa90bda.jar" />
+    </item>
+    <item
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\org.springframework.plugin\spring-plugin-core\1.2.0.RELEASE\f380e7760032e7d929184f8ad8a33716b75c0657\spring-plugin-core-1.2.0.RELEASE.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f380e7760032e7d929184f8ad8a33716b75c0657">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-plugin-core-1.2.0.RELEASE-d9fc733ffd99d935f5428d105f081bdaf88bb56c.jar" />
+    </item>
+    <item
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.6.0\a0990e2e812ac6639b6ce955c91b13228500476e\jackson-annotations-2.6.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a0990e2e812ac6639b6ce955c91b13228500476e">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\jackson-annotations-2.6.0-17afe2a1d6fb941a3fc9c8ed7f0a7524558962da.jar" />
+    </item>
+    <item
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\org.springframework.android\spring-android-rest-template\1.0.1.RELEASE\e132d929bd181941f79b0d63edafb8a86ae6fd33\spring-android-rest-template-1.0.1.RELEASE.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e132d929bd181941f79b0d63edafb8a86ae6fd33">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-android-rest-template-1.0.1.RELEASE-b84fa5ea6b9d6746e0de71611fd57ad7aa0d6c63.jar" />
+    </item>
+    <item
+        jar="C:\Users\lenovo\AppData\Local\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-8f351d14b83baced1484e17a588d7158f60c6e2b.jar" />
+    </item>
+    <item
+        jar="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6d9ed9a288364688e7fcf6704776284dac1eb42e">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-9176c9c2facd634ad079375bd447777910d50637.jar" />
+    </item>
+    <item
+        jar="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="77f9593d979f4347344be233bd0d888315f79517">
+        <dex dex="C:\msys64\home\lenovo\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\classes-0990e2a1f56792fe26909714a55d4bbc032884a9.jar" />
     </item>
 
 </items>
