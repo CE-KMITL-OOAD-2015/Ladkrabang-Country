@@ -139,6 +139,11 @@
             android:name=".Announce_Info"
             android:label="@string/title_activity_announce__info" >
         </activity>
+        <activity
+            android:name=".Announce_Listview"
+            android:label="@string/title_activity_announce__listview"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>

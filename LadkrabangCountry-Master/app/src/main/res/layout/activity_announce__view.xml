@@ -7,17 +7,43 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.awakenguys.kmitl.ladkrabangcountry.Announce_Info">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="Info_announce"
-        android:text="info"/>
+        android:text="info"
+        android:id="@+id/button2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="create_announce"
-        android:text="create"/>
+        android:text="create"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/myListView"
+            >
+        </ListView>
+    </ScrollView>
+    <include layout="@layout/content_announce__listview"
+        android:id="@+id/fix" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/profile_edit_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:onClick="create_announce"
+        android:src="@drawable/com_facebook_button_like_icon_selected"
+        android:layout_alignBottom="@+id/fix"
+        android:layout_alignRight="@+id/fix"
+        android:layout_alignEnd="@+id/fix" />
 </RelativeLayout>
+

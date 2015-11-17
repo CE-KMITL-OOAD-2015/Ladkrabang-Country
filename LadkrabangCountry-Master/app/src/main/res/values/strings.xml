@@ -71,6 +71,7 @@
     <string name="title_activity_maps_">Map</string>
     <string name="title_activity_maps_activity__motorcycle">Map</string>
     <string name="title_activity_announce">AnnounceActivity</string>
-    <string name="title_activity_announce__info">Announce_Info</string>
+    <string name="title_activity_announce__info">Info Announcement</string>
+    <string name="title_activity_announce__listview">Announcement</string>
 
 </resources>
