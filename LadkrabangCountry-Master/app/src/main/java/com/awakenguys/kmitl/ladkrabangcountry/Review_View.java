@@ -44,4 +44,10 @@ public class Review_View extends AppCompatActivity {
         Intent intent = new Intent(this,Review_Create.class);
         startActivity(intent);
     }
+
+    public void Menu_info(View view)
+    {
+        Intent intent = new Intent(this,Review_Info.class);
+        startActivity(intent);
+    }
 }
