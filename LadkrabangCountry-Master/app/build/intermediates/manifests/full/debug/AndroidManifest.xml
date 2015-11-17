@@ -124,8 +124,7 @@
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Announce_View"
-            android:label="@string/title_activity_announce__view"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:label="@string/title_activity_announce__view" >
         </activity>
         <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.Announce_Create" >
         </activity>

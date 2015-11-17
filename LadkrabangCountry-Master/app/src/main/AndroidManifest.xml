@@ -114,8 +114,7 @@
         </activity>
         <activity
             android:name=".Announce_View"
-            android:label="@string/title_activity_announce__view"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:label="@string/title_activity_announce__view">
         </activity>
         <activity android:name=".Announce_Create" >
         </activity>

@@ -4,9 +4,47 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.awakenguys.kmitl.ladkrabangcountry.Announce_Info">
+    tools:context="com.awakenguys.kmitl.ladkrabangcountry.Announce_Info"
+    android:background="@color/gray">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1"
+        >
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Show Topic"
+            android:gravity="top"
+            android:textColor="@color/orange"
+            android:id="@+id/topic_Ann_show"
+            android:layout_weight="0.10"
+            android:layout_marginTop="50dp"
+            android:background="@android:color/background_light"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Show Contect"
+            android:gravity="top"
+            android:textColor="@color/orange"
+            android:id="@+id/content_Ann_show"
+            android:layout_weight="0.49"
+            android:layout_marginTop="20dp" />
+        <Button
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_red_dark"
+            android:id="@+id/delete_announce"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:onClick="Announce_list"/>
+    </LinearLayout>
 </RelativeLayout>

@@ -13,6 +13,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class Announce_View extends AppCompatActivity {
     ListView listView;
@@ -26,6 +28,12 @@ public class Announce_View extends AppCompatActivity {
         values = new String[] {
                 "Android","iphone","Waaa","sssss","ssssss","aaaaaa"
         };
+        ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1,android.R.id.text1,values);
+        listAdapter.sort(null);
+        listAdapter.sort(Collections.reverseOrder());
+
+        listView.setAdapter(listAdapter);
 
     }
     @Override
