@@ -2,6 +2,7 @@ package com.awakenguys.kmitl.ladkrabangcountry;
 
 import com.awakenguys.kmitl.ladkrabangcountry.model.Place;
 import com.awakenguys.kmitl.ladkrabangcountry.model.Review;
+import com.awakenguys.kmitl.ladkrabangcountry.model.Train;
 import com.awakenguys.kmitl.ladkrabangcountry.model.User;
 
 import org.springframework.hateoas.MediaTypes;
@@ -193,6 +194,20 @@ public class ContentProvider {
             throw e;
         } finally {
             return user;
+        }
+    }
+
+    public Train getTrainByName(String trainName) {
+        Train train = null;
+
+        try {
+            traverson = new Traverson(new URI(url + "train/search/findByName?name=" + trainName),
+                    MediaTypes.HAL_JSON);
+            train = traverson.follow("$._embedded.train[0]._links.self.href").toObject(Train.class);
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            return train;
         }
     }
 

@@ -170,13 +170,8 @@
             android:label="@string/title_activity_maps_activity__motorcycle" >
         </activity>
         <activity
-            android:name=".TrainArrivalTime"
-            android:label="@string/title_activity_train_arrival_time"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-        <activity android:name=".model.TrainArrivalTimeActivity" >
-        </activity>
-        <activity android:name=".TrainArrivalTimeActivity" >
+            android:name=".TrainArrivalTimeActivity"
+            android:label="สถานีพระจอมเกล้า">
         </activity>
     </application>
 

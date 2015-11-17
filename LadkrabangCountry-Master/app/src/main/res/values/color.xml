@@ -12,4 +12,5 @@
     <color name="gray">#92a989</color>
     <color name="gray2">#8c8c8c</color>
     <color name="actionbar_background">#ffffff</color>
+    <color name="white">#ffffff</color>
 </resources>

@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-
 public class Tran_Train extends AppCompatActivity {
 
     @Override
@@ -15,7 +14,6 @@ public class Tran_Train extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tran__train);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -77,4 +77,28 @@ public class Train {
         }
         return trainArrivalTimes[trainArrivalTimes.length-1];
     }
+
+    public int minutesUntilNextTrain(String currentTime)
+    {
+        String[] currentTimeSplit =  currentTime.split(":");//{hour,min}
+        int currentMinuteOfTheDay = Integer.parseInt(currentTimeSplit[0])*60+Integer.parseInt(currentTimeSplit[1]);//time of the day in minutes
+
+        String[] trainArrivalTimes = this.trainArrivalTimes.split(",");//{7:00,8:00,9:30,....}
+        String[] trainArrivalTimeSplit;
+        int trainArrivalMinuteOfTheDay;
+
+        for(int i=0;i<trainArrivalTimes.length;i++)
+        {
+            trainArrivalTimeSplit = trainArrivalTimes[i].split(":");
+            trainArrivalMinuteOfTheDay = Integer.parseInt(trainArrivalTimeSplit[0])*60+Integer.parseInt(trainArrivalTimeSplit[1]);
+
+            if(currentMinuteOfTheDay<trainArrivalMinuteOfTheDay)
+            {
+                return trainArrivalMinuteOfTheDay-currentMinuteOfTheDay;
+            }
+        }
+        //Go back in time
+        trainArrivalTimeSplit = trainArrivalTimes[0].split(":");
+        return (1440 - currentMinuteOfTheDay + (Integer.parseInt(trainArrivalTimeSplit[0])*60+Integer.parseInt(trainArrivalTimeSplit[1])));
+    }
 }
