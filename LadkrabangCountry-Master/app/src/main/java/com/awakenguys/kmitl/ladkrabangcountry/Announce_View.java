@@ -21,7 +21,7 @@ public class Announce_View extends AppCompatActivity {
     private ListView listview;
     private AnnounceListAdapter adapter;
     private TextView emptyView;
-
+    private AsyncTask updateTask;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,10 +37,11 @@ public class Announce_View extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startPost();
-                finish();
+                //finish();
             }
         });
-        new UpdateTask().execute();
+        updateTask = new UpdateTask();
+        updateTask.execute();
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -63,6 +64,12 @@ public class Announce_View extends AppCompatActivity {
         startActivity(new Intent(this, Announce_Create.class));
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+            new UpdateTask().execute();
+    }
+
     public class UpdateTask extends AsyncTask<Void,Void,Void>{
         @Override
         protected Void doInBackground(Void... params) {
@@ -71,6 +78,7 @@ public class Announce_View extends AppCompatActivity {
             for(;i>0;i--){
                 try{
                     announceList.add(provider.getAnnounceByIndex(i-1));
+                    isCancelled();
                     publishProgress();
                 }catch (Exception e) {
                     e.printStackTrace();
@@ -92,4 +100,15 @@ public class Announce_View extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if(updateTask!=null) updateTask.cancel(true);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(updateTask!=null) updateTask.cancel(true);
+    }
 }

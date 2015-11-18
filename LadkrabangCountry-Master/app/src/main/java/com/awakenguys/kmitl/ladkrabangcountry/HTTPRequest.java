@@ -11,10 +11,12 @@ import java.net.URL;
 
 
 public class HTTPRequest extends AsyncTask<String,Void,Void> {
+    private String value;
+
     @Override
     protected Void doInBackground(String... params) {
         try {
-            executeGet(params[0]);
+            value = executeGet(params[0]);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -37,6 +39,10 @@ public class HTTPRequest extends AsyncTask<String,Void,Void> {
         in.close();
         connection.disconnect();
         return response.toString();
+    }
+
+    public String getValue() {
+        return value;
     }
 }
 

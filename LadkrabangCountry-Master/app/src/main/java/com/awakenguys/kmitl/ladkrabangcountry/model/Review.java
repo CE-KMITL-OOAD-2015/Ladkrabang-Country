@@ -14,7 +14,6 @@ public class Review {
     private String author;
     private String authorId;
     private float rating = 0;
-    private int total = 0;
     private long create_date = new Date().getTime();
     private HashMap<String, Integer> ratings = new HashMap<>();
 
@@ -37,7 +36,7 @@ public class Review {
     }
 
 
-    public Review(String id, String topic, String content, String img_path, String author, String authorId, float rating, int total, long create_date, HashMap<String, Integer> ratings) {
+    public Review(String id, String topic, String content, String img_path, String author, String authorId, float rating, long create_date, HashMap<String, Integer> ratings) {
         this.id = id;
         this.topic = topic;
         this.content = content;
@@ -45,7 +44,6 @@ public class Review {
         this.author = author;
         this.authorId = authorId;
         this.rating = rating;
-        this.total = total;
         this.create_date = create_date;
         this.ratings = ratings;
     }
@@ -106,14 +104,6 @@ public class Review {
         this.rating = rating;
     }
 
-    public int getTotal() {
-        return total;
-    }
-
-    public void setTotal(int total) {
-        this.total = total;
-    }
-
     public long getCreate_date() {
         return create_date;
     }
@@ -140,7 +130,6 @@ public class Review {
                 ", author='" + author + '\'' +
                 ", authorId='" + authorId + '\'' +
                 ", rating=" + rating +
-                ", total=" + total +
                 ", create_date=" + create_date +
                 ", ratings=" + ratings +
                 '}';

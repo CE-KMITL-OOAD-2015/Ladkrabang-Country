@@ -20,7 +20,7 @@ public class Review_View extends AppCompatActivity {
     private ListView listview;
     private ReviewListAdapter adapter;
     private TextView emptyView;
-
+    private UpdateTask updateTask;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,12 +39,13 @@ public class Review_View extends AppCompatActivity {
                 finish();
             }
         });
-        new UpdateTask().execute();
+        updateTask = new UpdateTask();
+        updateTask.execute();
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 view_review(position);
-
+                finish();
             }
         });
 
@@ -59,6 +60,17 @@ public class Review_View extends AppCompatActivity {
         startActivity(intent);
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if(updateTask!=null) updateTask.cancel(true);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(updateTask!=null) updateTask.cancel(true);
+    }
 
     private void startPost() {
         startActivity(new Intent(this, Review_Create.class));
@@ -68,14 +80,17 @@ public class Review_View extends AppCompatActivity {
         protected Void doInBackground(Void... params) {
             ContentProvider provider = new  ContentProvider();
             int i = provider.getReviewSize();
-            for(;i>0;i--){
-                try{
-                    reviewList.add(provider.getReviewByIndex(i-1));
-                    publishProgress();
-                }catch (Exception e) {
-                    e.printStackTrace();
+                for(;i>0;i--){
+                    if(!isCancelled()){
+                    try{
+                        reviewList.add(provider.getReviewByIndex(i-1));
+                            publishProgress();
+                    }catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
             }
+
             return null;
         }
 

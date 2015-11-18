@@ -333,6 +333,18 @@ public class ContentProvider {
         return all;
     }
 
+    public Review getReviewById(String id) {
+        Review review = null;
+        try {
+            traverson = new Traverson(new URI(url + "reviews/search/findById?fbId=" + id),
+                    MediaTypes.HAL_JSON);
+            review = traverson.follow("$._embedded.reviews[0]._links.self.href").toObject(Review.class);
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            return review;
+        }
+    }
 
 
     /*public List<String> getNearbyPlaces(double lat, double lng){
