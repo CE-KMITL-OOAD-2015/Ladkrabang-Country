@@ -78,6 +78,7 @@ public class Review_Create extends AppCompatActivity {
                 topic = txtDescription.getText().toString();
                 content = txtDescription2.getText().toString();
                 //new ImageUploadTask().execute();
+                post();
 
             }
         });

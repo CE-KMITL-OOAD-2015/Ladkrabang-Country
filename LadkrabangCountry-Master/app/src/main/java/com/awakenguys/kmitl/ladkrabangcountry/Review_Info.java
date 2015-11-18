@@ -64,9 +64,10 @@ public class Review_Info extends AppCompatActivity {
         ContentProvider provider = new ContentProvider();
         Review review = provider.getReviewById(id);
         HTTPRequest rq = new HTTPRequest();
-        rq.execute("http://203.151.92.199:8888/reviewratingbyid?userId=" + Profile.getUser().getId() +
+        rq.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,"http://203.151.92.199:8888/reviewratingbyid?userId=" + Profile.getUser().getId() +
                 "&reviewId=" + id);
         while(rq.getValue()==null);
+
         reviewRating = Integer.parseInt(rq.getValue());
         rating_Bar.setRating(reviewRating);
 
@@ -81,7 +82,7 @@ public class Review_Info extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        startActivity(new Intent(this, Review_View.class));
+       // startActivity(new Intent(this, Review_View.class));
     }
 
     private void rate(){

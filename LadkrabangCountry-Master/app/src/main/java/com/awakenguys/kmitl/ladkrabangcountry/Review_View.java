@@ -21,6 +21,7 @@ public class Review_View extends AppCompatActivity {
     private ReviewListAdapter adapter;
     private TextView emptyView;
     private UpdateTask updateTask;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,28 +37,32 @@ public class Review_View extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startPost();
-                finish();
+                //finish();
             }
         });
-        updateTask = new UpdateTask();
-        updateTask.execute();
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 view_review(position);
-                finish();
+                //finish();
             }
         });
 
     }
 
-    private void view_review(int position){
-        Intent intent = new Intent(this, Review_Info.class);
-        intent.putExtra("id", ((Review) adapter.getItem(position)).getId());
-        intent.putExtra("topic", ((Review) adapter.getItem(position)).getTopic());
-        intent.putExtra("content", ((Review) adapter.getItem(position)).getContent());
-        //intent.putExtra("other", ((Review) adapter.getItem(position)).getImg_path());
-        startActivity(intent);
+    @Override
+    protected void onResume() {
+        super.onResume();
+        reviewList.clear();
+        adapter.notifyDataSetChanged();
+        updateTask = new UpdateTask();
+        updateTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if(updateTask!=null) updateTask.cancel(true);
     }
 
     @Override
@@ -72,6 +77,15 @@ public class Review_View extends AppCompatActivity {
         if(updateTask!=null) updateTask.cancel(true);
     }
 
+    private void view_review(int position){
+        Intent intent = new Intent(this, Review_Info.class);
+        intent.putExtra("id", ((Review) adapter.getItem(position)).getId());
+        intent.putExtra("topic", ((Review) adapter.getItem(position)).getTopic());
+        intent.putExtra("content", ((Review) adapter.getItem(position)).getContent());
+        //intent.putExtra("other", ((Review) adapter.getItem(position)).getImg_path());
+        startActivity(intent);
+    }
+
     private void startPost() {
         startActivity(new Intent(this, Review_Create.class));
     }
@@ -81,15 +95,14 @@ public class Review_View extends AppCompatActivity {
             ContentProvider provider = new  ContentProvider();
             int i = provider.getReviewSize();
                 for(;i>0;i--){
-                    if(!isCancelled()){
-                    try{
-                        reviewList.add(provider.getReviewByIndex(i-1));
+                    if(isCancelled())break;
+                        try {
+                            reviewList.add(provider.getReviewByIndex(i - 1));
                             publishProgress();
-                    }catch (Exception e) {
-                        e.printStackTrace();
-                    }
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
                 }
-            }
 
             return null;
         }

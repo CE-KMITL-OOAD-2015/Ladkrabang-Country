@@ -80,7 +80,7 @@ public class ReviewListAdapter extends BaseAdapter {
 				genreStr.length() - 2) : genreStr;*/
 		author.setText(r.getAuthor());
 
-		
+
 		// rating
 		rating.setText(""+r.getRating());
 

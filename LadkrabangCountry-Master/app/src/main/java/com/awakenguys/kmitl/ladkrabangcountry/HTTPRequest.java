@@ -11,7 +11,7 @@ import java.net.URL;
 
 
 public class HTTPRequest extends AsyncTask<String,Void,Void> {
-    private String value;
+    private String value = null;
 
     @Override
     protected Void doInBackground(String... params) {
