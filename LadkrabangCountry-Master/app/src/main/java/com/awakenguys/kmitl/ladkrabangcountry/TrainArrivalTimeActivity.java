@@ -4,9 +4,15 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.awakenguys.kmitl.ladkrabangcountry.model.Train;
@@ -34,6 +40,7 @@ public class TrainArrivalTimeActivity extends AppCompatActivity {
             else{
                 ((TextView) findViewById(R.id.Minutes_Left)).setText("" + minutesLeft % 60);
             }
+
         }
     };
 
@@ -70,6 +77,16 @@ public class TrainArrivalTimeActivity extends AppCompatActivity {
         else{
             ((TextView) findViewById(R.id.Minutes_Left)).setText("" + minutesLeft % 60);
         }
+
+        ListView listView = (ListView) findViewById(R.id.trainArrivalTimeListView);
+        LayoutInflater inflater = getLayoutInflater();
+        ViewGroup header = (ViewGroup)inflater.inflate(R.layout.header_train_time_table_listview, listView, false);
+        listView.addHeaderView(header, null, false);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1,train.getTrainArrivalTimes().split(","));
+        listView.setAdapter(adapter);
+        //setBackgroundColor(Color.RED);
+
     }
 
     @Override
