@@ -103,7 +103,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".PostActivity"
+            android:name=".Review_Create"
             android:label="@string/title_activity_post"
             android:screenOrientation="portrait" >
         </activity>

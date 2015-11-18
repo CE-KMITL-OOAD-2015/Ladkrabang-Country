@@ -71,6 +71,7 @@ dependencies {
     compile 'com.fasterxml.jackson.core:jackson-databind:2.6.3'
     compile 'com.android.support:design:23.1.0'
     compile 'com.google.android.gms:play-services-location:8.3.0'
+    compile 'com.jcraft:jsch:0.1.53'
 
 
 }

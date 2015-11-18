@@ -1,19 +1,16 @@
 package com.awakenguys.kmitl.ladkrabangcountry;
 
 import android.app.ProgressDialog;
-import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.provider.MediaStore;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Base64;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,43 +20,39 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.internal.http.multipart.MultipartEntity;
 import com.awakenguys.kmitl.ladkrabangcountry.model.User;
 
-
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.protocol.BasicHttpContext;
-import org.apache.http.protocol.HttpContext;
+//import org.apache.commons.net.ftp.FTP;
+//import org.apache.commons.net.ftp.FTPClient;
 
 import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
+import java.net.InetAddress;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 
 
-public class PostActivity extends AppCompatActivity {
+public class Review_Create extends AppCompatActivity {
     private static final int SELECT_PHOTO = 1;
     private TextView text;
     private ImageButton imageButton;
     private Context context = this;
     Bitmap bitmap = null;
+    String filePath = "";
+    String topic;
+    String content;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post);
-        if(Profile.getUser().getLevel()== User.GUEST){
-            Toast.makeText(PostActivity.this, "You must login before post.", Toast.LENGTH_SHORT).show();
+        if (Profile.getUser().getLevel() == User.GUEST) {
+            Toast.makeText(Review_Create.this, "You must login before post.", Toast.LENGTH_SHORT).show();
             finish();
             startActivity(new Intent(this, Profile.class));
         }
@@ -81,18 +74,23 @@ public class PostActivity extends AppCompatActivity {
         postButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                post();
+                EditText txtDescription = (EditText) findViewById(R.id.edit_text);
+                EditText txtDescription2 = (EditText) findViewById(R.id.edit_text_2);
+                topic = txtDescription.getText().toString();
+                content = txtDescription2.getText().toString();
+                //new ImageUploadTask().execute();
 
-                finish();
             }
         });
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.guest_anotherpage_menu, menu);
         return true;
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -106,22 +104,13 @@ public class PostActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
     //Edittext to String and send to server
-    private void post(){
-        imagePost();
-        EditText txtDescription = (EditText) findViewById(R.id.edit_text);
-        EditText txtDescription2 = (EditText) findViewById(R.id.edit_text_2);
-        String topic = txtDescription.getText().toString();
-        String content = txtDescription2.getText().toString();
-        HTTPRequest rq = new HTTPRequest();
-        try {
-            rq.execute("http://203.151.92.199:8888/addreview?topic=" + topic + "&content=" +
-                    content + "&authorId=" + Profile.getUser().getId());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        Toast.makeText(PostActivity.this, "Success!", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(this, ReviewList.class));
+    private void post() {
+
+
+        //Toast.makeText(Review_Create.this, "Success!", Toast.LENGTH_SHORT).show();
+        //startActivity(new Intent(this, ReviewList.class));
     }
 
 
@@ -131,7 +120,7 @@ public class PostActivity extends AppCompatActivity {
 
         if (requestCode == SELECT_PHOTO && resultCode == RESULT_OK && null != data) {
             Uri selectedImage = data.getData();
-            String[] filePathColumn = { MediaStore.Images.Media.DATA };
+            String[] filePathColumn = {MediaStore.Images.Media.DATA};
 
             Cursor cursor = getContentResolver().query(selectedImage,
                     filePathColumn, null, null, null);
@@ -140,17 +129,56 @@ public class PostActivity extends AppCompatActivity {
             int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
             String picturePath = cursor.getString(columnIndex);
             cursor.close();
-
             decodeFile(picturePath);
-
+            filePath = picturePath;
         }
 
     }
 
-    public String imagePost()
-    {
-        if(bitmap!=null){
-            URL url;
+    /*private String imagePost(String filePath) {
+        FTPClient ftpClient = new FTPClient();
+        FileInputStream fis = null;
+        boolean result;
+        String ftpServerAddress = "localhost";
+        String userName = "root";
+        String password = "kingkikkok";
+
+        if (bitmap != null) {
+            ftpClient = new FTPClient();
+            try {
+                ftpClient.connect("203.151.92.199");
+                result = ftpClient.login(userName, password);
+                if (result == true) {
+                    System.out.println("Logged in Successfully !");
+                } else {
+                    System.out.println("Login Fail!");
+                    return null;
+                }
+                ftpClient.setFileType(FTP.BINARY_FILE_TYPE);
+                ftpClient.changeWorkingDirectory("/images");
+                File file = new File(filePath);
+                String fileName = file.getName();
+                fis = new FileInputStream(file);
+                result = ftpClient.storeFile(fileName, fis);
+                if (result == true) {
+                    System.out.println("File is uploaded successfully");
+                    filePath = file.getName();
+                } else {
+                    System.out.println("File uploading failed");
+                }
+                ftpClient.logout();
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                try {
+                    ftpClient.disconnect();
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
+            }
+
+
+            /*URL url;
             HttpURLConnection connection = null;
             try {
                 //Create connection
@@ -185,7 +213,7 @@ public class PostActivity extends AppCompatActivity {
             }
         }
         return null;
-    }
+    }*/
 
     public void decodeFile(String filePath) {
 
@@ -195,7 +223,7 @@ public class PostActivity extends AppCompatActivity {
         BitmapFactory.decodeFile(filePath, o);
 
         // The new size we want to scale to
-        final int REQUIRED_SIZE = 300;
+        final int REQUIRED_SIZE = 400;
 
         // Find the correct scale value. It should be the power of 2.
         int width_tmp = o.outWidth, height_tmp = o.outHeight;
@@ -216,12 +244,13 @@ public class PostActivity extends AppCompatActivity {
         imageButton.setBackgroundResource(0);
 
     }
-
+}
+/*
     class ImageUploadTask extends AsyncTask<String, Void, String> {
 
 
         // private ProgressDialog dialog;
-        private ProgressDialog dialog = new ProgressDialog(PostActivity.this);
+        //private ProgressDialog dialog = new ProgressDialog(Review_Create.this);
 
         @Override
         protected void onPreExecute() {
@@ -231,17 +260,66 @@ public class PostActivity extends AppCompatActivity {
 
         @Override
         protected String doInBackground(String... params) {
+            FTPClient ftpClient = new FTPClient();
+            FileInputStream fis = null;
+            boolean result;
+            String ftpServerAddress = "sfZZ203.151.92.199";
+            String userName = "root";
+            String password = "kingkikkok";
 
+            if (bitmap != null) {
+                ftpClient = new FTPClient();
+                try {
+                    ftpClient.connect("203.151.92.199:1");
+                    result = ftpClient.login(userName, password);
+                    if (result == true) {
+                        System.out.println("Logged in Successfully !");
+                    } else {
+                        System.out.println("Login Fail!");
+                        return null;
+                    }
+                    ftpClient.setFileType(FTP.BINARY_FILE_TYPE);
+                    ftpClient.changeWorkingDirectory("/images");
+                    File file = new File(filePath);
+                    String fileName = file.getName();
+                    fis = new FileInputStream(file);
+                    result = ftpClient.storeFile(fileName, fis);
+                    if (result == true) {
+                        System.out.println("File is uploaded successfully");
+                        filePath = file.getName();
+                    } else {
+                        System.out.println("File uploading failed");
+                    }
+                    ftpClient.logout();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                } finally {
+                    try {
+                        ftpClient.disconnect();
+                    } catch (Exception e) {
+                        System.out.println(e);
+                    }
+                }
+
+            }
             return null;
         }
 
         @Override
         protected void onPostExecute(String result) {
-            dialog.dismiss();
-            Toast.makeText(getApplicationContext(), "file uploaded",Toast.LENGTH_LONG).show();
+            //dialog.dismiss();
+            HTTPRequest rq = new HTTPRequest();
+            try {
+                rq.execute("http://203.151.92.199:8888/addreview?topic=" + topic + "&content=" +
+                        content + "&authorId=" + Profile.getUser().getId() + "&img_path=" + filePath);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            finish();
         }
+
     }
+}*/
 
 
 
-}

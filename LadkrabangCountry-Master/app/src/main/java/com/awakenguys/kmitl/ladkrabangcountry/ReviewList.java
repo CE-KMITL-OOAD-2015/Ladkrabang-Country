@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 import com.awakenguys.kmitl.ladkrabangcountry.model.Review;
 
-import java.security.spec.ECField;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,7 +43,7 @@ public class ReviewList extends AppCompatActivity {
 
     private void startPost()
     {
-        startActivity(new Intent(this, PostActivity.class));
+        startActivity(new Intent(this, Review_Create.class));
     }
     public class UpdateTask extends AsyncTask<Void,Void,Void>{
 
