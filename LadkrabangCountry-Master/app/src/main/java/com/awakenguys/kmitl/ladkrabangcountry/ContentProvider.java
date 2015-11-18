@@ -1,8 +1,10 @@
 package com.awakenguys.kmitl.ladkrabangcountry;
 
 
+import com.awakenguys.kmitl.ladkrabangcountry.model.Announce;
 import com.awakenguys.kmitl.ladkrabangcountry.model.Place;
 import com.awakenguys.kmitl.ladkrabangcountry.model.Review;
+import com.awakenguys.kmitl.ladkrabangcountry.model.Train;
 import com.awakenguys.kmitl.ladkrabangcountry.model.User;
 
 import org.springframework.hateoas.MediaTypes;
@@ -208,7 +210,37 @@ public class ContentProvider {
             return name;
         }
     }
+    public Train getTrainByName(String trainName) {
+        Train train = null;
 
+        try {
+            traverson = new Traverson(new URI(url + "train/search/findByName?name=" + trainName),
+                    MediaTypes.HAL_JSON);
+            train = traverson.follow("$._embedded.train[0]._links.self.href").toObject(Train.class);
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            return train;
+        }
+    }
+
+    public Announce getAnnounceByIndex(int index){
+        try {
+            traverson = new Traverson(new URI(url + "announces"), MediaTypes.HAL_JSON);
+            int all = traverson.follow("$._links.self.href").toObject("$.page.totalElements");
+            int size = traverson.follow("$._links.self.href").toObject("$.page.size");
+            int page = index/size;
+            index = index % size;
+            traverson = new Traverson(new URI(url+"announces?page="+page), MediaTypes.HAL_JSON);
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+        Announce announce;
+        Traverson.TraversalBuilder traversalBuilder = traverson
+                .follow("$._embedded.announces[" + index + "]._links.self.href");
+        announce = traversalBuilder.toObject(Announce.class);
+        return announce;
+    }
 
     public Review getReviewByIndex(int index){
         try {
@@ -222,8 +254,7 @@ public class ContentProvider {
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }
-        Review review = new Review();
-
+        Review review;
         Traverson.TraversalBuilder traversalBuilder = traverson
                 .follow("$._embedded.reviews[" + index + "]._links.self.href");
         review = traversalBuilder.toObject(Review.class);
@@ -289,6 +320,19 @@ public class ContentProvider {
         }
         return all;
     }
+
+    public int getAnnounceSize(){
+        int all = 0;
+        try {
+            traverson = new Traverson(new URI(url + "announces"), MediaTypes.HAL_JSON);
+            all = traverson.follow("$._links.self.href").toObject("$.page.totalElements");
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return all;
+    }
+
 
 
     /*public List<String> getNearbyPlaces(double lat, double lng){

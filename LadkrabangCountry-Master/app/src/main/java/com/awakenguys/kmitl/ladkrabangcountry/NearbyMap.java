@@ -116,9 +116,7 @@ public class NearbyMap extends FragmentActivity implements OnMapReadyCallback {
                 location.setLongitude(latLng.longitude);
                 map.addMarker(new MarkerOptions().position(latLng).title("Selected location").icon(BitmapDescriptorFactory
                         .defaultMarker(BitmapDescriptorFactory.HUE_ORANGE)));
-                blueMarker = map.addMarker(new MarkerOptions().position(new LatLng(myLocation.getLatitude(),
-                        myLocation.getLongitude())).title("Your last known location").icon(BitmapDescriptorFactory
-                        .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+
                 getPlacesTask = new GetPlacesTask().execute(location);
             }
         });

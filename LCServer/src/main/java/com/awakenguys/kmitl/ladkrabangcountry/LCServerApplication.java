@@ -1,14 +1,16 @@
 package com.awakenguys.kmitl.ladkrabangcountry;
 
 import com.awakenguys.kmitl.ladkrabangcountry.model.Place;
-import com.awakenguys.kmitl.ladkrabangcountry.model.Train_Station;
+import com.awakenguys.kmitl.ladkrabangcountry.model.Train;
 import com.awakenguys.kmitl.ladkrabangcountry.model.Van_Route;
 import com.awakenguys.kmitl.ladkrabangcountry.model.Van_Station;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.geo.Point;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 @SpringBootApplication
@@ -23,7 +25,9 @@ public class LCServerApplication implements CommandLineRunner {
     @Autowired
     private VanRouteRepo vanRouteRepo;
     @Autowired
-    private TrainStationRepo trainStationRepo;
+    private TrainRepo trainRepo;
+    @Autowired
+    private UserRepo userRepo;
 
 
     public static void main(String[] args) {
@@ -33,17 +37,37 @@ public class LCServerApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
         placeRepo.deleteAll();
         vanStationRepo.deleteAll();
-        trainStationRepo.deleteAll();
+        trainRepo.deleteAll();
         savePlace();
         saveVanStation();
-        saveTrainStation();
+        saveTrain();
     }
 
     private void saveBusLine() throws Exception{
     }
 
-    private void saveTrainStation() throws Exception {
-        trainStationRepo.save(new Train_Station("พระจอมเกล้าฯ", 13.728180f, 100.775444f));
+    private void saveTrain() throws Exception {
+        String goTime = "07:00,07:29,07:38,08:10,08:55,11:07,13:01,13:46,16:16,17:43,18:39,19:22";
+        String reTime = "06:28,07:04,07:37,08:07,09:14,11:10,13:18,14:37,16:12,17:09,17:13,18:57";
+
+        trainRepo.save(new Train("go", goTime));
+        trainRepo.save(new Train("re", reTime));
+        //goTime = go.getTrainArrivalTimes();
+
+        /*Train re = trainRepo.save(new Train("re", reTime));
+        reTime = re.getTrainArrivalTimes();
+        reTime.add("06:28");
+        reTime.add("07:04");
+        reTime.add("07:37");
+        reTime.add("08:07");
+        reTime.add("09:14");
+        reTime.add("11:10");
+        reTime.add("13:18");
+        reTime.add("14:37");
+        reTime.add("16:12");
+        reTime.add("17:09");
+        reTime.add("17:13");
+        reTime.add("18:57");*/
     }
 
     private void saveVanStation() throws Exception {
@@ -56,7 +80,7 @@ public class LCServerApplication implements CommandLineRunner {
 
     }
 
-    private void savePlace() throws Exception{
+    private void savePlace() throws Exception {
         placeRepo.save(new Place("อาคารเรียนรวม 12 ชั้น(E12)", "คณะวิศวกรรมศาสตร์", 13.727621f, 100.772344f));
         placeRepo.save(new Place("อาคารปฏิบัติการรวม CCA", "คณะวิศวกรรมศาสตร์", 13.726530f, 100.772984f));
         placeRepo.save(new Place("โรงอาหาร C", "คณะวิศวกรรมศาสตร์", 13.726863f, 100.772091f));
@@ -85,7 +109,7 @@ public class LCServerApplication implements CommandLineRunner {
         placeRepo.save(new Place("หอพักนักศึกษา(ใหม่)", "ทั่วไป", 13.729640f, 100.774683f));
         placeRepo.save(new Place("สมาคมศิษย์เก่า", "ทั่วไป", 13.731067f, 100.774665f));
         placeRepo.save(new Place("อาคารเรียนรวมสมเด็จพระเทพฯ", "ทั่วไป", 13.730115f, 100.776802f));
-        placeRepo.save(new Place("อาคารเฉลิมพระเกียรติ 55 พรรษา สมเด็จพระเทพฯ", "ทั่วไป", 13.729952f, 100.775283f));
+        placeRepo.save(new Place("อาคารเฉลิมพระเกียรติ 55 พรรษา สมเด็จพระเทพฯ", "วิทยาลัยนานาชาติ วิทยาลัยนวัตกรรมการจัดการข้อมูล", 13.729952f, 100.775283f));
         placeRepo.save(new Place("อาคารองค์การนักศึกษา", "ทั่วไป", 13.728772f, 100.778624f));
         placeRepo.save(new Place("อาคารสำนักบริการคอมพิวเตอร์", "ทั่วไป", 13.731218f, 100.780278f));
         placeRepo.save(new Place("อาคารวิทยาลัยการบริหารและจัดการ", "วิทยาลัยการบริหารและการจัดการ", 13.731218f, 100.780278f));
@@ -99,7 +123,6 @@ public class LCServerApplication implements CommandLineRunner {
         placeRepo.save(new Place("อาคารจุฬาภรณ์วลัยลักษณ์ 2", "คณะวิทยาศาสตร์", 13.730232f, 100.779318f));
         placeRepo.save(new Place("อาคารปฏิบัติการใหม่", "คณะวิทยาศาสตร์", 13.729046f, 100.779856f));
         placeRepo.save(new Place("อาคารกิจกรรม", "คณะวิทยาศาสตร์", 13.728947f, 100.778425f));
-        placeRepo.save(new Place("อาคารปฏิบัติการพิเศษจอมไตร", "คณะวิทยาศาสตร์", 13.729574f, 100.780795f));
         placeRepo.save(new Place("อาคารคณะเทคโนโลยีสารสนเทศ", "คณะเทคโนโลยีสารสนเทศ", 13.730976f, 100.781116f));
         placeRepo.save(new Place("โรงอาหารคณะเทคโนโลยีสารสนเทศ", "คณะเทคโนโลยีสารสนเทศ", 13.731161f, 100.782077f));
         placeRepo.save(new Place("โรงอาหารคณะสถาปัตยกรรมศาสตร์", "คณะสถาปัตยกรรมศาสตร์", 13.731161f, 100.782077f));
@@ -120,9 +143,7 @@ public class LCServerApplication implements CommandLineRunner {
         placeRepo.save(new Place("อาคารเจ้าคุณทหาร", "คณะอุตสาหกรรมการเกษตร เทคโนโลยีการเกษตร", 13.726536f, 100.780341f));
         placeRepo.save(new Place("โรงอาหารคณะอุตสาหกรรมการเกษตร", "คณะอุตสาหกรรมการเกษตร", 13.725263f, 100.780632f));
         placeRepo.save(new Place("อาคารบุนนาค", "คณะเทคโนโลยีการเกษตร", 13.729740f, 100.782029f));
+        placeRepo.save(new Place("อาคารปฏิบัติการพิเศษจอมไตร", "คณะครุศาสตร์อุตสาหกรรม", 13.729472f, 100.780771f));
+        placeRepo.save(new Place("อาคารวิทยาลัยนาโนเทคโนโลยีพระจอมเกล้าลาดกระบัง", "วิทยาลัยนาโนเทคโนโลยี", 13.729038f, 100.777152f));
     }
-
-
-
-
 }

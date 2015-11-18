@@ -3,6 +3,7 @@ package com.awakenguys.kmitl.ladkrabangcountry.model;
 
 
 import java.util.Date;
+import java.util.HashMap;
 
 public class Review {
 
@@ -15,6 +16,7 @@ public class Review {
     private float rating = 0;
     private int total = 0;
     private long create_date = new Date().getTime();
+    private HashMap<String, Integer> ratings = new HashMap<>();
 
     public Review() {
     }
@@ -23,6 +25,7 @@ public class Review {
         this.topic = topic;
         this.content = content;
         this.authorId = authorId;
+        this.author = author;
     }
 
     public Review(String topic, String content, String img_path, String authorId, String author) {
@@ -30,6 +33,21 @@ public class Review {
         this.content = content;
         this.img_path = img_path;
         this.authorId = authorId;
+        this.author = author;
+    }
+
+
+    public Review(String id, String topic, String content, String img_path, String author, String authorId, float rating, int total, long create_date, HashMap<String, Integer> ratings) {
+        this.id = id;
+        this.topic = topic;
+        this.content = content;
+        this.img_path = img_path;
+        this.author = author;
+        this.authorId = authorId;
+        this.rating = rating;
+        this.total = total;
+        this.create_date = create_date;
+        this.ratings = ratings;
     }
 
     public String getId() {
@@ -104,6 +122,14 @@ public class Review {
         this.create_date = create_date;
     }
 
+    public HashMap<String, Integer> getRatings() {
+        return ratings;
+    }
+
+    public void setRatings(HashMap<String, Integer> ratings) {
+        this.ratings = ratings;
+    }
+
     @Override
     public String toString() {
         return "Review{" +
@@ -116,6 +142,7 @@ public class Review {
                 ", rating=" + rating +
                 ", total=" + total +
                 ", create_date=" + create_date +
+                ", ratings=" + ratings +
                 '}';
     }
 }

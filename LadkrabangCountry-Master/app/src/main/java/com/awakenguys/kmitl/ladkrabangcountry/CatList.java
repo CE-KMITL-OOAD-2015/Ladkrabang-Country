@@ -53,6 +53,8 @@ public class CatList extends AppCompatActivity {
             }
 
         });
+        TextView emptyText = (TextView) findViewById(R.id.emptyList);
+        emptyText.setVisibility(View.INVISIBLE);
 
 
     }
@@ -61,7 +63,7 @@ public class CatList extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_default, menu);
+        getMenuInflater().inflate(R.menu.guest_anotherpage_menu, menu);
         return true;
     }
 
@@ -73,10 +75,11 @@ public class CatList extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+
+        if (id == R.id.home_icon) {
+            startActivity(new Intent(this, MainActivity.class));
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 

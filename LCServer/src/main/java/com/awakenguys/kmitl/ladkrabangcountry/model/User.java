@@ -1,25 +1,43 @@
 package com.awakenguys.kmitl.ladkrabangcountry.model;
 
 import java.util.ArrayList;
+
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.springframework.data.annotation.Id;
 
 public class User {
     @Id private String id;
-    private String fb_id;
+    private String fbId;
     private String name;
-    private boolean banned;
     private  int level;
-    public final int ADMIN = 0;
-    public final int MEMBER = 1;
-    ArrayList<String> rateReview = new ArrayList<String>();
+    private boolean banned;
+
+    ArrayList<String> ratedReviews = new ArrayList<String>();
 
     public User() {
     }
 
-    public User(String fb_id, String name, int level) {
-        this.fb_id = fb_id;
+    public User(String fbId, String name, int level) {
+        this.fbId = fbId;
         this.name = name;
         this.level = level;
+        banned = false;
+    }
+
+    public User(String fbId, String name,  int level, boolean banned) {
+        this.fbId = fbId;
+        this.name = name;
+        this.level = level;
+        this.banned = banned;
+    }
+
+    public User(String id, String fbId, String name,  int level, boolean banned, ArrayList<String> ratedReviews) {
+        this.id = id;
+        this.fbId = fbId;
+        this.name = name;
+        this.level = level;
+        this.banned = banned;
+        this.ratedReviews = ratedReviews;
     }
 
     public String getId() {
@@ -30,12 +48,12 @@ public class User {
         this.id = id;
     }
 
-    public String getFb_id() {
-        return fb_id;
+    public String getFbId() {
+        return fbId;
     }
 
-    public void setFb_id(String fb_id) {
-        this.fb_id = fb_id;
+    public void setFbId(String fbId) {
+        this.fbId = fbId;
     }
 
     public String getName() {
@@ -62,25 +80,23 @@ public class User {
         this.level = level;
     }
 
-    public ArrayList<String> getRateReview() {
-        return rateReview;
+    public ArrayList<String> getRatedReviews() {
+        return ratedReviews;
     }
 
-    public void setRateReview(ArrayList<String> rateReview) {
-        this.rateReview = rateReview;
+    public void setRatedReviews(ArrayList<String> ratedReviews) {
+        this.ratedReviews = ratedReviews;
     }
 
     @Override
     public String toString() {
         return "User{" +
                 "id='" + id + '\'' +
-                ", fb_id='" + fb_id + '\'' +
+                ", fbId='" + fbId + '\'' +
                 ", name='" + name + '\'' +
                 ", banned=" + banned +
                 ", level=" + level +
-                ", ADMIN=" + ADMIN +
-                ", MEMBER=" + MEMBER +
-                ", rateReview=" + rateReview +
+                ", ratedReviews=" + ratedReviews +
                 '}';
     }
 }

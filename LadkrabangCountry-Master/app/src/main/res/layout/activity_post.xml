@@ -15,11 +15,12 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true">
         <ImageButton
-            android:id="@+id/image_button"
-            android:layout_width="300px"
-            android:layout_height="300px"
+            android:id="@+id/image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_gravity="center"
             android:scaleType="centerInside"
+            android:src="@drawable/camera"
             android:background="@color/white" />
         <TextView
             android:layout_width="wrap_content"
@@ -32,7 +33,7 @@
             android:layout_marginBottom="16dp"
 
             android:layout_weight="0.10"
-            android:id="@+id/edit_text"
+            android:id="@+id/edittext"
             android:autoText="true"
             android:hint="Topic"
             android:selectAllOnFocus="true"
@@ -42,7 +43,7 @@
             android:layout_width="355dp"
             android:layout_height="155dp"
             android:layout_marginBottom="20dp"
-            android:id="@+id/edit_text_2"
+            android:id="@+id/edittext2"
             android:hint="Content here"
             android:gravity="top"
             android:selectAllOnFocus="false"

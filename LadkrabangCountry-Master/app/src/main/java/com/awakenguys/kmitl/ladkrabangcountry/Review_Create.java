@@ -1,7 +1,9 @@
 package com.awakenguys.kmitl.ladkrabangcountry;
 
+
 import android.app.ProgressDialog;
 import android.content.Context;
+
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -22,14 +24,9 @@ import android.widget.Toast;
 
 import com.awakenguys.kmitl.ladkrabangcountry.model.User;
 
-//import org.apache.commons.net.ftp.FTP;
-//import org.apache.commons.net.ftp.FTPClient;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
@@ -50,15 +47,17 @@ public class Review_Create extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_post);
-        if (Profile.getUser().getLevel() == User.GUEST) {
+        setContentView(R.layout.activity_create_review);
+        if(Profile.getUser().getLevel()== User.GUEST){
             Toast.makeText(Review_Create.this, "You must login before post.", Toast.LENGTH_SHORT).show();
             finish();
             startActivity(new Intent(this, Profile.class));
         }
 
+
         imageButton = (ImageButton) findViewById(R.id.image_button);
         imageButton.setBackgroundResource(R.drawable.camera);
+
         text = (TextView) findViewById(R.id.text);
 
         imageButton.setOnClickListener(new View.OnClickListener() {
@@ -105,12 +104,24 @@ public class Review_Create extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    //Edittext to String and send to server
-    private void post() {
 
+    private void post(){
+        //magePost();
+        EditText txtDescription = (EditText) findViewById(R.id.edit_text);
+        EditText txtDescription2 = (EditText) findViewById(R.id.edit_text_2);
+        String topic = txtDescription.getText().toString();
+        String content = txtDescription2.getText().toString();
+        HTTPRequest rq = new HTTPRequest();
+        try {
+            rq.execute("http://203.151.92.199:8888/addreview?topic=" + topic + "&content=" +
+                    content + "&authorId=" + Profile.getUser().getId());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
-        //Toast.makeText(Review_Create.this, "Success!", Toast.LENGTH_SHORT).show();
-        //startActivity(new Intent(this, ReviewList.class));
+        Toast.makeText(Review_Create.this, "Success!", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, Review_View.class));
+
     }
 
 
@@ -250,7 +261,11 @@ public class Review_Create extends AppCompatActivity {
 
 
         // private ProgressDialog dialog;
+<<<<<<< HEAD:LadkrabangCountry-Master/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Review_Create.java
         //private ProgressDialog dialog = new ProgressDialog(Review_Create.this);
+=======
+        private ProgressDialog dialog = new ProgressDialog(Review_Create.this);
+>>>>>>> origin/reviewUI:LadkrabangCountry-Master/app/src/main/java/com/awakenguys/kmitl/ladkrabangcountry/Review_Create.java
 
         @Override
         protected void onPreExecute() {

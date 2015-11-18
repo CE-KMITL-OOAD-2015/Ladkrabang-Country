@@ -56,7 +56,10 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.CatList" >
+        <activity
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.CatList"
+            android:label="Category"
+            android:screenOrientation="portrait" >
         </activity>
         <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.PlaceList" />
         <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.Profile" />
@@ -113,11 +116,7 @@
             android:label="@string/title_activity_post"
             android:screenOrientation="portrait" >
         </activity>
-        <activity
-            android:name="com.awakenguys.kmitl.ladkrabangcountry.Main_Review"
-            android:label="@string/title_activity_main__review"
-            android:screenOrientation="portrait" >
-        </activity>
+        a35ad4e9a29f5d9336dac799e67a6f9fbee5bb3b
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Tran_Bus_Second"
             android:label="@string/title_activity_tran__bus__second"
@@ -125,8 +124,7 @@
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Announce_View"
-            android:label="@string/title_activity_announce__view"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:label="@string/title_activity_announce__view" >
         </activity>
         <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.Announce_Create" >
         </activity>
@@ -142,7 +140,17 @@
             android:name="com.awakenguys.kmitl.ladkrabangcountry.MotorcycleMap"
             android:label="@string/title_activity_maps_activity__motorcycle" >
         </activity>
-        <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.ReviewList" >
+        <activity
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.Announce_Info"
+            android:label="@string/title_activity_announce__info" >
+        </activity>
+        <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.Review_Info" >
+        </activity>
+        <activity
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.TrainArrivalTimeActivity"
+            android:label="สถานีพระจอมเกล้า" >
+        </activity>
+        <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.Review_View" >
         </activity>
     </application>
 

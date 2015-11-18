@@ -80,13 +80,15 @@ public class Main_Tran extends AppCompatActivity implements View.OnClickListener
         }
     }
     //========================================================================
-    public void Menu_Train(View view) {
-        Intent intent = new Intent(this, Tran_Train.class);
+    public void Menu_Train_Re(View view) {
+        Intent intent = new Intent(this, TrainArrivalTimeActivity.class);
+        intent.putExtra("name","re");
         startActivity(intent);
     }
 
-    public void Menu_TrainOut(View view) {
-        Intent intent = new Intent(this, TableTrainOut.class);
+    public void Menu_Train_Go(View view) {
+        Intent intent = new Intent(this, TrainArrivalTimeActivity.class);
+        intent.putExtra("name","go");
         startActivity(intent);
     }
 

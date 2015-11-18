@@ -46,10 +46,13 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".CatList" >
+        <activity android:name=".CatList"
+            android:label="Category"
+            android:screenOrientation="portrait">
         </activity>
         <activity android:name=".PlaceList" />
         <activity android:name=".Profile" />
+
 
         <activity
             android:name=".NearbyMap"
@@ -77,10 +80,13 @@
             android:label="@string/title_activity_tran__van"
             android:screenOrientation="portrait" >
         </activity>
+
+
         <activity
             android:name=".Tran_Bus"
             android:label="@string/title_activity_tran__bus"
             android:screenOrientation="portrait" >
+
         </activity>
 
         <activity
@@ -107,12 +113,7 @@
             android:label="@string/title_activity_post"
             android:screenOrientation="portrait" >
         </activity>
-        <activity
-            android:name=".Main_Review"
-            android:label="@string/title_activity_main__review"
-            android:screenOrientation="portrait" >
-        </activity>
-
+        a35ad4e9a29f5d9336dac799e67a6f9fbee5bb3b
         <activity
             android:name=".Tran_Bus_Second"
             android:label="@string/title_activity_tran__bus__second"
@@ -120,8 +121,7 @@
         </activity>
         <activity
             android:name=".Announce_View"
-            android:label="@string/title_activity_announce__view"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:label="@string/title_activity_announce__view" >
         </activity>
         <activity android:name=".Announce_Create" >
         </activity>
@@ -137,8 +137,21 @@
             android:name=".MotorcycleMap"
             android:label="@string/title_activity_maps_activity__motorcycle" >
         </activity>
-        <activity android:name=".ReviewList" >
+
+
+        <activity
+            android:name=".Announce_Info"
+            android:label="@string/title_activity_announce__info" >
+        </activity>
+        <activity android:name=".Review_Info" >
+        </activity>
+        <activity
+            android:name=".TrainArrivalTimeActivity"
+            android:label="สถานีพระจอมเกล้า">
+
+        </activity>
+        <activity android:name=".Review_View" >
+
         </activity>
     </application>
-
 </manifest>

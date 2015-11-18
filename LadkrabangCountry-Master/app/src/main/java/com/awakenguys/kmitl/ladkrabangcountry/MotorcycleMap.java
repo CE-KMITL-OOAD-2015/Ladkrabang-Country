@@ -39,7 +39,7 @@ public class MotorcycleMap extends FragmentActivity implements OnMapReadyCallbac
 
         MarkerOptions loah = new MarkerOptions();
         loah.position(LOAH);
-        loah.title("วินมอเตอร์ไซต์หน้าโหล");
+        loah.title("วินมอเตอร์ไซต์หน้าอาคารเรียนรวม 12 ชั้น (ตึกโหล)");
 
         MarkerOptions library = new MarkerOptions();
         library.position(LIBRARY);
@@ -51,11 +51,11 @@ public class MotorcycleMap extends FragmentActivity implements OnMapReadyCallbac
 
         map.addMarker(rnp);
         //ย้ายกล้องไปที่วินวิทยา กำหนดซูมระดับ 5
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(RNP, 5));
+        //map.moveCamera(CameraUpdateFactory.newLatLngZoom(RNP, 5));
 
         map.addMarker(kay3);
         //ย้ายกล้องไปที่วินวิทยา กำหนดซูมระดับ 5
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(KAY3,5));
+        //map.moveCamera(CameraUpdateFactory.newLatLngZoom(KAY3,5));
 
         map.addMarker(loah);
         //ย้ายกล้องไปที่วินวิทยา กำหนดซูมระดับ 5
@@ -63,13 +63,13 @@ public class MotorcycleMap extends FragmentActivity implements OnMapReadyCallbac
 
         map.addMarker(library);
         //ย้ายกล้องไปที่วินวิทยา กำหนดซูมระดับ 5
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(LIBRARY,5));
+        //map.moveCamera(CameraUpdateFactory.newLatLngZoom(LIBRARY,5));
 
         map.addMarker(fbt);
         //ย้ายกล้องไปที่วินวิทยา กำหนดซูมระดับ 5
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(FBT,5));
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(13.726137, 100.771828),10));
 
         //ซุมมาที่ระดับ 13 แบบมีแอนิเมชั่น
-        map.animateCamera(CameraUpdateFactory.zoomTo(15),200,null);
+        //map.animateCamera(CameraUpdateFactory.zoomTo(10),200,null);
     }
 }
