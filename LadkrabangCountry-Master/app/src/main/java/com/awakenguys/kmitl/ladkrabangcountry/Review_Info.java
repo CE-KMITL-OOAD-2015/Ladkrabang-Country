@@ -30,7 +30,6 @@ public class Review_Info extends AppCompatActivity {
                                         boolean fromUser) {
 
                 txtView1.setText("Your Selected : " + String.valueOf(rating));
-
             }
         });
 
@@ -43,12 +42,20 @@ public class Review_Info extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
             }
         });
+        //pull data
+        Bundle bundle = getIntent().getExtras();
+        String topic = bundle.getString("topic");
+        String content = bundle.getString("content");
+        final TextView topicView = (TextView)findViewById(R.id.edittextInfo);
+        topicView.setText(topic);
+        final TextView topicView2 = (TextView)findViewById(R.id.textViewInfo);
+        topicView2.setText(content);
 
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main__review, menu);
+        getMenuInflater().inflate(R.menu.guest_anotherpage_menu, menu);
         return true;
     }
 

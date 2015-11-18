@@ -39,7 +39,7 @@ public class MotorcycleMap extends FragmentActivity implements OnMapReadyCallbac
 
         MarkerOptions loah = new MarkerOptions();
         loah.position(LOAH);
-        loah.title("วินมอเตอร์ไซต์หน้าโหล");
+        loah.title("วินมอเตอร์ไซต์หน้าอาคารเรียนรวม 12 ชั้น (ตึกโหล)");
 
         MarkerOptions library = new MarkerOptions();
         library.position(LIBRARY);

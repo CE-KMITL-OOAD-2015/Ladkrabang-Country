@@ -46,6 +46,7 @@ public class PlaceList extends AppCompatActivity {
                 // ListView Clicked item value
                 String itemValue = (String) listView.getItemAtPosition(position);
                 new GetPlace().execute(itemValue);
+
             }
 
         });

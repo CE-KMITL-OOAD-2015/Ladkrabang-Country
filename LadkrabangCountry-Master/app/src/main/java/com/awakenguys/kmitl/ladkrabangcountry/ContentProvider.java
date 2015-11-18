@@ -1,12 +1,12 @@
 package com.awakenguys.kmitl.ladkrabangcountry;
 
+
 import com.awakenguys.kmitl.ladkrabangcountry.model.Place;
 import com.awakenguys.kmitl.ladkrabangcountry.model.Review;
 import com.awakenguys.kmitl.ladkrabangcountry.model.User;
 
 import org.springframework.hateoas.MediaTypes;
 import org.springframework.hateoas.client.Traverson;
-import org.springframework.http.MediaType;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -128,7 +128,7 @@ public class ContentProvider {
             if(str.equals("ทั้งหมด")){
                 traverson = new Traverson(new URI(url+"places?sort=name,asc"), MediaTypes.HAL_JSON);
                 Traverson.TraversalBuilder traversalBuilder = traverson
-                            .follow("$._embedded.places[" + index + "]._links.self.href");
+                        .follow("$._embedded.places[" + index + "]._links.self.href");
                 name = traversalBuilder.toObject("$.name");
             }
             else {
@@ -196,22 +196,36 @@ public class ContentProvider {
         }
     }
 
+    public String getUserNameById(String id) {
+        String name = null;
+        try {
+            traverson = new Traverson(new URI(url + "users/search/findUserById?id=" + id),
+                    MediaTypes.HAL_JSON);
+            name = traverson.follow("$._embedded.users[0]._links.self.href").toObject("$.name");
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            return name;
+        }
+    }
+
 
     public Review getReviewByIndex(int index){
-
-        int all = traverson.follow("$._links.self.href").toObject("$.page.totalElements");
-        int size = traverson.follow("$._links.self.href").toObject("$.page.size");
-        int page = index/size;
-        index = index % size;
         try {
-            traverson = new Traverson(new URI(url+"reviews?page="+page+"&sort=name,asc"), MediaTypes.HAL_JSON);
+            traverson = new Traverson(new URI(url + "reviews"), MediaTypes.HAL_JSON);
+            int all = traverson.follow("$._links.self.href").toObject("$.page.totalElements");
+            int size = traverson.follow("$._links.self.href").toObject("$.page.size");
+            int page = index/size;
+            index = index % size;
+
+            traverson = new Traverson(new URI(url+"reviews?page="+page), MediaTypes.HAL_JSON);
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }
         Review review = new Review();
 
         Traverson.TraversalBuilder traversalBuilder = traverson
-                .follow("$._embedded.places[" + index + "]._links.self.href");
+                .follow("$._embedded.reviews[" + index + "]._links.self.href");
         review = traversalBuilder.toObject(Review.class);
 
         return review;
@@ -262,6 +276,18 @@ public class ContentProvider {
 
             return lngAxis;
         }
+    }
+
+    public int getReviewSize(){
+        int all = 0;
+        try {
+            traverson = new Traverson(new URI(url + "reviews"), MediaTypes.HAL_JSON);
+            all = traverson.follow("$._links.self.href").toObject("$.page.totalElements");
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return all;
     }
 
 

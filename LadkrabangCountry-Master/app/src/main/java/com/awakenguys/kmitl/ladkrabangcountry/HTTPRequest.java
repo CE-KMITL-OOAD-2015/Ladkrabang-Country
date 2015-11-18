@@ -22,20 +22,20 @@ public class HTTPRequest extends AsyncTask<String,Void,Void> {
     }
     public static String executeGet(String targetURL) throws Exception{
         URL url;
-        HttpURLConnection urlcon;
+        HttpURLConnection connection;
         url = new URL(targetURL.replace(" ","+"));
-        urlcon = (HttpURLConnection) url.openConnection();
-        urlcon.setRequestMethod("GET");
-        urlcon.setRequestProperty("User-Agent", "Mozilla 5.0");
-        urlcon.connect();
-        BufferedReader in = new BufferedReader(new InputStreamReader(urlcon.getInputStream()));
+        connection = (HttpURLConnection) url.openConnection();
+        connection.setRequestMethod("GET");
+        connection.setRequestProperty("User-Agent", "Mozilla 5.0");
+        connection.connect();
+        BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
         String inputLine;
         StringBuffer response = new StringBuffer();
         while((inputLine = in.readLine())!= null){
             response.append(inputLine);
         }
         in.close();
-        urlcon.disconnect();
+        connection.disconnect();
         return response.toString();
     }
 }

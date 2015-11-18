@@ -1,6 +1,7 @@
 package com.awakenguys.kmitl.ladkrabangcountry.model;
 
 
+
 import java.util.Date;
 
 public class Review {
@@ -9,6 +10,7 @@ public class Review {
     private String topic;
     private String content;
     private String img_path;
+    private String author;
     private String authorId;
     private float rating = 0;
     private int total = 0;
@@ -17,13 +19,13 @@ public class Review {
     public Review() {
     }
 
-    public Review(String topic, String content, String authorId) {
+    public Review(String topic, String content, String authorId, String author) {
         this.topic = topic;
         this.content = content;
         this.authorId = authorId;
     }
 
-    public Review(String topic, String content, String img_path, String authorId) {
+    public Review(String topic, String content, String img_path, String authorId, String author) {
         this.topic = topic;
         this.content = content;
         this.img_path = img_path;
@@ -60,6 +62,14 @@ public class Review {
 
     public void setImg_path(String img_path) {
         this.img_path = img_path;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public String getAuthorId() {
@@ -101,6 +111,7 @@ public class Review {
                 ", topic='" + topic + '\'' +
                 ", content='" + content + '\'' +
                 ", img_path='" + img_path + '\'' +
+                ", author='" + author + '\'' +
                 ", authorId='" + authorId + '\'' +
                 ", rating=" + rating +
                 ", total=" + total +

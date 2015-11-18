@@ -1,10 +1,15 @@
 package com.awakenguys.kmitl.ladkrabangcountry;
 
+
+import android.app.ProgressDialog;
+import android.content.Context;
+
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.provider.MediaStore;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -13,31 +18,43 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.awakenguys.kmitl.ladkrabangcountry.model.User;
 
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+
 public class Review_Create extends AppCompatActivity {
     private static final int SELECT_PHOTO = 1;
     private TextView text;
-    private ImageView imageView;
+    private ImageButton imageButton;
+    private Context context = this;
+    Bitmap bitmap = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_review_create);
+        setContentView(R.layout.activity_create_review);
         if(Profile.getUser().getLevel()== User.GUEST){
-            Toast.makeText(Review_Create.this, "Youl must login before post.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Review_Create.this, "You must login before post.", Toast.LENGTH_SHORT).show();
             finish();
             startActivity(new Intent(this, Profile.class));
         }
 
-        Button button = (Button) findViewById(R.id.postButton);
+
+        imageButton = (ImageButton) findViewById(R.id.image_button);
+        imageButton.setBackgroundResource(R.drawable.camera);
+
         text = (TextView) findViewById(R.id.text);
-        imageView = (ImageView) findViewById(R.id.image);
-        button.setOnClickListener(new View.OnClickListener() {
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
@@ -51,6 +68,7 @@ public class Review_Create extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 post();
+
                 finish();
             }
         });
@@ -76,8 +94,9 @@ public class Review_Create extends AppCompatActivity {
     }
     //Edittext to String and send to server
     private void post(){
-        EditText txtDescription = (EditText) findViewById(R.id.edittext);
-        EditText txtDescription2 = (EditText) findViewById(R.id.edittext2);
+        imagePost();
+        EditText txtDescription = (EditText) findViewById(R.id.edit_text);
+        EditText txtDescription2 = (EditText) findViewById(R.id.edit_text_2);
         String topic = txtDescription.getText().toString();
         String content = txtDescription2.getText().toString();
         HTTPRequest rq = new HTTPRequest();
@@ -87,29 +106,130 @@ public class Review_Create extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
         Toast.makeText(Review_Create.this, "Success!", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, Review_View.class));
+
     }
+
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        // Here we need to check if the activity that was triggers was the Image Gallery.
-        // If it is the requestCode will match the LOAD_IMAGE_RESULTS value.
-        // If the resultCode is RESULT_OK and there is some data we know that an image was picked.
-        if (requestCode == SELECT_PHOTO && resultCode == RESULT_OK && data != null) {
-            // Let's read picked image data - its URI
-            Uri pickedImage = data.getData();
-            // Let's read picked image path using content resolver
-            String[] filePath = { MediaStore.Images.Media.DATA };
-            Cursor cursor = getContentResolver().query(pickedImage, filePath, null, null, null);
+
+        if (requestCode == SELECT_PHOTO && resultCode == RESULT_OK && null != data) {
+            Uri selectedImage = data.getData();
+            String[] filePathColumn = { MediaStore.Images.Media.DATA };
+
+            Cursor cursor = getContentResolver().query(selectedImage,
+                    filePathColumn, null, null, null);
             cursor.moveToFirst();
-            String imagePath = cursor.getString(cursor.getColumnIndex(filePath[0]));
-            BitmapFactory.Options options = new BitmapFactory.Options();
-            options.inPreferredConfig = Bitmap.Config.ARGB_8888;
-            Bitmap bitmap = BitmapFactory.decodeFile(imagePath, options);
-            imageView.setImageBitmap(bitmap);
-            // Do something with the bitmap
-            // At the end remember to close the cursor or you will end with the RuntimeException!
+
+            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+            String picturePath = cursor.getString(columnIndex);
             cursor.close();
+
+            decodeFile(picturePath);
+
+        }
+
+    }
+
+    public String imagePost()
+    {
+        if(bitmap!=null){
+            URL url;
+            HttpURLConnection connection = null;
+            try {
+                //Create connection
+                url = new URL("http://203.151.92.199:8888/uploadimage");
+                connection = (HttpURLConnection) url.openConnection();
+                connection.setReadTimeout(10000);
+                connection.setConnectTimeout(15000);
+                connection.setDoOutput(true);
+                connection.setDoOutput(true);
+                connection.setRequestProperty("Content-Type", "image/jpeg");
+                connection.setRequestMethod("POST");
+
+
+                OutputStream outputStream = connection.getOutputStream();
+
+
+                bitmap.compress(Bitmap.CompressFormat.JPEG, 100, outputStream);
+
+                outputStream.close();
+                BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+                String inputLine;
+                StringBuffer response = new StringBuffer();
+                while((inputLine = in.readLine())!= null){
+                    response.append(inputLine);
+                }
+                in.close();
+                connection.disconnect();
+                return response.toString();
+            } catch (Exception e) {
+                e.printStackTrace();
+
+            }
+        }
+        return null;
+    }
+
+    public void decodeFile(String filePath) {
+
+        // Decode image size
+        BitmapFactory.Options o = new BitmapFactory.Options();
+        o.inJustDecodeBounds = true;
+        BitmapFactory.decodeFile(filePath, o);
+
+        // The new size we want to scale to
+        final int REQUIRED_SIZE = 300;
+
+        // Find the correct scale value. It should be the power of 2.
+        int width_tmp = o.outWidth, height_tmp = o.outHeight;
+        int scale = 1;
+        while (true) {
+            if (width_tmp < REQUIRED_SIZE && height_tmp < REQUIRED_SIZE)
+                break;
+            width_tmp /= 2;
+            height_tmp /= 2;
+            scale *= 2;
+        }
+
+        // Decode with inSampleSize
+        BitmapFactory.Options o2 = new BitmapFactory.Options();
+        o2.inSampleSize = scale;
+        bitmap = BitmapFactory.decodeFile(filePath, o2);
+        imageButton.setImageBitmap(bitmap);
+        imageButton.setBackgroundResource(0);
+
+    }
+
+    class ImageUploadTask extends AsyncTask<String, Void, String> {
+
+
+        // private ProgressDialog dialog;
+        private ProgressDialog dialog = new ProgressDialog(Review_Create.this);
+
+        @Override
+        protected void onPreExecute() {
+            //dialog.setMessage("Uploading...");
+            //dialog.show();
+        }
+
+        @Override
+        protected String doInBackground(String... params) {
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            dialog.dismiss();
+            Toast.makeText(getApplicationContext(), "file uploaded",Toast.LENGTH_LONG).show();
         }
     }
+
+
+
 }

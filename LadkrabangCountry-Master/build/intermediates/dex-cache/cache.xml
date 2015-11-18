@@ -2,6 +2,7 @@
 <items version="2" >
 
     <item
+<<<<<<< HEAD
         jar="C:\Users\siriporn\.gradle\caches\modules-2\files-2.1\org.springframework.android\spring-android-rest-template\1.0.1.RELEASE\e132d929bd181941f79b0d63edafb8a86ae6fd33\spring-android-rest-template-1.0.1.RELEASE.jar"
         jumboMode="false"
         revision="23.0.2"
@@ -189,6 +190,20 @@
         revision="23.0.2"
         sha1="256abd04e9c25f84ef98b18e4b89051b8ec68ba2">
         <dex dex="C:\Users\siriporn\Documents\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\spring-expression-4.0.9.RELEASE-cb8cef11a3830ccee910b3db540af651082209d7.jar" />
+=======
+        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.4.4\b31526a230871fbe285fbcbe2813f9c0839ae9b0\httpcore-4.4.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b31526a230871fbe285fbcbe2813f9c0839ae9b0">
+        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\httpcore-4.4.4-9a20a4b516ef4daf26c1bd003916897539732607.jar" />
+    </item>
+    <item
+        jar="C:\Users\x_zee_000\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpmime\4.5.1\96823b9421ebb9f490dec837d9f96134e864e3a7\httpmime-4.5.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="96823b9421ebb9f490dec837d9f96134e864e3a7">
+        <dex dex="D:\GitHub\Ladkrabang-Country\LadkrabangCountry-Master\app\build\intermediates\pre-dexed\debug\httpmime-4.5.1-586b84950b195266a5f894a045b23f18e5adc019.jar" />
+>>>>>>> a35ad4e9a29f5d9336dac799e67a6f9fbee5bb3b
     </item>
 
 </items>

@@ -16,6 +16,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    useLibrary 'org.apache.http.legacy'
     productFlavors {
     }
 
@@ -31,6 +33,8 @@ android {
         exclude 'license.txt'
         exclude 'changelog.txt'
     }
+
+
 }
 
 repositories {
@@ -67,4 +71,6 @@ dependencies {
     compile 'com.fasterxml.jackson.core:jackson-databind:2.6.3'
     compile 'com.android.support:design:23.1.0'
     compile 'com.google.android.gms:play-services-location:8.3.0'
+
+
 }

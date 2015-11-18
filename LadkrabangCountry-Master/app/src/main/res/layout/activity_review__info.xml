@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/edittext"
+            android:id="@+id/edittextInfo"
             android:autoText="true"
             android:hint="Topic"
             android:selectAllOnFocus="true"
@@ -38,11 +38,11 @@
             android:layout_gravity="center"
             android:scaleType="centerInside"
             android:src="@drawable/camera"
-            android:background="@color/actionbar_background" />
+            android:background="@color/white" />
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textview"
+            android:id="@+id/textViewInfo"
             android:layout_weight="1.13"
             android:layout_marginTop="10dp" />
 
