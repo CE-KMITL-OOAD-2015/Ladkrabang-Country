@@ -52,7 +52,8 @@
         </activity>
         <activity android:name=".PlaceList" />
         <activity android:name=".Profile" />
-            a35ad4e9a29f5d9336dac799e67a6f9fbee5bb3b
+
+
         <activity
             android:name=".NearbyMap"
             android:label="@string/title_activity_maps"
@@ -67,13 +68,13 @@
             android:label="@string/title_activity_main__tran"
             android:screenOrientation="portrait" >
         </activity>
-        a35ad4e9a29f5d9336dac799e67a6f9fbee5bb3b
+
         <activity
             android:name=".Tran_Train"
             android:label="@string/title_activity_tran__train"
             android:screenOrientation="portrait" >
         </activity>
-        a35ad4e9a29f5d9336dac799e67a6f9fbee5bb3b
+
         <activity
             android:name=".Tran_Van"
             android:label="@string/title_activity_tran__van"
@@ -85,8 +86,9 @@
             android:name=".Tran_Bus"
             android:label="@string/title_activity_tran__bus"
             android:screenOrientation="portrait" >
+
         </activity>
-         a35ad4e9a29f5d9336dac799e67a6f9fbee5bb3b
+
         <activity
             android:name=".LogInActivity"
             android:label="@string/Ladkrabang_Country"
@@ -136,16 +138,20 @@
             android:label="@string/title_activity_maps_activity__motorcycle" >
         </activity>
 
+
         <activity
             android:name=".Announce_Info"
             android:label="@string/title_activity_announce__info" >
         </activity>
         <activity android:name=".Review_Info" >
         </activity>
+        <activity
+            android:name=".TrainArrivalTimeActivity"
+            android:label="สถานีพระจอมเกล้า">
 
+        </activity>
         <activity android:name=".Review_View" >
 
         </activity>
     </application>
-
 </manifest>

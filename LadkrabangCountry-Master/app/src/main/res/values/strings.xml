@@ -14,8 +14,8 @@
     <string name="title_activity_tran__train">Train</string>
 
     //train function
-    <string name="goBKK">TO BBK</string>
-    <string name="outBKK">FROM BBK</string>
+    <string name="goBKK">To Bangkok</string>
+    <string name="outBKK">From Bangkok</string>
     <string name="title_activity_menu__van">Menu_Van</string>
     <string name="title_activity_tran__van">Van</string>
     <string name="title_activity_tran__bus">Bus</string>
@@ -70,8 +70,11 @@
     <string name="title_activity_maps_2">Map</string>
     <string name="title_activity_maps_">Map</string>
     <string name="title_activity_maps_activity__motorcycle">Map</string>
+
     <string name="title_activity_announce">AnnounceActivity</string>
     <string name="title_activity_announce__info">Info Announcement</string>
     <string name="title_activity_announce__listview">Announcement</string>
+
+    <string name="title_activity_train_arrival_time">TrainArrivalTime</string>
 
 </resources>

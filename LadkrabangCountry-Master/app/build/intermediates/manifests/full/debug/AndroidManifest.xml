@@ -63,7 +63,6 @@
         </activity>
         <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.PlaceList" />
         <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.Profile" />
-            a35ad4e9a29f5d9336dac799e67a6f9fbee5bb3b
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.NearbyMap"
             android:label="@string/title_activity_maps"
@@ -78,13 +77,11 @@
             android:label="@string/title_activity_main__tran"
             android:screenOrientation="portrait" >
         </activity>
-        a35ad4e9a29f5d9336dac799e67a6f9fbee5bb3b
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Tran_Train"
             android:label="@string/title_activity_tran__train"
             android:screenOrientation="portrait" >
         </activity>
-        a35ad4e9a29f5d9336dac799e67a6f9fbee5bb3b
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Tran_Van"
             android:label="@string/title_activity_tran__van"
@@ -95,7 +92,6 @@
             android:label="@string/title_activity_tran__bus"
             android:screenOrientation="portrait" >
         </activity>
-         a35ad4e9a29f5d9336dac799e67a6f9fbee5bb3b
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.LogInActivity"
             android:label="@string/Ladkrabang_Country"
@@ -149,6 +145,10 @@
             android:label="@string/title_activity_announce__info" >
         </activity>
         <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.Review_Info" >
+        </activity>
+        <activity
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.TrainArrivalTimeActivity"
+            android:label="สถานีพระจอมเกล้า" >
         </activity>
         <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.Review_View" >
         </activity>
