@@ -18,9 +18,8 @@ public class Announce_Create extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_announce__create);
         //--------------send text to server-----------------
-        Button button = (Button) findViewById(R.id.announceButton);
-        text = (TextView) findViewById(R.id.text);
         Button postButton = (Button) findViewById(R.id.announceButton);
+
         postButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,13 +35,14 @@ public class Announce_Create extends AppCompatActivity {
         String content = txtDescription2.getText().toString();
         HTTPRequest rq = new HTTPRequest();
         try {
-            rq.execute("http://203.151.92.199:8888/addreview?topic=" + topic + "&content=" +
+            rq.execute("http://203.151.92.199:8888/addannounce?topic=" + topic + "&content=" +
                     content + "&authorId=" + Profile.getUser().getId());
         } catch (Exception e) {
             e.printStackTrace();
         }
         Toast.makeText(Announce_Create.this, "Success!", Toast.LENGTH_SHORT).show();
     }
+    //---------------------------------
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
