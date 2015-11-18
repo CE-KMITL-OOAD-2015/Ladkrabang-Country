@@ -19,13 +19,12 @@ public class ReviewList extends AppCompatActivity {
     private List<Review> reviewList = new ArrayList<Review>();
     private ListView listview;
     private CustomListAdapter adapter;
-    private UpdateTask updateTask;
     private TextView emptyView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_listview);
+        setContentView(R.layout.activity_review_list);
 
         listview = (ListView) findViewById(android.R.id.list);
         adapter = new CustomListAdapter(this, reviewList);
