@@ -778,7 +778,7 @@ int id adjust_height 0x7f0d0032
 int id adjust_width 0x7f0d0033
 int id alertTitle 0x7f0d005f
 int id always 0x7f0d0037
-int id announce 0x7f0d0081
+int id announceButton 0x7f0d0081
 int id auto 0x7f0d003f
 int id automatic 0x7f0d004b
 int id beginning 0x7f0d0030

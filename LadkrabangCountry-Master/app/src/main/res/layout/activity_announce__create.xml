@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:text="announce"
             android:background="@color/orange"
-            android:id="@+id/announce"
+            android:id="@+id/announceButton"
             android:layout_margin="20dp"
             android:layout_gravity="center"
             android:onClick="Announce_list"/>

@@ -6,13 +6,42 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class Announce_Create extends AppCompatActivity {
-
+    private TextView text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_announce__create);
+        //--------------send text to server-----------------
+        Button button = (Button) findViewById(R.id.announceButton);
+        text = (TextView) findViewById(R.id.text);
+        Button postButton = (Button) findViewById(R.id.announceButton);
+        postButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                announce();
+                finish();
+            }
+        });
+    }
+    private void announce(){
+        EditText txtDescription = (EditText) findViewById(R.id.topic_Ann);
+        EditText txtDescription2 = (EditText) findViewById(R.id.content_Ann);
+        String topic = txtDescription.getText().toString();
+        String content = txtDescription2.getText().toString();
+        HTTPRequest rq = new HTTPRequest();
+        try {
+            rq.execute("http://203.151.92.199:8888/addreview?topic=" + topic + "&content=" +
+                    content + "&authorId=" + Profile.getUser().getId());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Toast.makeText(Announce_Create.this, "Success!", Toast.LENGTH_SHORT).show();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

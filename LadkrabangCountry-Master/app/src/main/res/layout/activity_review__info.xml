@@ -29,7 +29,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignRight="@+id/linearLayout2"
             android:layout_alignEnd="@+id/linearLayout2"
-            android:layout_weight="0.11" />
+            android:layout_weight="0.10" />
 
         <ImageView
             android:id="@+id/image"
@@ -40,9 +40,11 @@
             android:src="@drawable/camera"
             android:background="@color/actionbar_background" />
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textview"/>
+            android:id="@+id/textview"
+            android:layout_weight="1.13"
+            android:layout_marginTop="10dp" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -66,28 +68,25 @@
                     android:id="@+id/textView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="112dp"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:layout_below="@+id/ratingBar1"
+                    android:layout_centerHorizontal="true" />
 
 
                 <RatingBar
                     android:id="@+id/ratingBar1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/textView1"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="34dp" />
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
 
                 <Button
                     android:id="@+id/button1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Rate"
                     android:layout_below="@+id/textView1"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="32dp"
-                    android:text="Button" />
+                    android:layout_centerHorizontal="true" />
 
             </RelativeLayout>
         </ScrollView>

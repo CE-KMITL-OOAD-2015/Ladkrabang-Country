@@ -2715,7 +2715,7 @@ containing a value of this type.
         public static final int adjust_width=0x7f0d0033;
         public static final int alertTitle=0x7f0d005f;
         public static final int always=0x7f0d0037;
-        public static final int announce=0x7f0d0081;
+        public static final int announceButton=0x7f0d0081;
         public static final int auto=0x7f0d003f;
         public static final int automatic=0x7f0d004b;
         public static final int beginning=0x7f0d0030;
