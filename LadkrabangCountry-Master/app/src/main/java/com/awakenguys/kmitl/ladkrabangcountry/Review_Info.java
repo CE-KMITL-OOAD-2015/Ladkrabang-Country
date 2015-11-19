@@ -53,6 +53,12 @@ public class Review_Info extends AppCompatActivity {
                 //finish();
             }
         });
+        if(Profile.getUser().getLevel()==2){
+            rating_Bar.setVisibility(View.INVISIBLE);
+            txtView1.setVisibility(View.INVISIBLE);
+            btn1.setVisibility(View.INVISIBLE);
+        }
+
         //pull data
         Bundle bundle = getIntent().getExtras();
         String topic = bundle.getString("topic");
