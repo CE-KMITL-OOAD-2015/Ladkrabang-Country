@@ -54,8 +54,8 @@ public class AnnounceListAdapter extends BaseAdapter {
 
         //if (imageLoader == null)
         //	imageLoader = AppController.getInstance().getImageLoader();
-        ImageView thumbNail = (ImageView) convertView
-                .findViewById(R.id.thumbnail);
+        //ImageView thumbNail = (ImageView) convertView
+        //        .findViewById(R.id.thumbnail);
         TextView topic = (TextView) convertView.findViewById(R.id.topic);
         TextView content = (TextView) convertView.findViewById(R.id.content);
         author = (TextView) convertView.findViewById(R.id.author);
@@ -65,7 +65,7 @@ public class AnnounceListAdapter extends BaseAdapter {
         Announce a = announceItems.get(position);
 
         // thumbnail image
-        thumbNail.setImageResource(R.drawable.camera);
+        //thumbNail.setImageResource(R.drawable.camera);
 
         // topic
         topic.setText(a.getTopic());

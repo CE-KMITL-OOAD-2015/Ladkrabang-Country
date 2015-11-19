@@ -66,7 +66,7 @@ public class Review_Create extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_review);
-        if(Profile.getUser().getLevel()== User.GUEST){
+        if (Profile.getUser().getLevel() == User.GUEST) {
             Toast.makeText(Review_Create.this, "You must login before post.", Toast.LENGTH_SHORT).show();
             finish();
             startActivity(new Intent(this, Profile.class));
@@ -123,12 +123,8 @@ public class Review_Create extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void post(){
+    private void post() {
         //magePost();
-
-
-
-
 
 
         EditText txtDescription = (EditText) findViewById(R.id.edit_text);
@@ -136,30 +132,29 @@ public class Review_Create extends AppCompatActivity {
         topic = txtDescription.getText().toString();
         content = txtDescription2.getText().toString();
 
-        new PostTask().execute();
+        //new PostTask().execute();
 
 
-    ;
-        /*HTTPRequest rq = new HTTPRequest();
+        ;
+        HTTPRequest rq = new HTTPRequest();
         try {
             if (encodedImg == null) {
                 rq.execute("http://203.151.92.199:8888/addreview?topic=" + topic + "&content=" +
                         content + "&authorId=" + Profile.getUser().getId());
-            }
-            else {
+            } else {
                 rq.execute("http://203.151.92.199:8888/addreview?topic=" + topic + "&content=" +
-                        content + "&authorId=" + Profile.getUser().getId()+"&img="+ encodedImg);
+                        content + "&authorId=" + Profile.getUser().getId() + "&img=" + encodedImg);
             }
         } catch (Exception e) {
             e.printStackTrace();
-        }*/
+        }
 
         Toast.makeText(Review_Create.this, "Success!", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(this, Review_View.class));
 
     }
 
-    private class PostTask extends AsyncTask<Void,Void,String>{
+    /*private class PostTask extends AsyncTask<Void,Void,String>{
         @Override
         protected String doInBackground(Void... params) {
             try {
@@ -196,7 +191,7 @@ public class Review_Create extends AppCompatActivity {
 
 
     }
-
+*/
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -227,7 +222,7 @@ public class Review_Create extends AppCompatActivity {
         BitmapFactory.decodeFile(filePath, o);
 
         // The new size we want to scale to
-        final int REQUIRED_SIZE = 300;
+        final int REQUIRED_SIZE = 200;
 
         // Find the correct scale value. It should be the power of 2.
         int width_tmp = o.outWidth, height_tmp = o.outHeight;

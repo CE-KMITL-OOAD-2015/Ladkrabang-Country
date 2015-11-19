@@ -10,7 +10,7 @@ public class Review {
     private String id;
     private String topic;
     private String content;
-    private String img_path;
+    private String img;
     private String author;
     private String authorId;
     private float rating = 0;
@@ -27,10 +27,10 @@ public class Review {
         this.author = author;
     }
 
-    public Review(String topic, String content, String img_path, String authorId, String author) {
+    public Review(String topic, String content, String img, String authorId, String author) {
         this.topic = topic;
         this.content = content;
-        this.img_path = img_path;
+        this.img = img;
         this.authorId = authorId;
         this.author = author;
     }
@@ -40,7 +40,7 @@ public class Review {
         this.id = id;
         this.topic = topic;
         this.content = content;
-        this.img_path = img_path;
+        this.img = img_path;
         this.author = author;
         this.authorId = authorId;
         this.rating = rating;
@@ -72,12 +72,12 @@ public class Review {
         this.content = content;
     }
 
-    public String getImg_path() {
-        return img_path;
+    public String getImg() {
+        return img;
     }
 
-    public void setImg_path(String img_path) {
-        this.img_path = img_path;
+    public void setImg(String img_path) {
+        this.img = img;
     }
 
     public String getAuthor() {
@@ -126,7 +126,7 @@ public class Review {
                 "id='" + id + '\'' +
                 ", topic='" + topic + '\'' +
                 ", content='" + content + '\'' +
-                ", img_path='" + img_path + '\'' +
+                ", img='" + img + '\'' +
                 ", author='" + author + '\'' +
                 ", authorId='" + authorId + '\'' +
                 ", rating=" + rating +
