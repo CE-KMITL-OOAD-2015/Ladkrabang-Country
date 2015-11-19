@@ -123,7 +123,8 @@
             android:name=".Announce_View"
             android:label="@string/title_activity_announce__view" >
         </activity>
-        <activity android:name=".Announce_Create" >
+        <activity android:name=".Announce_Create"
+            android:label="@string/title_activity_announce__create" >
         </activity>
         <activity
             android:name=".VanMap2"
@@ -150,7 +151,8 @@
             android:label="สถานีพระจอมเกล้า">
 
         </activity>
-        <activity android:name=".Review_View" >
+        <activity android:name=".Review_View"
+            android:label="Reviews">
 
         </activity>
     </application>

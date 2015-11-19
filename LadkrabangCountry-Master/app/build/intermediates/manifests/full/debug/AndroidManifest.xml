@@ -126,7 +126,9 @@
             android:name="com.awakenguys.kmitl.ladkrabangcountry.Announce_View"
             android:label="@string/title_activity_announce__view" >
         </activity>
-        <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.Announce_Create" >
+        <activity
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.Announce_Create"
+            android:label="@string/title_activity_announce__create" >
         </activity>
         <activity
             android:name="com.awakenguys.kmitl.ladkrabangcountry.VanMap2"
@@ -150,7 +152,9 @@
             android:name="com.awakenguys.kmitl.ladkrabangcountry.TrainArrivalTimeActivity"
             android:label="สถานีพระจอมเกล้า" >
         </activity>
-        <activity android:name="com.awakenguys.kmitl.ladkrabangcountry.Review_View" >
+        <activity
+            android:name="com.awakenguys.kmitl.ladkrabangcountry.Review_View"
+            android:label="Reviews" >
         </activity>
     </application>
 

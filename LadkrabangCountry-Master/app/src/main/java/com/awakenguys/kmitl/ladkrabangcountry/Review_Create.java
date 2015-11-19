@@ -118,6 +118,7 @@ public class Review_Create extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.home_icon) {
             startActivity(new Intent(this, MainActivity.class));
+            finish();
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -156,6 +157,7 @@ public class Review_Create extends AppCompatActivity {
 
         Toast.makeText(Review_Create.this, "Success!", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(this, Review_View.class));
+        finish();
 
     }
 

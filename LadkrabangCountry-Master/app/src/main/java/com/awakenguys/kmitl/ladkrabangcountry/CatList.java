@@ -78,6 +78,7 @@ public class CatList extends AppCompatActivity {
 
         if (id == R.id.home_icon) {
             startActivity(new Intent(this, MainActivity.class));
+            finish();
             return true;
         }
         return super.onOptionsItemSelected(item);

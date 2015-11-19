@@ -59,6 +59,7 @@ public class Main_Tran extends AppCompatActivity implements View.OnClickListener
         //noinspection SimplifiableIfStatement
         if (id == R.id.home_icon) {
             startActivity(new Intent(this, MainActivity.class));
+            finish();
             return true;
         }
 

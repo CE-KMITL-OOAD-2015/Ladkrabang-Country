@@ -12,7 +12,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_tran__train">Train</string>
-
+    <string name="title_activity_announce__create">Announce create</string>
     //train function
     <string name="goBKK">To Bangkok</string>
     <string name="outBKK">From Bangkok</string>
@@ -38,7 +38,7 @@
 พระจอมเกล้าเจ้าคุณทหารลาดกระบัง</string>
     <string name="title_activity_search_page">Search</string>
 
-    <string name="title_activity_post">Share</string>
+    <string name="title_activity_post">Post</string>
     <string name="title_activity_main__review">Main_Review</string>
     <string name="title_activity_tran__bus2">Tran_Bus2</string>
     <string name="title_activity_tran__bus_second">Tran_Bus_second</string>

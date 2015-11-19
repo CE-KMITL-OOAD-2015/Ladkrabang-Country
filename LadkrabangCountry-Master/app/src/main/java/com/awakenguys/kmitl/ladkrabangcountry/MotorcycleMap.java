@@ -67,7 +67,7 @@ public class MotorcycleMap extends FragmentActivity implements OnMapReadyCallbac
 
         map.addMarker(fbt);
         //ย้ายกล้องไปที่วินวิทยา กำหนดซูมระดับ 5
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(13.726137, 100.771828),10));
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(13.726137, 100.771828),13));
 
         //ซุมมาที่ระดับ 13 แบบมีแอนิเมชั่น
         //map.animateCamera(CameraUpdateFactory.zoomTo(10),200,null);

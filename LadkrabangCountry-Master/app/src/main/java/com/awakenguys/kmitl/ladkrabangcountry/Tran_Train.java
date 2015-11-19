@@ -32,6 +32,7 @@ public class Tran_Train extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.home_icon) {
             startActivity(new Intent(this, MainActivity.class));
+            finish();
             return true;
         }
 
