@@ -54,6 +54,7 @@ public class Announce_View extends AppCompatActivity {
 
     private void view_announce(int position){
         Intent intent = new Intent(this, Announce_Info.class);
+        intent.putExtra("id", ((Announce) adapter.getItem(position)).getId());
         intent.putExtra("topic", ((Announce) adapter.getItem(position)).getTopic());
         intent.putExtra("content", ((Announce) adapter.getItem(position)).getContent());
         intent.putExtra("author", ((Announce) adapter.getItem(position)).getAuthor());
