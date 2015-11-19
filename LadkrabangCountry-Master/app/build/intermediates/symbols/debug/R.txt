@@ -811,7 +811,7 @@ int id com_facebook_tooltip_bubble_view_top_pointer 0x7f0d00b3
 int id content 0x7f0d00c1
 int id contentPanel 0x7f0d0060
 int id content_Ann 0x7f0d0080
-int id content_Ann_show 0x7f0d0083
+int id content_ann_show 0x7f0d0083
 int id custom 0x7f0d0066
 int id customPanel 0x7f0d0065
 int id dark 0x7f0d0040
@@ -961,7 +961,7 @@ int id top 0x7f0d0025
 int id topPanel 0x7f0d005d
 int id topic 0x7f0d00c0
 int id topic_Ann 0x7f0d007f
-int id topic_Ann_show 0x7f0d0082
+int id topic_ann_show 0x7f0d0082
 int id train 0x7f0d0094
 int id trainArrivalTimeListView 0x7f0d00af
 int id unknown 0x7f0d0047

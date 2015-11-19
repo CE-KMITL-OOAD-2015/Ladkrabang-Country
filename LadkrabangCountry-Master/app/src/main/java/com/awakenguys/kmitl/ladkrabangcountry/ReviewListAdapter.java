@@ -59,29 +59,17 @@ public class ReviewListAdapter extends BaseAdapter {
 		author = (TextView) convertView.findViewById(R.id.author);
 		TextView rating = (TextView) convertView.findViewById(R.id.rating);
 
-		// getting movie data for the row
+
 		Review r = reviewItems.get(position);
 
-		// thumbnail image
 		thumbNail.setImageResource(R.drawable.camera);
-		
-		// topic
+
 		topic.setText(r.getTopic());
-		
-		// content
+
 		content.setText(r.getContent());
-		
-		// genre
-		/*String genreStr = "";
-		for (String str : m.getGenre()) {
-			genreStr += str + ", ";
-		}
-		genreStr = genreStr.length() > 0 ? genreStr.substring(0,
-				genreStr.length() - 2) : genreStr;*/
+
 		author.setText(r.getAuthor());
 
-
-		// rating
 		rating.setText(""+r.getRating());
 
 		return convertView;

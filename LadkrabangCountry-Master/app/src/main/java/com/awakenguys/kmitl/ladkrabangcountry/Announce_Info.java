@@ -6,6 +6,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.awakenguys.kmitl.ladkrabangcountry.model.User;
 
 
 public class Announce_Info extends ActionBarActivity {
@@ -14,6 +19,20 @@ public class Announce_Info extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_announce__info);
+
+        final Bundle bundle = getIntent().getExtras();
+        TextView topicView = (TextView) findViewById(R.id.topic_ann_show);
+        TextView contentView = (TextView) findViewById(R.id.content_ann_show);
+        Button delButton = (Button) findViewById(R.id.delete_announce);
+        if(Profile.getUser().getLevel()== User.GUEST) delButton.setVisibility(View.INVISIBLE);
+        topicView.setText(bundle.getString("topic"));
+        contentView.setText(bundle.getString("content"));
+        delButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                deleteAnnounce(bundle.getString("id"));
+            }
+        });
     }
 
 
@@ -41,10 +60,14 @@ public class Announce_Info extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void Menu_Post(View view)
+    public void deleteAnnounce(String id)
     {
-        Intent intent = new Intent(this,Review_Create.class);
-        startActivity(intent);
+        HTTPRequest rq = new HTTPRequest();
+        rq.execute("http://203.151.92.199:8888/deleteannounce?id="+id);
+        Toast.makeText(Announce_Info.this,"Delete successful.",Toast.LENGTH_SHORT).show();
+        finish();
     }
+
+
 
 }

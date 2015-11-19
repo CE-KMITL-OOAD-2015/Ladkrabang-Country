@@ -20,7 +20,7 @@ public class Review_View extends AppCompatActivity {
     private ListView listview;
     private ReviewListAdapter adapter;
     private TextView emptyView;
-    private UpdateTask updateTask;
+    private UpdateReviewTask updateReviewTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,26 +55,26 @@ public class Review_View extends AppCompatActivity {
         super.onResume();
         reviewList.clear();
         adapter.notifyDataSetChanged();
-        updateTask = new UpdateTask();
-        updateTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        updateReviewTask = new UpdateReviewTask();
+        updateReviewTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        if(updateTask!=null) updateTask.cancel(true);
+        if(updateReviewTask !=null) updateReviewTask.cancel(true);
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        if(updateTask!=null) updateTask.cancel(true);
+        if(updateReviewTask !=null) updateReviewTask.cancel(true);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if(updateTask!=null) updateTask.cancel(true);
+        if(updateReviewTask !=null) updateReviewTask.cancel(true);
     }
 
     private void view_review(int position){
@@ -89,20 +89,22 @@ public class Review_View extends AppCompatActivity {
     private void startPost() {
         startActivity(new Intent(this, Review_Create.class));
     }
-    public class UpdateTask extends AsyncTask<Void,Void,Void>{
+
+    public class UpdateReviewTask extends AsyncTask<Void,Void,Void>{
         @Override
         protected Void doInBackground(Void... params) {
             ContentProvider provider = new  ContentProvider();
             int i = provider.getReviewSize();
-                for(;i>0;i--){
-                    if(isCancelled())break;
-                        try {
-                            reviewList.add(provider.getReviewByIndex(i - 1));
-                            publishProgress();
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
+            for(;i>0;i--) {
+                if (isCancelled()) break;
+                try {
+                    publishProgress();
+                    reviewList.add(provider.getReviewByIndex(i - 1));
+
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
+            }
 
             return null;
         }

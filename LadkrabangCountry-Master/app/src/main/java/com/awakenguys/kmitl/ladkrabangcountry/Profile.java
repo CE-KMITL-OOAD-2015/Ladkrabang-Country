@@ -78,22 +78,23 @@ public class Profile extends Activity {
         @Override
         protected void onPostExecute(User user) {
             super.onPostExecute(user);
-            setUser(user);
+            //setUser(user);
             ((Activity)mContext).finish();
+            if(user==null) Toast.makeText(Profile.this, "No internet connection.",Toast.LENGTH_SHORT).show();
             Toast.makeText(Profile.this, "Welcome "+user.getName(), Toast.LENGTH_SHORT).show();
         }
 
         private User login(User login_user) {
             ContentProvider provider = new ContentProvider();
-            User user = provider.getUserByFbId(login_user.getFbId());
+            user = provider.getUserByFbId(login_user.getFbId());
             try {
                 if (user == null) {
-                    if (login_user.getLevel() != 2) {
+                    if (login_user.getLevel() != User.GUEST) {
                         HTTPRequest rq = new HTTPRequest();
                         rq.executeGet("http://203.151.92.199:8888/adduser?fbId=" + login_user.getFbId()
                                 + "&name=" + login_user.getName());
                         user = provider.getUserByFbId(login_user.getFbId());
-                    } else user = new User(null, "Guest", 2);
+                    } else user = new User(null, "Guest", User.GUEST);
                 }
 
             } catch (Exception e) {

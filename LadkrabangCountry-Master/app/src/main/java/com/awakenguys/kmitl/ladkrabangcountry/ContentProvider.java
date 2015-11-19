@@ -126,9 +126,15 @@ public class ContentProvider {
     //use in PlaceList (get just one String of place name)
     public String getPlaceNameByCategory(String str,int index) throws URISyntaxException{
         String name = null;
+
         try {
             if(str.equals("ทั้งหมด")){
-                traverson = new Traverson(new URI(url+"places?sort=name,asc"), MediaTypes.HAL_JSON);
+                //int all = traverson.follow("$._links.self.href").toObject("$.page.totalElements");
+                traverson = new Traverson(new URI(url+"places"), MediaTypes.HAL_JSON);
+                int size = traverson.follow("$._links.self.href").toObject("$.page.size");
+                int page = index/size;
+                index = index % size;
+                traverson = new Traverson(new URI(url+"places?sort=name,asc&page="+page), MediaTypes.HAL_JSON);
                 Traverson.TraversalBuilder traversalBuilder = traverson
                         .follow("$._embedded.places[" + index + "]._links.self.href");
                 name = traversalBuilder.toObject("$.name");

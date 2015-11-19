@@ -31,6 +31,7 @@ public class Review_Info extends AppCompatActivity {
 
         // seekBar1
         rating_Bar = (RatingBar)findViewById(R.id.ratingBar1);
+        txtView1.setText("Your Selected :    ");
         rating_Bar.setOnRatingBarChangeListener(new OnRatingBarChangeListener() {
             public void onRatingChanged(RatingBar ratingBar, float rating,
                                         boolean fromUser) {
@@ -62,7 +63,7 @@ public class Review_Info extends AppCompatActivity {
         final TextView topicView2 = (TextView)findViewById(R.id.textViewInfo);
         topicView2.setText(content);
         ContentProvider provider = new ContentProvider();
-        Review review = provider.getReviewById(id);
+        //Review review = provider.getReviewById(id);
         HTTPRequest rq = new HTTPRequest();
         rq.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,"http://203.151.92.199:8888/reviewratingbyid?userId=" + Profile.getUser().getId() +
                 "&reviewId=" + id);
@@ -89,7 +90,6 @@ public class Review_Info extends AppCompatActivity {
         HTTPRequest rq = new HTTPRequest();
             rq.execute("http://203.151.92.199:8888/ratereview?userId="+Profile.getUser().getId()+
                     "&reviewId="+id+"&rating="+ userRating);
-        startActivity(new Intent(this, Review_View.class));
     }
 
 

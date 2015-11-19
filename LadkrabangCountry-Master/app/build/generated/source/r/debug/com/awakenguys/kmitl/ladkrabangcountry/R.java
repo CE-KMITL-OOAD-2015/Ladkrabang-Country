@@ -2748,7 +2748,7 @@ containing a value of this type.
         public static final int content=0x7f0d00c1;
         public static final int contentPanel=0x7f0d0060;
         public static final int content_Ann=0x7f0d0080;
-        public static final int content_Ann_show=0x7f0d0083;
+        public static final int content_ann_show=0x7f0d0083;
         public static final int custom=0x7f0d0066;
         public static final int customPanel=0x7f0d0065;
         public static final int dark=0x7f0d0040;
@@ -2898,7 +2898,7 @@ containing a value of this type.
         public static final int topPanel=0x7f0d005d;
         public static final int topic=0x7f0d00c0;
         public static final int topic_Ann=0x7f0d007f;
-        public static final int topic_Ann_show=0x7f0d0082;
+        public static final int topic_ann_show=0x7f0d0082;
         public static final int train=0x7f0d0094;
         public static final int trainArrivalTimeListView=0x7f0d00af;
         public static final int unknown=0x7f0d0047;

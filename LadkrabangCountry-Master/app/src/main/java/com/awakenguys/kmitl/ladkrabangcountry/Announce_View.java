@@ -21,7 +21,7 @@ public class Announce_View extends AppCompatActivity {
     private ListView listview;
     private AnnounceListAdapter adapter;
     private TextView emptyView;
-    private AsyncTask updateTask;
+    private AsyncTask updateAnnounceTask;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +33,7 @@ public class Announce_View extends AppCompatActivity {
         emptyView = (TextView) findViewById(R.id.emptyList);
         emptyView.setVisibility(View.INVISIBLE);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        if(Profile.getUser().getLevel()!=0) fab.setVisibility(View.INVISIBLE);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,8 +41,8 @@ public class Announce_View extends AppCompatActivity {
                 //finish();
             }
         });
-        updateTask = new UpdateTask();
-        updateTask.execute();
+//        updateAnnounceTask = new UpdateAnnounceTask();
+//        updateAnnounceTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -52,10 +53,11 @@ public class Announce_View extends AppCompatActivity {
     }
 
     private void view_announce(int position){
-        Intent intent = new Intent(this, Review_Info.class);
-        intent.putExtra("topic", ((Review) adapter.getItem(position)).getTopic());
-        intent.putExtra("content", ((Review) adapter.getItem(position)).getContent());
-        intent.putExtra("image", ((Review) adapter.getItem(position)).getImg_path());
+        Intent intent = new Intent(this, Announce_Info.class);
+        intent.putExtra("topic", ((Announce) adapter.getItem(position)).getTopic());
+        intent.putExtra("content", ((Announce) adapter.getItem(position)).getContent());
+        intent.putExtra("author", ((Announce) adapter.getItem(position)).getAuthor());
+        //intent.putExtra("image", ((Announce) adapter.getItem(position)).getImg_path());
         startActivity(intent);
     }
 
@@ -64,28 +66,26 @@ public class Announce_View extends AppCompatActivity {
         startActivity(new Intent(this, Announce_Create.class));
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-            new UpdateTask().execute();
-    }
 
-    public class UpdateTask extends AsyncTask<Void,Void,Void>{
+    public class UpdateAnnounceTask extends AsyncTask<Object,Void,Void>{
         @Override
-        protected Void doInBackground(Void... params) {
+        protected Void doInBackground(Object... params) {
             ContentProvider provider = new  ContentProvider();
             int i = provider.getAnnounceSize();
             for(;i>0;i--){
-                try{
-                    announceList.add(provider.getAnnounceByIndex(i-1));
-                    isCancelled();
+                if(isCancelled())break;
+                try {
+                    announceList.add(provider.getAnnounceByIndex(i - 1));
                     publishProgress();
-                }catch (Exception e) {
+
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
+
             return null;
         }
+
 
         @Override
         protected void onProgressUpdate(Void... values) {
@@ -100,15 +100,32 @@ public class Announce_View extends AppCompatActivity {
         }
     }
 
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        announceList.clear();
+        adapter.notifyDataSetChanged();
+        updateAnnounceTask = new UpdateAnnounceTask();
+        updateAnnounceTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if(updateAnnounceTask!=null) updateAnnounceTask.cancel(true);
+    }
+
     @Override
     protected void onStop() {
         super.onStop();
-        if(updateTask!=null) updateTask.cancel(true);
+        if(updateAnnounceTask !=null) updateAnnounceTask.cancel(true);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if(updateTask!=null) updateTask.cancel(true);
+        if(updateAnnounceTask !=null) updateAnnounceTask.cancel(true);
     }
+
 }

@@ -59,7 +59,7 @@ public class AnnounceListAdapter extends BaseAdapter {
         TextView topic = (TextView) convertView.findViewById(R.id.topic);
         TextView content = (TextView) convertView.findViewById(R.id.content);
         author = (TextView) convertView.findViewById(R.id.author);
-        TextView rating = (TextView) convertView.findViewById(R.id.rating);
+        ///TextView rating = (TextView) convertView.findViewById(R.id.rating);
 
         // getting movie data for the row
         Announce a = announceItems.get(position);
@@ -73,13 +73,7 @@ public class AnnounceListAdapter extends BaseAdapter {
         // content
         content.setText(a.getContent());
 
-        // genre
-		/*String genreStr = "";
-		for (String str : m.getGenre()) {
-			genreStr += str + ", ";
-		}
-		genreStr = genreStr.length() > 0 ? genreStr.substring(0,
-				genreStr.length() - 2) : genreStr;*/
+
         author.setText(a.getAuthor());
 
 
