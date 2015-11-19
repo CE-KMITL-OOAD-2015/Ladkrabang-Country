@@ -20,7 +20,7 @@ public class AnnounceController {
     @RequestMapping(value = "/addannounce",method= RequestMethod.GET)
     public @ResponseBody Announce addAnnounce(@RequestParam(value = "topic",required = true) String topic,
                                       @RequestParam(value = "content",required = true) String content,
-                                      @RequestParam(value = "img_path", required = false, defaultValue = "null") String img_path,
+                                      @RequestParam(value = "img", required = false, defaultValue = "null") String img_path,
                                       @RequestParam(value =  "authorId", required = true) String authorId) {
         Announce announce;
         User author = userRepo.findOne(authorId);

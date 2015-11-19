@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 
 @Controller
@@ -19,15 +20,30 @@ public class ReviewController {
     ReviewRepo reviewRepo;
     @Autowired
     UserRepo userRepo;
+
+    @RequestMapping(value = "/addreviewwithimg",method= RequestMethod.POST)
+    public @ResponseBody Review addReviewWithImg(HttpServletRequest request,
+                                                 @RequestParam(value = "topic",required = true) String topic,
+                                                 @RequestParam(value = "content",required = true) String content,
+                                                 @RequestParam(value = "img", required = false, defaultValue = "null") String img,
+                                                 @RequestParam(value = "authorId", required = true) String authorId){
+        Review review;
+        User author = userRepo.findOne(authorId);
+        if(img=="null") review = new Review(topic, content, authorId, author.getName());
+        else review = new Review(topic, content, img, authorId, author.getName());
+        reviewRepo.save(review);
+        return review;
+    }
+
     @RequestMapping(value = "/addreview",method= RequestMethod.GET)
     public @ResponseBody Review addReview(@RequestParam(value = "topic",required = true) String topic,
                                       @RequestParam(value = "content",required = true) String content,
-                                      @RequestParam(value = "img_path", required = false, defaultValue = "null") String img_path,
+                                      @RequestParam(value = "img", required = false, defaultValue = "null") String img,
                                       @RequestParam(value = "authorId", required = true) String authorId){
         Review review;
         User author = userRepo.findOne(authorId);
-        if(img_path=="null") review = new Review(topic, content, authorId, author.getName());
-        else review = new Review(topic, content, img_path, authorId, author.getName());
+        if(img=="null") review = new Review(topic, content, authorId, author.getName());
+        else review = new Review(topic, content, img, authorId, author.getName());
         reviewRepo.save(review);
         return review;
     }
@@ -50,7 +66,7 @@ public class ReviewController {
         return review;
     }
 
-    @RequestMapping(value = "ratingbyid", method=RequestMethod.GET)
+    @RequestMapping(value = "reviewratingbyid", method=RequestMethod.GET)
     public @ResponseBody int getRatingById(@RequestParam(value =  "userId",required = true) String userId,
                                            @RequestParam(value = "reviewId", required = true) String reviewId){
         User user = userRepo.findOne(userId);

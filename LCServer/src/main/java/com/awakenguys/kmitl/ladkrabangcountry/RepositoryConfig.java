@@ -1,5 +1,6 @@
 package com.awakenguys.kmitl.ladkrabangcountry;
 
+import com.awakenguys.kmitl.ladkrabangcountry.model.Announce;
 import com.awakenguys.kmitl.ladkrabangcountry.model.Place;
 import com.awakenguys.kmitl.ladkrabangcountry.model.Review;
 import com.awakenguys.kmitl.ladkrabangcountry.model.User;
@@ -13,8 +14,10 @@ public class RepositoryConfig extends SpringBootRepositoryRestMvcConfiguration {
     @Override
     protected void configureRepositoryRestConfiguration(
             RepositoryRestConfiguration config) {
-        config.exposeIdsFor(Review.class, User.class);
-        config.setDefaultPageSize(100);
+        config.exposeIdsFor(Review.class, User.class, Announce.class);
+        config.setDefaultPageSize(1);
+
+
 
     }
 }

@@ -11,6 +11,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource(collectionResourceRel = "reviews", path = "reviews")
 public interface ReviewRepo extends MongoRepository<Review, String> {
+    List<Review> findById(@Param("id") String id);
     List<Review> findByAuthorId(@Param("authorId") String authorId);
 }
 

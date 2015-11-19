@@ -1,9 +1,11 @@
 package com.awakenguys.kmitl.ladkrabangcountry.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.springframework.data.annotation.Id;
 
+import java.beans.Transient;
 import java.util.Date;
 import java.util.HashMap;
 
@@ -12,13 +14,14 @@ public class Review {
     private String id;
     private String topic;
     private String content;
-    private String img_path;
+    private String img;
     private String author;
+
     private String authorId;
     private float rating = 0;
-    private int total = 0;
+
     private long create_date = new Date().getTime();
-    @Ignore
+
     private HashMap<String, Integer> ratings = new HashMap<>();
 
     public Review() {
@@ -31,24 +34,23 @@ public class Review {
         this.author = author;
     }
 
-    public Review(String topic, String content, String img_path, String authorId, String author) {
+    public Review(String topic, String content, String img, String authorId, String author) {
         this.topic = topic;
         this.content = content;
-        this.img_path = img_path;
+        this.img = img;
         this.authorId = authorId;
         this.author = author;
     }
 
 
-    public Review(String id, String topic, String content, String img_path, String author, String authorId, float rating, int total, long create_date, HashMap<String, Integer> ratings) {
+    public Review(String id, String topic, String content, String img, String author, String authorId, float rating, long create_date, HashMap<String, Integer> ratings) {
         this.id = id;
         this.topic = topic;
         this.content = content;
-        this.img_path = img_path;
+        this.img = img;
         this.author = author;
         this.authorId = authorId;
         this.rating = rating;
-        this.total = total;
         this.create_date = create_date;
         this.ratings = ratings;
     }
@@ -77,12 +79,12 @@ public class Review {
         this.content = content;
     }
 
-    public String getImg_path() {
-        return img_path;
+    public String getImg() {
+        return img;
     }
 
-    public void setImg_path(String img_path) {
-        this.img_path = img_path;
+    public void setImg(String img) {
+        this.img = img;
     }
 
     public String getAuthor() {
@@ -109,14 +111,6 @@ public class Review {
         this.rating = rating;
     }
 
-    public int getTotal() {
-        return total;
-    }
-
-    public void setTotal(int total) {
-        this.total = total;
-    }
-
     public long getCreate_date() {
         return create_date;
     }
@@ -139,11 +133,10 @@ public class Review {
                 "id='" + id + '\'' +
                 ", topic='" + topic + '\'' +
                 ", content='" + content + '\'' +
-                ", img_path='" + img_path + '\'' +
+                ", img='" + img + '\'' +
                 ", author='" + author + '\'' +
                 ", authorId='" + authorId + '\'' +
                 ", rating=" + rating +
-                ", total=" + total +
                 ", create_date=" + create_date +
                 ", ratings=" + ratings +
                 '}';
